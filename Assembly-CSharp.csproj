@@ -60,7 +60,6 @@
     <Compile Include="Assets\Scripts\Scripts gerais\ExecAtividade.cs" />
     <Compile Include="Assets\Scripts\Scripts gerais\Itens\ColetaTinta.cs" />
     <Compile Include="Assets\Scripts\Scripts gerais\Check.cs" />
-    <Compile Include="Assets\Scripts\Scripts gerais\PosicaoNaLayer.cs" />
     <Compile Include="Assets\Scripts\Cena1\Scripts de Entrega\Entrega final\EntregaFinal.cs" />
     <Compile Include="Assets\Scripts\Cena1\Scripts de Entrega\ExecEntrega.cs" />
     <Compile Include="Assets\Scripts\Scripts gerais\MovimentoNpc.cs" />
@@ -68,12 +67,13 @@
     <Compile Include="Assets\Scripts\Scripts player\CameraSC.cs" />
     <Compile Include="Assets\Scripts\Scripts gerais\Itens\ColetaPasta.cs" />
     <Compile Include="Assets\Scripts\Cena1\Impressora\ExecImpressora.cs" />
-    <Compile Include="Assets\Scripts\Scripts gerais\MostraSala.cs" />
+    <Compile Include="Assets\Scripts\Cena1\MostraSala.cs" />
     <Compile Include="Assets\Scripts\Scripts gerais\Inventario\InvSprite.cs" />
     <Compile Include="Assets\Scripts\Cena1\Scripts de Entrega\EntregaItems.cs" />
     <Compile Include="Assets\Scripts\Scripts gerais\Itens\ItemAdquirido.cs" />
     <Compile Include="Assets\Scripts\Scripts player\PlayerController.cs" />
-    <Compile Include="Assets\Scripts\Scripts gerais\Temporizador.cs" />
+    <Compile Include="Assets\Scripts\Cena2\Temporizador.cs" />
+    <Compile Include="Assets\Scripts\Scripts gerais\HoraRelogio.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
