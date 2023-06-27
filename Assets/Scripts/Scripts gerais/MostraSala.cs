@@ -27,7 +27,7 @@ public class MostraSala : MonoBehaviour
 
     void Descoberta()
     {
-        if (gameObject.GetComponent<BoxCollider2D>().IsTouching(_player.GetComponent<BoxCollider2D>()))
+        if (gameObject.GetComponent<BoxCollider2D>().IsTouching(_player.GetComponent<CapsuleCollider2D>()))
         {
             _descobriu = true;
         }
