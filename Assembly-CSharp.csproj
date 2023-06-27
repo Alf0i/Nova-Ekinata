@@ -68,12 +68,12 @@
     <Compile Include="Assets\Scripts\Scripts gerais\Itens\ColetaPasta.cs" />
     <Compile Include="Assets\Scripts\Cena1\Impressora\ExecImpressora.cs" />
     <Compile Include="Assets\Scripts\Cena1\MostraSala.cs" />
+    <Compile Include="Assets\Scripts\Scripts gerais\HoraRelogio.cs" />
     <Compile Include="Assets\Scripts\Scripts gerais\Inventario\InvSprite.cs" />
     <Compile Include="Assets\Scripts\Cena1\Scripts de Entrega\EntregaItems.cs" />
     <Compile Include="Assets\Scripts\Scripts gerais\Itens\ItemAdquirido.cs" />
     <Compile Include="Assets\Scripts\Scripts player\PlayerController.cs" />
     <Compile Include="Assets\Scripts\Cena2\Temporizador.cs" />
-    <Compile Include="Assets\Scripts\Scripts gerais\HoraRelogio.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
