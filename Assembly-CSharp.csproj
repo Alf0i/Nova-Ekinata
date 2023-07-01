@@ -73,7 +73,7 @@
     <Compile Include="Assets\Scripts\Cena1\Scripts de Entrega\EntregaItems.cs" />
     <Compile Include="Assets\Scripts\Scripts gerais\Itens\ItemAdquirido.cs" />
     <Compile Include="Assets\Scripts\Scripts player\PlayerController.cs" />
-    <Compile Include="Assets\Scripts\Cena2\Temporizador.cs" />
+    <Compile Include="Assets\Scripts\Cena1\Temporizador.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

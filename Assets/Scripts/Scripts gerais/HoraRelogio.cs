@@ -6,71 +6,114 @@ using UnityEngine.UI;
 public class HoraRelogio : MonoBehaviour
 {
     public Text timerText;
-    private float initialTime;
+    private float contsh;
+    private float contms;
+    private float conts;
+    private float contm;
+    private float conth;
     private bool _isPaused;
+    private int x;
 
-    // Tempo total do temporizador em segundos
-    public float secTime;
-    public float minTime;
-    public float hourTime;
+
 
     void Start()
     {
-        secTime = Time.time * 4;
-        minTime = 0f;
-        hourTime = 0f;
-        _isPaused = false;
+        Debug.Log("COMEÇOU");
+        
         Time.timeScale = 1f;
+        contsh += Time.timeScale;
+        contms = 0;
+        conts = 0;
+        contm = 0;
+        conth = 7;
+
+        _isPaused = false;
+        
 
     }
 
     void Update()
     {
-        Pausar();
-    }
 
-    private void FixedUpdate()
-    {
-        
-    
-
-        float remainingTime = initialTime + (secTime);
-
-            // TERMINA DE CONTAR
-            if (remainingTime > 59f)
-            {
-                remainingTime = 0;
-                minTime++;
-            
-            
-
-
-            }
-
-            // DEFINIÇÕES DE VARIAVEIS
-            int min = Mathf.FloorToInt(remainingTime / 60f);
-            int sec = Mathf.FloorToInt(remainingTime);
-
-            string timeString = string.Format("{0:00}:{1:00}", min, sec);
-
-            timerText.text = timeString;
-    }
-
-    private void Pausar()
-    {
+        // PAUSE 
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            if (_isPaused == false)
+            Pausar();
+
+        }
+
+    }
+    private void FixedUpdate()
+    {
+        ContarHoras();
+    }
+
+    private void ContarHoras()
+    {
+
+
+        if (_isPaused == false)
+        {
+
+            
+
+            
+            if (conth == 23 && contm == 59 && conts == 59 && contms == 59 && contsh >= 4)
             {
-                Time.timeScale = 0f;
-                _isPaused = true;
+                conth = 0;
+                contm = 0;
+                conts = 0;
+                contms = 0;
+                contsh = 0;
             }
-            else
+            else if (contm == 23 && conts == 59 && contms == 59 && contsh >= 1.875)
             {
-                Time.timeScale = 1f;
-                _isPaused = false;
+                Debug.Log("UM DIA");
+                contm = 0;
+                conts = 0;
+                contms = 0;
+                contsh = 0;
+            }
+            else if (conts == 59 && contms == 59 && contsh >= 1.875)
+            {
+                Debug.Log("UMA HORA");
+                contm++;
+                conts = 0;
+                contms = 0;
+                contsh = 0;
+            }
+            else if (contms == 59 && contsh >= 1.875)
+            {
+                Debug.Log("UM MINUTO");
+                conts++;
+                contms = 0;
+                contsh = 0;
+            }
+            else if (contsh >= 1.875)
+            {
+                
+                contms++;
+                contsh = 0;
             }
         }
     }
+
+
+
+    private void Pausar()
+    {
+        if (_isPaused == false)
+        {
+            Time.timeScale = 0f;
+            _isPaused = true;
+        }
+        else
+        {
+            Time.timeScale = 1f;
+            _isPaused = false;
+        }
+    }
+
+
 }
 
