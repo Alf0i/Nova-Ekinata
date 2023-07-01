@@ -18,7 +18,7 @@ public class HoraRelogio : MonoBehaviour
 
     void Start()
     {
-        Debug.Log("COMEÇOU");
+        Debug.Log("COMEï¿½OU");
         
         Time.timeScale = 1f;
         contms = 0;
@@ -54,9 +54,10 @@ public class HoraRelogio : MonoBehaviour
         if (_isPaused == false)
         {
 
-            contms += (Time.deltaTime*60);
+            contms += (Time.fixedDeltaTime*60);
             Debug.Log(conth + " : " + contm);
-            if (conth == 23 && contm == 59 && conts == 59 && contms >= 3.59)
+            if (conth == 23 && contm == 59 && conts == 59 && contms >=1.875
+            )
             {
                 Debug.Log("UM DIA");
                 conth = 0;
@@ -65,7 +66,8 @@ public class HoraRelogio : MonoBehaviour
                 contms = 0;
 
             }
-            else if (contm == 59 && conts == 59 && contms >= 3.59)
+            else if (contm == 59 && conts == 59 && contms >=1.875
+            )
             {
                 Debug.Log("UMA HORA");
                 conth ++;
@@ -74,7 +76,8 @@ public class HoraRelogio : MonoBehaviour
                 contms = 0;
 
             }
-            else if (conts == 59 && contms >= 3.59)
+            else if (conts == 59 && contms >=1.875
+            )
             {   
                 Debug.Log("UM MINUTO");
                 contm++;
@@ -82,7 +85,8 @@ public class HoraRelogio : MonoBehaviour
                 contms = 0;
                 
             }
-            else if (contms >= 3.59)
+            else if (contms >=1.875
+            )
             {
                                 
                 conts++;
