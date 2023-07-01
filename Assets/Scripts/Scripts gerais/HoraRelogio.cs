@@ -6,13 +6,13 @@ using UnityEngine.UI;
 public class HoraRelogio : MonoBehaviour
 {
     public Text timerText;
-    private float contsh;
+
     private float contms;
     private float conts;
     private float contm;
     private float conth;
     private bool _isPaused;
-    private int x;
+
 
 
 
@@ -21,7 +21,6 @@ public class HoraRelogio : MonoBehaviour
         Debug.Log("COMEÇOU");
         
         Time.timeScale = 1f;
-        contsh += Time.timeScale;
         contms = 0;
         conts = 0;
         contm = 0;
@@ -50,51 +49,47 @@ public class HoraRelogio : MonoBehaviour
 
     private void ContarHoras()
     {
-
+        
 
         if (_isPaused == false)
         {
 
-            
-
-            
-            if (conth == 23 && contm == 59 && conts == 59 && contms == 59 && contsh >= 4)
+            contms += (Time.deltaTime*60);
+            Debug.Log(conth + " : " + contm);
+            if (conth == 23 && contm == 59 && conts == 59 && contms >= 3.59)
             {
+                Debug.Log("UM DIA");
                 conth = 0;
                 contm = 0;
                 conts = 0;
                 contms = 0;
-                contsh = 0;
+
             }
-            else if (contm == 23 && conts == 59 && contms == 59 && contsh >= 1.875)
+            else if (contm == 59 && conts == 59 && contms >= 3.59)
             {
-                Debug.Log("UM DIA");
+                Debug.Log("UMA HORA");
+                conth ++;
                 contm = 0;
                 conts = 0;
                 contms = 0;
-                contsh = 0;
+
             }
-            else if (conts == 59 && contms == 59 && contsh >= 1.875)
-            {
-                Debug.Log("UMA HORA");
+            else if (conts == 59 && contms >= 3.59)
+            {   
+                Debug.Log("UM MINUTO");
                 contm++;
                 conts = 0;
                 contms = 0;
-                contsh = 0;
+                
             }
-            else if (contms == 59 && contsh >= 1.875)
+            else if (contms >= 3.59)
             {
-                Debug.Log("UM MINUTO");
+                                
                 conts++;
                 contms = 0;
-                contsh = 0;
-            }
-            else if (contsh >= 1.875)
-            {
                 
-                contms++;
-                contsh = 0;
             }
+            
         }
     }
 
