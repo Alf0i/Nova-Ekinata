@@ -72,7 +72,6 @@
     <Compile Include="Assets\Scripts\Scripts gerais\Inventario\InvSprite.cs" />
     <Compile Include="Assets\Scripts\Cena1\Scripts de Entrega\EntregaItems.cs" />
     <Compile Include="Assets\Scripts\Scripts gerais\Itens\ItemAdquirido.cs" />
-    <Compile Include="Assets\Scripts\Scripts gerais\Conversa\Dialogo.cs" />
     <Compile Include="Assets\Scripts\Scripts player\PlayerController.cs" />
     <Compile Include="Assets\Scripts\Cena1\Temporizador.cs" />
     <Compile Include="Assets\Scripts\Scripts gerais\Conversa\TemplateFalaNPC.cs" />

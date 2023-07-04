@@ -23,7 +23,7 @@ public class PlayerController : MonoBehaviour
     {
         
         _playerRigidbody2D = GetComponent<Rigidbody2D>();
-        _playerRunSpeed = _playerSpeed + 6f;
+        _playerRunSpeed = _playerSpeed + ((_playerSpeed*3)/4);
         _isRunning = false;
         _Runned = false;
         _SpeedTime = 1f;
