@@ -40,7 +40,9 @@ public class HoraRelogio : MonoBehaviour
             Pausar();
 
         }
+        string timeString = string.Format("{0:00}:{1:00}", conth, contm);
 
+        timerText.text = timeString;
     }
     private void FixedUpdate()
     {
@@ -55,7 +57,7 @@ public class HoraRelogio : MonoBehaviour
         {
 
             contms += (Time.fixedDeltaTime*60);
-            Debug.Log(conth + " : " + contm);
+            
             if (conth == 23 && contm == 59 && conts == 59 && contms >=1.875
             )
             {
