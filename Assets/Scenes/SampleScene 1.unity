@@ -7580,7 +7580,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1379038721}
   m_Layer: 0
-  m_Name: Npcs
+  m_Name: NpcsDialogo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
