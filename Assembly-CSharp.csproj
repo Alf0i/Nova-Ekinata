@@ -57,6 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Cena1\Scripts de Entrega\RequisitoSprite.cs" />
+    <Compile Include="Assets\Scripts\Scripts gerais\Conversa\TemplateFalaNPC.cs" />
     <Compile Include="Assets\Scripts\Scripts gerais\ExecAtividade.cs" />
     <Compile Include="Assets\Scripts\Scripts gerais\Itens\ColetaTinta.cs" />
     <Compile Include="Assets\Scripts\Scripts gerais\Check.cs" />
@@ -74,7 +75,7 @@
     <Compile Include="Assets\Scripts\Scripts gerais\Itens\ItemAdquirido.cs" />
     <Compile Include="Assets\Scripts\Scripts player\PlayerController.cs" />
     <Compile Include="Assets\Scripts\Cena1\Temporizador.cs" />
-    <Compile Include="Assets\Scripts\Scripts gerais\Conversa\TemplateFalaNPC.cs" />
+    <Compile Include="Assets\Scripts\Scripts gerais\Conversa\Dialogo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
