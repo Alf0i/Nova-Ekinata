@@ -12,7 +12,7 @@ public class Dialogo : MonoBehaviour
     private int index;
 
 
-    //private bool dialogoIniciado;
+    
     private bool linhaTerminada;
 
 
@@ -20,27 +20,19 @@ public class Dialogo : MonoBehaviour
     {
 
         gameObject.SetActive(false);
-        // dialogoIniciado = false;
+        
     }
 
 
     private void Update()
     {
 
-        /*if(dialogoIniciado == false)
-        {
-            if (Input.GetKeyDown(KeyCode.F))
-            {
-                AbrirDialogo(linhas);
-            }
-        }
-        else
-        {*/
+        
         if (Input.GetKeyDown(KeyCode.Space))
         {
             NextPage();
         }
-        //}
+        
 
 
     }
@@ -54,7 +46,7 @@ public class Dialogo : MonoBehaviour
         {
             return;
         }
-        //dialogoIniciado = true;
+        
         gameObject.SetActive(true);
         this.linhas = linhas;
         index = 0;
