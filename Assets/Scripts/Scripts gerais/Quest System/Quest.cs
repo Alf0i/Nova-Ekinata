@@ -85,8 +85,14 @@ public class Quest : MonoBehaviour
                             _obj[i].Init();
                             return;
                         }
+                        else 
+                        {
+                            i = Mathf.Clamp(i, 0, _obj.Count - 1);
+                            _obj[i].Init();
+                            return;
+                        }
 
-                        _obj[i].ObjAtualiza();
+                        
 
                     }
                 
@@ -95,18 +101,29 @@ public class Quest : MonoBehaviour
                 else if (_obj.Count > 1)
                 {
 
-
+                    i = 0;
                     foreach (var o in _obj)
                     {
 
 
                         if (o != null && o._objetivoAct != null)
                         {
-                            o.ObjAtualiza();
+                            if (i == 0)
+                            {
+                                o.Init();
+                                i++;
+                            }
+                            else
+                            {
+                                o.ObjAtualiza();
+                                i++;
+                            }
+                            
                         }
                         else
                         {
                             o._isComplete = true;
+                            i = 0;
                         }
                     }
                 }
