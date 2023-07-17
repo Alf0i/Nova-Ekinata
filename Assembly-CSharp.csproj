@@ -67,6 +67,7 @@
     <Compile Include="Assets\Scripts\Scripts gerais\Contador.cs" />
     <Compile Include="Assets\Scripts\Scripts player\CameraSC.cs" />
     <Compile Include="Assets\Scripts\Scripts gerais\Itens\ColetaPasta.cs" />
+    <Compile Include="Assets\Scripts\Scripts gerais\Conversa\Dialogo.cs" />
     <Compile Include="Assets\Scripts\Cena1\Impressora\ExecImpressora.cs" />
     <Compile Include="Assets\Scripts\Cena1\MostraSala.cs" />
     <Compile Include="Assets\Scripts\Scripts gerais\HoraRelogio.cs" />
@@ -75,7 +76,11 @@
     <Compile Include="Assets\Scripts\Scripts gerais\Itens\ItemAdquirido.cs" />
     <Compile Include="Assets\Scripts\Scripts player\PlayerController.cs" />
     <Compile Include="Assets\Scripts\Cena1\Temporizador.cs" />
-    <Compile Include="Assets\Scripts\Scripts gerais\Conversa\Dialogo.cs" />
+    <Compile Include="Assets\Scripts\Scripts gerais\Quest System\ObjetivoSM.cs" />
+    <Compile Include="Assets\Scripts\Scripts gerais\Quest System\Objetivo.cs" />
+    <Compile Include="Assets\Scripts\Scripts gerais\Quest System\Quest.cs" />
+    <Compile Include="Assets\Scripts\Scripts gerais\DestruirObj.cs" />
+    <Compile Include="Assets\Scripts\Scripts gerais\Quest System\QuestColeta.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
