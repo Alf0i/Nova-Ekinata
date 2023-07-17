@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class QuestColeta : ObjetivoSM
+public class QuestColeta : MonoBehaviour, ObjetivoSM
 {
     public bool AtualizarObjetivo(Transform[] objs)
     {
