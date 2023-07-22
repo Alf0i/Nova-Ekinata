@@ -10,15 +10,16 @@ public class Quest : MonoBehaviour
     public int i;
 
     int MAX;
-    public List<Objetivo> _obj;
+    public List<Objetivo> _objetivo;
     public bool _questIniciada;
+    public bool _objetivoIniciado;
     public GameObject player;
     private float dist;
     // Start is called before the first frame update
     void Start()
     {
         _questIniciada = false;
-
+        _objetivoIniciado = false;
 
 
         /*if (_obj.Count <= 1)
@@ -53,7 +54,7 @@ public class Quest : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        
         dist = Vector2.Distance(gameObject.transform.position, player.transform.position);
 
         if (dist <= 2 && Input.GetKeyDown(KeyCode.Space))
@@ -71,61 +72,76 @@ public class Quest : MonoBehaviour
             else
             {
 
-                if (_obj.Count <= 1)
+                if (_objetivo.Count <= 1)
                 {
 
-
-                    if (_obj[i] != null)
-                    {
-
-                        if (_obj[i]._isComplete == true)
+                    if (_objetivoIniciado == false)
+                    { 
+                        if (_objetivo[i] != null)
                         {
-                            i++;
-                            i = Mathf.Clamp( i, 0, _obj.Count -1);
-                            _obj[i].Init();
-                            return;
+                            _objetivo[i].Init();
+                            _objetivoIniciado = true;
                         }
-                        else 
-                        {
-                            i = Mathf.Clamp(i, 0, _obj.Count - 1);
-                            _obj[i].Init();
-                            return;
-                        }
-
-                        
-
                     }
-                
+                    else  
+                    {
+                        if (_objetivo[i] != null)
+                        {
+
+                            if (_objetivo[i]._objCompleto == true)
+                            {
+                                i++;
+                                i = Mathf.Clamp(i, 0, _objetivo.Count - 1);
+                                _objetivo[i].Init();
+                                return;
+                            }
+
+                            _objetivo[i].ObjAtualiza();
+
+                        }
+                    }
                 }
 
-                else if (_obj.Count > 1)
+                else if (_objetivo.Count > 1)
                 {
 
-                    i = 0;
-                    foreach (var o in _obj)
+                    
+
+                    if (_objetivoIniciado == false)
                     {
-
-
-                        if (o != null && o._objetivoAct != null)
+                        foreach (var o in _objetivo)
                         {
-                            if (i == 0)
+                            if(o != null)
                             {
                                 o.Init();
-                                i++;
+                                _objetivoIniciado = true;
                             }
                             else
                             {
-                                o.ObjAtualiza();
-                                i++;
+                                o._objCompleto = true;
                             }
-                            
-                        }
-                        else
-                        {
-                            o._isComplete = true;
-                            i = 0;
                         }
                     }
+                    else
+                    {
+                        foreach (var o in _objetivo)
+                        {
+
+
+                            if (o != null && o._objetivoAct != null)
+                            {
+                                o.ObjAtualiza();
+                            
+                            }
+                            else
+                            {
+                                o._objCompleto = true;
+                                
+                            }
+                        }
+                    }
+
+                    
                 }
 
                 if (ChecarTodosObjetivos())
@@ -143,9 +159,9 @@ public class Quest : MonoBehaviour
     {
         bool result = false;
 
-        foreach (var o in _obj)
+        foreach (var o in _objetivo)
         {
-            if (o._isComplete)
+            if (o._objCompleto)
             {
                 result = true;
             }

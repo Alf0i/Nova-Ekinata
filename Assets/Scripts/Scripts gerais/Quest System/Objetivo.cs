@@ -7,7 +7,7 @@ public class Objetivo
 {
     [TextArea(2, 4)]
     public string _descricao;
-    public bool _isComplete;
+    public bool _objCompleto;
 
     public Transform _objetivoActT;
     public ObjetivoSM _objetivoAct;
@@ -25,7 +25,7 @@ public class Objetivo
         if ( _objetivoAct.AtualizarObjetivo(_objetos) )
         {
             _objetivoAct.SairObjetivo(_objetos);
-            _isComplete = true;
+            _objCompleto = true;
         }
     }
 }

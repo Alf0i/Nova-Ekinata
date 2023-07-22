@@ -1590,7 +1590,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -2438,17 +2438,22 @@ MonoBehaviour:
   _nomeQuest: coletar caixas amarelas
   complete: 0
   i: 0
-  _obj:
-  - _descricao: colete todas as caixas amarelas
-    _isComplete: 0
+  _objetivo:
+  - _descricao: colete as caixas amarelas
+    _objCompleto: 0
     _objetivoActT: {fileID: 367206409}
     _objetos:
     - {fileID: 1858332048}
     - {fileID: 250806941}
     - {fileID: 2083624966}
+  - _descricao: colete as caixas vermelhas
+    _objCompleto: 0
+    _objetivoActT: {fileID: 367206409}
+    _objetos:
     - {fileID: 1195767207}
     - {fileID: 2124668530}
   _questIniciada: 0
+  _objetivoIniciado: 0
   player: {fileID: 482671402}
 --- !u!1 &482671402
 GameObject:
@@ -6881,7 +6886,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.7830189, g: 0.7272896, b: 0, a: 1}
+  m_Color: {r: 0.78431374, g: 0, b: 0.03137255, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -6899,7 +6904,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1195767204}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 51.85, y: 37.62, z: 0}
+  m_LocalPosition: {x: 13.7, y: 13.9, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6916,7 +6921,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -74333,7 +74338,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -74633,7 +74638,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.7830189, g: 0.7272896, b: 0, a: 1}
+  m_Color: {r: 0.78431374, g: 0, b: 0.028627433, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -74651,7 +74656,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2124668527}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 62.73, y: -9.45, z: 0}
+  m_LocalPosition: {x: 0.21, y: 32.52, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -74668,7 +74673,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
