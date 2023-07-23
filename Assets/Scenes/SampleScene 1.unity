@@ -2435,7 +2435,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6273a9d134a93849b411c89530140d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _nomeQuest: coletar caixas amarelas
+  _nomeQuest:
+  - colete caixas
   complete: 0
   i: 0
   _objetivo:
@@ -8022,6 +8023,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tempoLetra: 0.02
   textDialog: {fileID: 180366544}
+  missao: {fileID: 461449673}
 --- !u!1 &1403420842
 GameObject:
   m_ObjectHideFlags: 0

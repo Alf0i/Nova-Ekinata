@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class Quest : MonoBehaviour
 {
-    public string _nomeQuest;
+    public static Quest missao;
+    public string[] _nomeQuest;
     public bool complete;
-
+   
     public int i;
 
     int MAX;
@@ -14,8 +15,11 @@ public class Quest : MonoBehaviour
     public bool _questIniciada;
     public bool _objetivoIniciado;
     public GameObject player;
-    private float dist;
     // Start is called before the first frame update
+    private void Awake()
+    {
+        missao = this;
+    }
     void Start()
     {
         _questIniciada = false;
@@ -54,13 +58,9 @@ public class Quest : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-        dist = Vector2.Distance(gameObject.transform.position, player.transform.position);
 
-        if (dist <= 2 && Input.GetKeyDown(KeyCode.Space))
-        {
-            _questIniciada = true;
-        } 
+
+        
 
         if (_questIniciada) {
 

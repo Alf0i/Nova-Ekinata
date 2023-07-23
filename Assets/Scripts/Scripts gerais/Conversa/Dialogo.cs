@@ -6,13 +6,13 @@ using UnityEngine;
 public class Dialogo : MonoBehaviour
 {
     [SerializeField] float _tempoLetra;
-
     [SerializeField] TextMeshProUGUI textDialog;
     private string[] linhas;
     private int index;
+    public Quest missao;
+    private string linhas2;
 
 
-    
     private bool linhaTerminada;
 
 
@@ -69,19 +69,53 @@ public class Dialogo : MonoBehaviour
         linhaTerminada = true;
     }
 
+    IEnumerator DitarQuest()
+    {
+        linhas2 = Quest.missao._objetivo[Quest.missao.i]._descricao;
+
+        textDialog.text = "";
+        linhaTerminada = false;
+        foreach (var c in linhas2)
+        {
+            textDialog.text += c;
+            yield return new WaitForSeconds(_tempoLetra);
+            
+            if (Input.GetKeyDown(KeyCode.E))
+        {
+             Quest.missao._questIniciada = true;
+            
+        }
+        else if (Input.GetKeyDown(KeyCode.Q))
+        {
+            linhaTerminada = true;
+            TerminarDialogo();
+            yield return 0;
+        }
+        }
+        
+        
+    }
+
 
     private void NextPage()
     {
         if (linhaTerminada)
         {
-            index++;
-            if (index >= linhas.Length)
-            {
 
+            
+            if (index >= linhas.Length - 1)
+            {
                 TerminarDialogo();
-                return;
+                AbrirDialogo(Quest.missao._nomeQuest);
+                StartCoroutine(DitarQuest());
+                
             }
-            StartCoroutine(Ditar());
+            else
+            {   
+                index++;
+                StartCoroutine(Ditar());
+            }
+            
         }
         else
         {
@@ -100,6 +134,7 @@ public class Dialogo : MonoBehaviour
 
         //dialogoIniciado = false;
         gameObject.SetActive(false);
+        StopCoroutine(DitarQuest());
         StopCoroutine(Ditar());
     }
 
