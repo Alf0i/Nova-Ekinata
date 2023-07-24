@@ -59,13 +59,18 @@ public class Quest : MonoBehaviour
     void Update()
     {
 
-
+        if (complete == true)
+        {
+            Debug.Log("Missao COMPLETA");
+            complete = false;
+        }
         
 
         if (_questIniciada) {
 
             if (complete == true)
             {
+                
                 return;
             }
 

@@ -61,7 +61,7 @@ public class HoraRelogio : MonoBehaviour
             if (conth == 23 && contm == 59 && conts == 59 && contms >=1.875
             )
             {
-                Debug.Log("UM DIA");
+                //Debug.Log("UM DIA");
                 conth = 0;
                 contm = 0;
                 conts = 0;
@@ -71,7 +71,7 @@ public class HoraRelogio : MonoBehaviour
             else if (contm == 59 && conts == 59 && contms >=1.875
             )
             {
-                Debug.Log("UMA HORA");
+                //Debug.Log("UMA HORA");
                 conth ++;
                 contm = 0;
                 conts = 0;
@@ -81,7 +81,7 @@ public class HoraRelogio : MonoBehaviour
             else if (conts == 59 && contms >=1.875
             )
             {   
-                Debug.Log("UM MINUTO");
+                //Debug.Log("UM MINUTO");
                 contm++;
                 conts = 0;
                 contms = 0;

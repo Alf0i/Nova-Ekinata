@@ -11,16 +11,16 @@ public class Dialogo : MonoBehaviour
     private int index;
     public Quest missao;
     private string linhas2;
-
+    [SerializeField] GameObject infoQuest;
 
     private bool linhaTerminada;
-
+    private bool escreveuQuest;
 
     private void Start()
     {
 
         gameObject.SetActive(false);
-        
+        escreveuQuest = false;
     }
 
 
@@ -32,9 +32,20 @@ public class Dialogo : MonoBehaviour
         {
             NextPage();
         }
-        
 
-
+        if (escreveuQuest)
+        {   if (Input.GetKeyDown(KeyCode.E))
+            {
+                Quest.missao._questIniciada = true;
+                TerminarDialogo();
+                escreveuQuest = false;
+            }
+            else if (Input.GetKeyDown(KeyCode.Q))
+            {
+                TerminarDialogo();
+                escreveuQuest = false;
+            }
+        }
     }
 
 
@@ -79,21 +90,10 @@ public class Dialogo : MonoBehaviour
         {
             textDialog.text += c;
             yield return new WaitForSeconds(_tempoLetra);
-            
-            if (Input.GetKeyDown(KeyCode.E))
-        {
-             Quest.missao._questIniciada = true;
-            
         }
-        else if (Input.GetKeyDown(KeyCode.Q))
-        {
-            linhaTerminada = true;
-            TerminarDialogo();
-            yield return 0;
-        }
-        }
-        
-        
+        linhaTerminada = true;
+        escreveuQuest = true;
+        infoQuest.SetActive(true);
     }
 
 
@@ -134,6 +134,7 @@ public class Dialogo : MonoBehaviour
 
         //dialogoIniciado = false;
         gameObject.SetActive(false);
+        infoQuest.SetActive(false);
         StopCoroutine(DitarQuest());
         StopCoroutine(Ditar());
     }
