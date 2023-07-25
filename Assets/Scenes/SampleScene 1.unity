@@ -2520,7 +2520,7 @@ MonoBehaviour:
   complete: 0
   i: 0
   _objetivo:
-  - _descricao: colete as caixas amarelas
+  - _descricao: 1 2 3
     _objCompleto: 0
     _objetivoActT: {fileID: 367206409}
     _objetos:

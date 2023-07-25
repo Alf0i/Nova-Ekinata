@@ -27,10 +27,19 @@ public class Dialogo : MonoBehaviour
     private void Update()
     {
 
-        
+
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            NextPage();
+            if (textDialog.text == linhas[index])
+            {
+                NextPage();
+            }
+
+            else
+            {
+                StopAllCoroutines();
+                textDialog.text = linhas[index];
+            }
         }
 
         if (escreveuQuest)
@@ -66,6 +75,22 @@ public class Dialogo : MonoBehaviour
         StartCoroutine(Ditar());
     }
 
+    public void AbrirQuest(string[] linhas)
+    {
+        FindObjectOfType<PlayerController>()._playerSpeed = 0f;
+
+        if (gameObject.activeInHierarchy == true)
+        {
+            return;
+        }
+
+        gameObject.SetActive(true);
+        this.linhas = linhas;
+        index = 0;
+        linhaTerminada = false;
+
+        StartCoroutine(DitarQuest());
+    }
 
     IEnumerator Ditar()
     {
@@ -82,7 +107,7 @@ public class Dialogo : MonoBehaviour
 
     IEnumerator DitarQuest()
     {
-        linhas2 = Quest.missao._objetivo[Quest.missao.i]._descricao;
+        linhas2 = missao._objetivo[index]._descricao;
 
         textDialog.text = "";
         linhaTerminada = false;
@@ -106,8 +131,8 @@ public class Dialogo : MonoBehaviour
             if (index >= linhas.Length - 1)
             {
                 TerminarDialogo();
-                AbrirDialogo(Quest.missao._nomeQuest);
-                StartCoroutine(DitarQuest());
+                AbrirQuest(Quest.missao._nomeQuest);
+                
                 
             }
             else
