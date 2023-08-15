@@ -4,17 +4,25 @@ using UnityEngine;
 
 public class ObjColetavel : MonoBehaviour
 {
-
-    private void OnTriggerEnter2D(Collider2D col)
+    private float dist;
+    private GameObject player;
+    [SerializeField] float distancia;
+    private void Update()
     {
-        if(col.gameObject.tag == "Player")
+        player = GameObject.FindGameObjectWithTag("Player");
+        dist = Vector2.Distance(gameObject.transform.position, player.transform.position);
+
+        if(dist <= distancia)
         {
+
+            //Local para adcionar uma sprite de PRESSIONAR F.
+
             if (Input.GetKeyDown(KeyCode.F))
             {
                 Destroy(gameObject);
-               
+
             }
         }
-        
     }
+    
 }

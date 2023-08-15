@@ -31,27 +31,55 @@ public class DefiniçãoDeMissão : MonoBehaviour
 
     private GerenciadorDeMissões gerenciadorDeMissões;
     private bool missaoPreparada;
+    private bool podeCompletar;
+    private bool objetivoCompleto;
     void Start()
     {
+        objetivoCompleto = false;
+        podeCompletar =false;
         missaoPreparada = false;
         gerenciadorDeMissões = FindObjectOfType<GerenciadorDeMissões>();
     }
 
     void Update()
     {
+        Debug.Log(ObjetivoAtual);
         if (Input.GetKeyDown(KeyCode.L) && gerenciadorDeMissões.missãoAtual != null)
         {
             CancelarMissão();
         }
+
         if (missaoPreparada)
         {
-            foreach (DefiniçãoObjetivo objetivo in objetivos)
+            /*foreach (DefiniçãoObjetivo objetivo in objetivos)
             {
                 
                 AtualizarMissão(objetivo.alvos);
 
-                if (AtualizarMissão(objetivo.alvos))
+                if (AtualizarMissão(objetivo.alvos) && podeCompletar)
+                    objetivoCompleto = true;
                     CompletarObjetivo();
+                    podeCompletar = false;
+            }*/
+
+
+            if (ObjetivoAtual < objetivos.Count)
+            {
+
+                AtualizarMissão(objetivos[ObjetivoAtual].alvos);
+
+                if (AtualizarMissão(objetivos[ObjetivoAtual].alvos))
+                {
+                    podeCompletar = true;
+                }
+
+                if (podeCompletar)
+                {
+                    Debug.Log("pode completar");
+                    objetivoCompleto = true;
+                    CompletarObjetivo();
+                    podeCompletar = false;
+                }
             }
         }
 
@@ -81,6 +109,7 @@ public class DefiniçãoDeMissão : MonoBehaviour
                 
             }
         }
+
         missaoPreparada = true;
     }
 
@@ -93,6 +122,7 @@ public class DefiniçãoDeMissão : MonoBehaviour
             if (o == null)
             {
                 result = true;
+                
             }
             else
             {
@@ -100,7 +130,7 @@ public class DefiniçãoDeMissão : MonoBehaviour
                 break;
             }
         }
-
+        
         return result;
     }
 
@@ -117,12 +147,18 @@ public class DefiniçãoDeMissão : MonoBehaviour
 
     public void CompletarObjetivo()
     {
-        ObjetivoAtual++;
-
-        if(ObjetivoAtual == objetivos.Count)
+        if (objetivoCompleto)
         {
-            CompletarMissão();
+            ObjetivoAtual++;
+
+            if (ObjetivoAtual == objetivos.Count)
+            {
+                CompletarMissão();
+
+            }
+            objetivoCompleto = false;
         }
+            
     }
 
     public void CompletarMissão()
@@ -130,5 +166,6 @@ public class DefiniçãoDeMissão : MonoBehaviour
         gerenciadorDeMissões.missãoAtual = null;
 
         completado = true;
+        
     }
 }
