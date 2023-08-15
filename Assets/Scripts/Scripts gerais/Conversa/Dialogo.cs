@@ -10,11 +10,18 @@ public class Dialogo : MonoBehaviour
     
     private string[] linhas;
     private int index;
-    private bool linhaTerminada;
+    public bool dialogoTerminado;
+
+    public static Dialogo Diag;
 
     private void Start()
     {
         gameObject.SetActive(false);
+    }
+
+    void Awake()
+    {
+        Diag = this;
     }
 
 
@@ -50,7 +57,7 @@ public class Dialogo : MonoBehaviour
         gameObject.SetActive(true);
         this.linhas = linhas;
         index = 0;
-        linhaTerminada = false;
+        dialogoTerminado = false;
 
         StartCoroutine(Ditar());
     }
@@ -59,13 +66,11 @@ public class Dialogo : MonoBehaviour
     {
         var linha = linhas[index];
         textDialog.text = "";
-        linhaTerminada = false;
         foreach (var c in linha)
         {
             textDialog.text += c;
             yield return new WaitForSeconds(_tempoLetra);
         }
-        linhaTerminada = true;
     }
 
     private void NextPage()
@@ -78,10 +83,11 @@ public class Dialogo : MonoBehaviour
         }
         
         else
-        {
+        {   
             FindObjectOfType<PlayerController>()._playerSpeed = 8f;
             gameObject.SetActive(false);
             StopCoroutine(Ditar());
+            dialogoTerminado = true;
         }
     }
 }

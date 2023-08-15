@@ -6,23 +6,32 @@ public class GerenciadorDeMissões : MonoBehaviour
 {
     public DefiniçãoDeMissão[] missões;
     public DefiniçãoDeMissão missãoAtual;
-    
-    // Start is called before the first frame update
+
+    public int indexQuest;
+
+    public static GerenciadorDeMissões Gerencia;
+
+    void Awake()
+    {
+        Gerencia = this;
+    }
+
     void Start()
     {
         missões = GetComponentsInChildren<DefiniçãoDeMissão>();
-        ComeçarMissão();
+        missãoAtual = null;
+
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+    
     }
 
     public void ComeçarMissão()
     {
-        missãoAtual = missões[1];
+        missãoAtual = missões[indexQuest];
         missãoAtual.PrepararMissão();
+
     }
 }

@@ -1996,50 +1996,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!1 &367206408
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 367206409}
-  - component: {fileID: 367206410}
-  m_Layer: 0
-  m_Name: ColectQuest
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &367206409
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 367206408}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 461449669}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &367206410
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 367206408}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 93d34c340a4785046882ca1c4de6941d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &397173296
 GameObject:
   m_ObjectHideFlags: 0
@@ -2234,8 +2190,7 @@ Transform:
   m_LocalPosition: {x: -4.9, y: 0.70000076, z: 1.8439555}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 367206409}
+  m_Children: []
   m_Father: {fileID: 1379038721}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2298,6 +2253,10 @@ MonoBehaviour:
   - oi prazer
   - "onde \xE9 que a gente esta?"
   player: {fileID: 482671402}
+  TemQuest: 1
+  QuestID: 0
+  "IniciarMiss\xE3o": 0
+  "miss\xE3oIniciada": 0
 --- !u!1 &482671402
 GameObject:
   m_ObjectHideFlags: 0
@@ -2610,6 +2569,10 @@ MonoBehaviour:
   - "estou aqui nesse corredor com dois estranhos. falando nisso... Quem \xE9 voce?? "
   - testa o outro cara tambem.
   player: {fileID: 482671402}
+  TemQuest: 1
+  QuestID: 1
+  "IniciarMiss\xE3o": 0
+  "miss\xE3oIniciada": 0
 --- !u!70 &506851187
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -5088,6 +5051,10 @@ MonoBehaviour:
   - oi voce
   - 'tchau '
   player: {fileID: 482671402}
+  TemQuest: 0
+  QuestID: 0
+  "IniciarMiss\xE3o": 0
+  "miss\xE3oIniciada": 0
 --- !u!1 &924289425
 GameObject:
   m_ObjectHideFlags: 0
@@ -7823,6 +7790,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tempoLetra: 0.02
   textDialog: {fileID: 180366544}
+  dialogoTerminado: 0
 --- !u!1 &1403420842
 GameObject:
   m_ObjectHideFlags: 0
@@ -8426,6 +8394,7 @@ MonoBehaviour:
   - {fileID: 486521734}
   - {fileID: 687392877}
   "miss\xE3oAtual": {fileID: 486521734}
+  indexQuest: 0
 --- !u!4 &1494539232
 Transform:
   m_ObjectHideFlags: 0

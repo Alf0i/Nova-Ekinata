@@ -44,7 +44,10 @@ public class DefiniçãoDeMissão : MonoBehaviour
 
     void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.L) && gerenciadorDeMissões.missãoAtual != null)
+        {
+            CancelarMissão();
+        }
     }
 
     public string PegarDescriçãoDeObjetivo()
@@ -77,6 +80,9 @@ public class DefiniçãoDeMissão : MonoBehaviour
         {
             Destroy(objetoDeMissão);
         }
+
+        gerenciadorDeMissões.missãoAtual = null;
+        Debug.Log("Cancelo a missão" );
     }
 
     public void CompletarObjetivo()
