@@ -4,28 +4,15 @@ using UnityEngine;
 
 public class ObjColetavel : MonoBehaviour
 {
-    
-    [SerializeField] bool coletado;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        coletado = false;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-    }
 
     private void OnTriggerEnter2D(Collider2D col)
     {
-        if(col.CompareTag("Player"))
+        if(col.gameObject.tag == "Player")
         {
-            if (Input.GetKeyDown(KeyCode.F) && !coletado)
+            if (Input.GetKeyDown(KeyCode.F))
             {
-                Destroy(this.gameObject);
-                coletado = true;
+                Destroy(gameObject);
+               
             }
         }
         

@@ -12,17 +12,10 @@ public enum AçãoDeObjetivo
 }
 
 [System.Serializable]
-public class DefiniçãoDeObjetoDeObjetivo
-{
-    public GameObject objectPrefab;
-    public Vector3 spawnPosition;
-}
-
-[System.Serializable]
 public class DefiniçãoObjetivo
 {
     public string descrição;
-    public List<DefiniçãoDeObjetoDeObjetivo> alvos;
+    public Transform[] alvos;
     public AçãoDeObjetivo ação;
 
 }
@@ -37,12 +30,10 @@ public class DefiniçãoDeMissão : MonoBehaviour
     public bool completado;
 
     private GerenciadorDeMissões gerenciadorDeMissões;
-    private int count;
     private bool missaoPreparada;
     void Start()
     {
         missaoPreparada = false;
-        count = 0;
         gerenciadorDeMissões = FindObjectOfType<GerenciadorDeMissões>();
     }
 
@@ -56,23 +47,15 @@ public class DefiniçãoDeMissão : MonoBehaviour
         {
             foreach (DefiniçãoObjetivo objetivo in objetivos)
             {
-                foreach (DefiniçãoDeObjetoDeObjetivo alvo in objetivo.alvos)
-                {
-                    if (alvo.objectPrefab = null)
-                    {
-                        count++;
-                    }
+                
+                AtualizarMissão(objetivo.alvos);
 
-                }
-                if (count >= objetivo.alvos.Count)
-                {
+                if (AtualizarMissão(objetivo.alvos))
                     CompletarObjetivo();
-                    count = 0;
-                }
             }
         }
-        
-       
+
+
     }
 
     public string PegarDescriçãoDeObjetivo()
@@ -86,21 +69,39 @@ public class DefiniçãoDeMissão : MonoBehaviour
 
         foreach (DefiniçãoObjetivo objetivo in objetivos)
         {
-            foreach (DefiniçãoDeObjetoDeObjetivo alvo in objetivo.alvos)
+            foreach (Transform alvo in objetivo.alvos)
             {
-                if(alvo.objectPrefab != null)
+                if (alvo != null)
                 {
-                    GameObject objetoDeMissão = Instantiate(alvo.objectPrefab, alvo.spawnPosition, transform.rotation);
-                    HandlerDeMissão handler = objetoDeMissão.AddComponent<HandlerDeMissão>();
-                    BoxCollider2D box = objetoDeMissão.AddComponent<BoxCollider2D>();
-                    box.isTrigger = true;
+                    HandlerDeMissão handler = alvo.GetComponent<HandlerDeMissão>();
                     handler.SetarMissão(this, objetivo);
-                    objetosDeMissão.Add(objetoDeMissão);
+                    objetosDeMissão.Add(alvo.gameObject);
+                    alvo.gameObject.SetActive(true);
                 }
-
+                
             }
         }
         missaoPreparada = true;
+    }
+
+    public bool AtualizarMissão(Transform[] objs)
+    {
+        bool result = false;
+
+        foreach (var o in objs)
+        {
+            if (o == null)
+            {
+                result = true;
+            }
+            else
+            {
+                result = false;
+                break;
+            }
+        }
+
+        return result;
     }
 
     public void CancelarMissão()
