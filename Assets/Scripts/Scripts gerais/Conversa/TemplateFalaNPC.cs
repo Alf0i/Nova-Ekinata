@@ -75,7 +75,7 @@ public class TemplateFalaNPC : MonoBehaviour
                 
                 IniciarMissão = true;
                 falar.dialogoTerminado = false;
-                G.indexQuest = QuestID -1;
+                G.indexQuest = QuestID ;
                 Debug.Log("G.indexQuest: " + G.indexQuest);
             }    
         }

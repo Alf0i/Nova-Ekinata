@@ -2646,7 +2646,6 @@ Transform:
   m_Children:
   - {fileID: 220820156}
   - {fileID: 2054967406}
-  - {fileID: 1313415716}
   m_Father: {fileID: 1494539232}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2666,7 +2665,6 @@ MonoBehaviour:
   - "descri\xE7\xE3o": Coletar Caixas AMARELAS
     alvos:
     - {fileID: 220820156}
-    - {fileID: 1313415716}
     "a\xE7\xE3o": 0
   - "descri\xE7\xE3o": Coletar Caixas VERMELHAS
     alvos:
@@ -4131,7 +4129,7 @@ MonoBehaviour:
   objetivos:
   - "descri\xE7\xE3o": Coletar Caixas
     alvos:
-    - {fileID: 0}
+    - {fileID: 1313415716}
     "a\xE7\xE3o": 0
   completado: 0
 --- !u!4 &687392878
@@ -4145,7 +4143,8 @@ Transform:
   m_LocalPosition: {x: -4.143506, y: 13.014016, z: -513.62384}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1313415716}
   m_Father: {fileID: 1494539232}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7865,7 +7864,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 486521733}
+    m_TransformParent: {fileID: 687392878}
     m_Modifications:
     - target: {fileID: 2397610649729648433, guid: 03b2033de822b024794fcb10f776855d, type: 3}
       propertyPath: m_SortingOrder
@@ -7881,7 +7880,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4494818076090297311, guid: 03b2033de822b024794fcb10f776855d, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4494818076090297311, guid: 03b2033de822b024794fcb10f776855d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7889,7 +7888,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4494818076090297311, guid: 03b2033de822b024794fcb10f776855d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.82
+      value: -0.8199997
       objectReference: {fileID: 0}
     - target: {fileID: 4494818076090297311, guid: 03b2033de822b024794fcb10f776855d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -8625,7 +8624,7 @@ MonoBehaviour:
   - {fileID: 486521734}
   - {fileID: 687392877}
   "miss\xE3oAtual": {fileID: 486521734}
-  indexQuest: 0
+  indexQuest: 1
 --- !u!4 &1494539232
 Transform:
   m_ObjectHideFlags: 0

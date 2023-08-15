@@ -166,6 +166,6 @@ public class DefiniçãoDeMissão : MonoBehaviour
         gerenciadorDeMissões.missãoAtual = null;
 
         completado = true;
-        
+        gerenciadorDeMissões.indexQuest = 0;
     }
 }

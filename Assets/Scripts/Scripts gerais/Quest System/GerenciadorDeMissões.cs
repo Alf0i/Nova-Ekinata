@@ -25,7 +25,7 @@ public class GerenciadorDeMissões : MonoBehaviour
 
     void Update()
     {
-    
+
     }
 
     public void ComeçarMissão()
