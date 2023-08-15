@@ -51,10 +51,10 @@ public class TemplateFalaNPC : MonoBehaviour
         if (missãoIniciada == false)
         {
             if (IniciarMissão == true)
-            {
+            {   Debug.Log("missãoAtual: " + G.indexQuest );
                 missãoIniciada = true;
                 G.ComeçarMissão();
-                Debug.Log("missãoAtual " + G.indexQuest + " Iniciada" );
+                
                 IniciarMissão = false;
             }
         }
@@ -68,15 +68,15 @@ public class TemplateFalaNPC : MonoBehaviour
             
         if (falar.dialogoTerminado == true)
         {
-            Debug.Log("2");
+            
 
             if (TemQuest == true)
             {
-                Debug.Log("3");
+                
                 IniciarMissão = true;
                 falar.dialogoTerminado = false;
-                G.indexQuest = QuestID;
-                
+                G.indexQuest = QuestID -1;
+                Debug.Log("G.indexQuest: " + G.indexQuest);
             }    
         }
     }

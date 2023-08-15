@@ -2254,7 +2254,7 @@ MonoBehaviour:
   - "onde \xE9 que a gente esta?"
   player: {fileID: 482671402}
   TemQuest: 1
-  QuestID: 0
+  QuestID: 1
   "IniciarMiss\xE3o": 0
   "miss\xE3oIniciada": 0
 --- !u!1 &482671402
@@ -2511,7 +2511,9 @@ MonoBehaviour:
   objetivos:
   - "descri\xE7\xE3o": Coletar Caixas
     alvos:
-    - objectPrefab: {fileID: 8616386188304829783, guid: 36f743988b199b049bde73a622a86d86, type: 3}
+    - objectPrefab: {fileID: 3141608283030769823, guid: 03b2033de822b024794fcb10f776855d, type: 3}
+      spawnPosition: {x: 45, y: 14, z: 0}
+    - objectPrefab: {fileID: 3141608283030769823, guid: 03b2033de822b024794fcb10f776855d, type: 3}
       spawnPosition: {x: 50, y: 14, z: 0}
     "a\xE7\xE3o": 0
   completado: 0
@@ -2570,7 +2572,7 @@ MonoBehaviour:
   - testa o outro cara tambem.
   player: {fileID: 482671402}
   TemQuest: 1
-  QuestID: 1
+  QuestID: 0
   "IniciarMiss\xE3o": 0
   "miss\xE3oIniciada": 0
 --- !u!70 &506851187

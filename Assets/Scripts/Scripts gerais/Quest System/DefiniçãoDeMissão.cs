@@ -24,6 +24,7 @@ public class DefiniçãoObjetivo
     public string descrição;
     public List<DefiniçãoDeObjetoDeObjetivo> alvos;
     public AçãoDeObjetivo ação;
+
 }
 
 public class DefiniçãoDeMissão : MonoBehaviour
@@ -36,9 +37,12 @@ public class DefiniçãoDeMissão : MonoBehaviour
     public bool completado;
 
     private GerenciadorDeMissões gerenciadorDeMissões;
-
+    private int count;
+    private bool missaoPreparada;
     void Start()
     {
+        missaoPreparada = false;
+        count = 0;
         gerenciadorDeMissões = FindObjectOfType<GerenciadorDeMissões>();
     }
 
@@ -48,6 +52,27 @@ public class DefiniçãoDeMissão : MonoBehaviour
         {
             CancelarMissão();
         }
+        if (missaoPreparada)
+        {
+            foreach (DefiniçãoObjetivo objetivo in objetivos)
+            {
+                foreach (DefiniçãoDeObjetoDeObjetivo alvo in objetivo.alvos)
+                {
+                    if (alvo.objectPrefab = null)
+                    {
+                        count++;
+                    }
+
+                }
+                if (count >= objetivo.alvos.Count)
+                {
+                    CompletarObjetivo();
+                    count = 0;
+                }
+            }
+        }
+        
+       
     }
 
     public string PegarDescriçãoDeObjetivo()
@@ -67,11 +92,15 @@ public class DefiniçãoDeMissão : MonoBehaviour
                 {
                     GameObject objetoDeMissão = Instantiate(alvo.objectPrefab, alvo.spawnPosition, transform.rotation);
                     HandlerDeMissão handler = objetoDeMissão.AddComponent<HandlerDeMissão>();
+                    BoxCollider2D box = objetoDeMissão.AddComponent<BoxCollider2D>();
+                    box.isTrigger = true;
                     handler.SetarMissão(this, objetivo);
                     objetosDeMissão.Add(objetoDeMissão);
                 }
+
             }
-        } 
+        }
+        missaoPreparada = true;
     }
 
     public void CancelarMissão()
