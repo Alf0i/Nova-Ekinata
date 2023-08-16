@@ -2685,7 +2685,7 @@ GameObject:
   - component: {fileID: 506851187}
   - component: {fileID: 506851186}
   m_Layer: 0
-  m_Name: Npc (2)
+  m_Name: Npc 0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8623,8 +8623,7 @@ MonoBehaviour:
   "miss\xF5es":
   - {fileID: 486521734}
   - {fileID: 687392877}
-  "miss\xE3oAtual": {fileID: 486521734}
-  indexQuest: 1
+  "miss\xE3oAtual": {fileID: 0}
 --- !u!4 &1494539232
 Transform:
   m_ObjectHideFlags: 0
