@@ -16,11 +16,13 @@ public class TemplateFalaNPC : MonoBehaviour
 
     public bool TemQuest;
 
-    public int QuestID;
+    [SerializeField] int QuestID;
 
     private GerenciadorDeMissões G;
 
     public static TemplateFalaNPC Temp;
+
+
 
     private float dist;
     private bool _podeFalar;
@@ -48,10 +50,29 @@ public class TemplateFalaNPC : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        dist = Vector2.Distance(gameObject.transform.position, player.transform.position);
+
+        if(dist <= 2)
+        {
+            if (falar.dialogoTerminado == true)
+            {
+
+
+                if (TemQuest == true)
+                {
+                    G.IndexQuest = QuestID;
+                    IniciarMissão = true;
+                    falar.dialogoTerminado = false;
+
+                    Debug.Log("G.indexQuest: " + G.IndexQuest);
+                }
+            }
+        }
+
         if (missãoIniciada == false)
         {
             if (IniciarMissão == true)
-            {   Debug.Log("missãoAtual: " + G.indexQuest );
+            {   
                 missãoIniciada = true;
                 G.ComeçarMissão();
                 
@@ -66,19 +87,7 @@ public class TemplateFalaNPC : MonoBehaviour
 
         }
             
-        if (falar.dialogoTerminado == true)
-        {
-            
-
-            if (TemQuest == true)
-            {
-                
-                IniciarMissão = true;
-                falar.dialogoTerminado = false;
-                G.indexQuest = QuestID ;
-                Debug.Log("G.indexQuest: " + G.indexQuest);
-            }    
-        }
+        
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

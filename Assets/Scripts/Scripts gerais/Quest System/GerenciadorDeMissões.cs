@@ -7,7 +7,8 @@ public class GerenciadorDeMissões : MonoBehaviour
     public DefiniçãoDeMissão[] missões;
     public DefiniçãoDeMissão missãoAtual;
 
-    public int indexQuest;
+    private int indexQuest;
+    public int IndexQuest { get => indexQuest; set => indexQuest = value; }
 
     public static GerenciadorDeMissões Gerencia;
 

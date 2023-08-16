@@ -29,7 +29,7 @@ public class DefiniçãoDeMissão : MonoBehaviour
 
     public bool completado;
 
-    private GerenciadorDeMissões gerenciadorDeMissões;
+    private GerenciadorDeMissões gm;
     private bool missaoPreparada;
     private bool podeCompletar;
     private bool objetivoCompleto;
@@ -38,13 +38,13 @@ public class DefiniçãoDeMissão : MonoBehaviour
         objetivoCompleto = false;
         podeCompletar =false;
         missaoPreparada = false;
-        gerenciadorDeMissões = FindObjectOfType<GerenciadorDeMissões>();
+        gm = GerenciadorDeMissões.Gerencia;
     }
 
     void Update()
     {
         Debug.Log(ObjetivoAtual);
-        if (Input.GetKeyDown(KeyCode.L) && gerenciadorDeMissões.missãoAtual != null)
+        if (Input.GetKeyDown(KeyCode.L) && gm.missãoAtual != null)
         {
             CancelarMissão();
         }
@@ -141,7 +141,7 @@ public class DefiniçãoDeMissão : MonoBehaviour
             Destroy(objetoDeMissão);
         }
 
-        gerenciadorDeMissões.missãoAtual = null;
+        gm.missãoAtual = null;
         Debug.Log("Cancelo a missão" );
     }
 
@@ -163,9 +163,9 @@ public class DefiniçãoDeMissão : MonoBehaviour
 
     public void CompletarMissão()
     {
-        gerenciadorDeMissões.missãoAtual = null;
+        gm.missãoAtual = null;
 
         completado = true;
-        gerenciadorDeMissões.indexQuest = 0;
+        //gerenciadorDeMissões.IndexQuest = 0;
     }
 }
