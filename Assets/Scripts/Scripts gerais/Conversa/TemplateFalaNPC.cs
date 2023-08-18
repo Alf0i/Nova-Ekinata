@@ -18,7 +18,7 @@ public class TemplateFalaNPC : MonoBehaviour
 
     [SerializeField] int QuestID;
 
-    private GerenciadorDeMissões G;
+    public GerenciadorDeMissões G;
 
     public static TemplateFalaNPC Temp;
 

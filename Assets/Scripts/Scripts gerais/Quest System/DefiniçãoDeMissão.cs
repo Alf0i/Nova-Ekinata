@@ -22,17 +22,20 @@ public class DefiniçãoObjetivo
 
 public class DefiniçãoDeMissão : MonoBehaviour
 {
-
+    
     public List<DefiniçãoObjetivo> objetivos;
     private List<GameObject> objetosDeMissão = new List<GameObject>();
     private int ObjetivoAtual;
 
     public bool completado;
 
-    private GerenciadorDeMissões gm;
-    private bool missaoPreparada;
+    public GerenciadorDeMissões gm;
+    public bool missaoPreparada;
     private bool podeCompletar;
     private bool objetivoCompleto;
+
+    
+
     void Start()
     {
         objetivoCompleto = false;
@@ -85,7 +88,10 @@ public class DefiniçãoDeMissão : MonoBehaviour
 
 
     }
-
+    public string PegarNomeDeObjetivo()
+    {
+        return gameObject.name;
+    }
     public string PegarDescriçãoDeObjetivo()
     {
         return objetivos[ObjetivoAtual].descrição;

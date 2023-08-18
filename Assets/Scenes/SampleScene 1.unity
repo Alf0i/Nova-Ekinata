@@ -2406,6 +2406,7 @@ MonoBehaviour:
   player: {fileID: 482671402}
   TemQuest: 1
   QuestID: 1
+  G: {fileID: 0}
   "IniciarMiss\xE3o": 0
   "miss\xE3oIniciada": 0
 --- !u!1 &482671402
@@ -2671,6 +2672,8 @@ MonoBehaviour:
     - {fileID: 2054967406}
     "a\xE7\xE3o": 0
   completado: 0
+  gm: {fileID: 0}
+  missaoPreparada: 0
 --- !u!1 &506851184
 GameObject:
   m_ObjectHideFlags: 0
@@ -2727,6 +2730,7 @@ MonoBehaviour:
   player: {fileID: 482671402}
   TemQuest: 1
   QuestID: 0
+  G: {fileID: 0}
   "IniciarMiss\xE3o": 0
   "miss\xE3oIniciada": 0
 --- !u!70 &506851187
@@ -4132,6 +4136,8 @@ MonoBehaviour:
     - {fileID: 1313415716}
     "a\xE7\xE3o": 0
   completado: 0
+  gm: {fileID: 0}
+  missaoPreparada: 0
 --- !u!4 &687392878
 Transform:
   m_ObjectHideFlags: 0
@@ -5209,6 +5215,7 @@ MonoBehaviour:
   player: {fileID: 482671402}
   TemQuest: 0
   QuestID: 0
+  G: {fileID: 0}
   "IniciarMiss\xE3o": 0
   "miss\xE3oIniciada": 0
 --- !u!1 &924289425
@@ -72666,7 +72673,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: TEst Tsest Test
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -73879,7 +73886,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Miss\xE3o:"
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
