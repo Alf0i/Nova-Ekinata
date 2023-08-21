@@ -46,7 +46,6 @@ public class DefiniçãoDeMissão : MonoBehaviour
 
     void Update()
     {
-        Debug.Log(ObjetivoAtual);
         if (Input.GetKeyDown(KeyCode.L) && gm.missãoAtual != null)
         {
             CancelarMissão();

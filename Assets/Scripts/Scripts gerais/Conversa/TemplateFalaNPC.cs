@@ -3,9 +3,17 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
+[System.Serializable]
+public class TelaDeMissao
+{
+    public TextMeshProUGUI titulo;
+    public TextMeshProUGUI descricao;
+}
 
 public class TemplateFalaNPC : MonoBehaviour
 {
+    [SerializeField] TelaDeMissao Tela;
+
     [SerializeField] Dialogo falar;
 
     [TextArea(5, 8)]
@@ -13,6 +21,8 @@ public class TemplateFalaNPC : MonoBehaviour
     [SerializeField] string[] pages;
 
     [SerializeField] GameObject player;
+
+    [SerializeField] GameObject telaDeQuest;
 
     public bool TemQuest;
 
@@ -38,6 +48,8 @@ public class TemplateFalaNPC : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        telaDeQuest.SetActive(false);
+
         IniciarMissão = false;
 
         missãoIniciada = false;
@@ -59,12 +71,31 @@ public class TemplateFalaNPC : MonoBehaviour
 
 
                 if (TemQuest == true)
-                {
-                    G.IndexQuest = QuestID;
-                    IniciarMissão = true;
-                    falar.dialogoTerminado = false;
+                {   
+                    FindObjectOfType<PlayerController>()._playerSpeed = 0f;
+                    telaDeQuest.SetActive(true);
+                    Tela.titulo.text += G.missãoAtual?.PegarNomeDeObjetivo();
+                    Tela.descricao.text += G.missãoAtual?.PegarDescriçãoDeObjetivo();
+                    
+                    if (Input.GetKeyDown(KeyCode.E)) {
+                        Tela.titulo.text = " ";
+                        Tela.descricao.text = " ";
+                        G.IndexQuest = QuestID;
+                        IniciarMissão = true;
+                        falar.dialogoTerminado = false;
+                        telaDeQuest.SetActive(false);
+                        FindObjectOfType<PlayerController>()._playerSpeed = 8f;
 
-                    Debug.Log("G.indexQuest: " + G.IndexQuest);
+                        Debug.Log("G.indexQuest: " + G.IndexQuest);
+                    }
+                    else if (Input.GetKeyDown(KeyCode.Q))
+                    {
+                        Tela.titulo.text = " ";
+                        Tela.descricao.text = " ";
+                        telaDeQuest.SetActive(false);
+                        falar.dialogoTerminado = false;
+                        FindObjectOfType<PlayerController>()._playerSpeed = 8f;
+                    }
                 }
             }
         }
