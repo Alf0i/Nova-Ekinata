@@ -67,7 +67,7 @@ public class DefiniçãoDeMissão : MonoBehaviour
 
             if (ObjetivoAtual < objetivos.Count)
             {
-
+                
                 AtualizarMissão(objetivos[ObjetivoAtual].alvos);
 
                 if (AtualizarMissão(objetivos[ObjetivoAtual].alvos))
@@ -77,7 +77,7 @@ public class DefiniçãoDeMissão : MonoBehaviour
 
                 if (podeCompletar)
                 {
-                    Debug.Log("pode completar");
+                    
                     objetivoCompleto = true;
                     CompletarObjetivo();
                     podeCompletar = false;
@@ -99,7 +99,11 @@ public class DefiniçãoDeMissão : MonoBehaviour
     public void PrepararMissão()
     {
         ObjetivoAtual = 0;
-
+        /*foreach (GameObject objetoDeMissão in objetosDeMissão)
+        {
+            //Destroy(objetoDeMissão);
+            objetoDeMissão.SetActive(true);
+        }*/
         foreach (DefiniçãoObjetivo objetivo in objetivos)
         {
             foreach (Transform alvo in objetivo.alvos)
@@ -136,18 +140,33 @@ public class DefiniçãoDeMissão : MonoBehaviour
             }
         }
         
+        
         return result;
     }
 
     public void CancelarMissão()
     {
+       /* foreach (DefiniçãoObjetivo objetivo in objetivos)
+        {
+            foreach (Transform alvo in objetivo.alvos)
+            {
+                if (alvo != null)
+                {
+                    objetosDeMissão.Remove(alvo.gameObject);
+                    alvo.gameObject.SetActive(false);
+                }
+
+            }
+        }
         foreach (GameObject objetoDeMissão in objetosDeMissão)
         {
             Destroy(objetoDeMissão);
+           
         }
-
+        gm.indexQuest = -1;
+        missaoPreparada = false;
         gm.missãoAtual = null;
-        Debug.Log("Cancelo a missão" );
+        Debug.Log("Cancelou a missão" );*/
     }
 
     public void CompletarObjetivo()
@@ -169,8 +188,8 @@ public class DefiniçãoDeMissão : MonoBehaviour
     public void CompletarMissão()
     {
         gm.missãoAtual = null;
-
+        Debug.Log("Completado");
         T.completado = true;
-        //gerenciadorDeMissões.IndexQuest = 0;
+        gm.IndexQuest = -1;
     }
 }

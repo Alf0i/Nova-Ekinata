@@ -32,8 +32,6 @@ public class GerenciadorDeMissões : MonoBehaviour
     public void ComeçarMissão()
     {
         
-        missãoAtual = missões[indexQuest];
-        
         missãoAtual.PrepararMissão();
         
     }

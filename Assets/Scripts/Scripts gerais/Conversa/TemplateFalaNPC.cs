@@ -70,18 +70,19 @@ public class TemplateFalaNPC : MonoBehaviour
 
                 if (TemQuest == true)
                 {
-                    if (completado) {
+                    if (!completado) {
                         FindObjectOfType<PlayerController>()._playerSpeed = 0f;
                         telaDeQuest.SetActive(true);
                         G.IndexQuest = QuestID;
-                        titulo.text = G.missões[G.indexQuest].PegarNomeDeObjetivo();
-                        descricao.text = G.missões[G.indexQuest].PegarDescriçãoDeObjetivo();
+                        G.missãoAtual = G.missões[G.indexQuest];
+                        titulo.text = G.missãoAtual?.PegarNomeDeObjetivo();
+                        descricao.text = G.missãoAtual?.PegarDescriçãoDeObjetivo();
 
                         if (Input.GetKeyDown(KeyCode.E))
                         {
                             titulo.text = " ";
                             descricao.text = " ";
-                            //G.IndexQuest = QuestID;
+                            
                             IniciarMissão = true;
                             falar.dialogoTerminado = false;
                             telaDeQuest.SetActive(false);
@@ -91,7 +92,8 @@ public class TemplateFalaNPC : MonoBehaviour
                         }
                         else if (Input.GetKeyDown(KeyCode.Q))
                         {
-                            G.IndexQuest = 0;
+                            G.missãoAtual = null;
+                            G.IndexQuest = -1;
                             titulo.text = " ";
                             descricao.text = " ";
                             telaDeQuest.SetActive(false);
