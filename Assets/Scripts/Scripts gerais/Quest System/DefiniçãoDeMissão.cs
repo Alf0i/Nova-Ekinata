@@ -27,7 +27,7 @@ public class DefiniçãoDeMissão : MonoBehaviour
     private List<GameObject> objetosDeMissão = new List<GameObject>();
     private int ObjetivoAtual;
 
-    public bool completado;
+    [SerializeField] TemplateFalaNPC T;
 
     public GerenciadorDeMissões gm;
     public bool missaoPreparada;
@@ -170,7 +170,7 @@ public class DefiniçãoDeMissão : MonoBehaviour
     {
         gm.missãoAtual = null;
 
-        completado = true;
+        T.completado = true;
         //gerenciadorDeMissões.IndexQuest = 0;
     }
 }

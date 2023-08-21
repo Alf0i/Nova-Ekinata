@@ -2534,9 +2534,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91b8627b80f41c5488ff989a66b5112d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Tela:
-    titulo: {fileID: 0}
-    descricao: {fileID: 0}
+  titulo: {fileID: 21027132}
+  descricao: {fileID: 623842627}
   falar: {fileID: 1391911510}
   pages:
   - oi prazer
@@ -2545,7 +2544,8 @@ MonoBehaviour:
   telaDeQuest: {fileID: 798882275}
   TemQuest: 1
   QuestID: 1
-  G: {fileID: 1494539231}
+  G: {fileID: 0}
+  completado: 0
   "IniciarMiss\xE3o": 0
   "miss\xE3oIniciada": 0
 --- !u!1 &482671402
@@ -2810,7 +2810,7 @@ MonoBehaviour:
     alvos:
     - {fileID: 2054967406}
     "a\xE7\xE3o": 0
-  completado: 0
+  T: {fileID: 0}
   gm: {fileID: 0}
   missaoPreparada: 0
 --- !u!1 &506851184
@@ -2860,9 +2860,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91b8627b80f41c5488ff989a66b5112d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Tela:
-    titulo: {fileID: 0}
-    descricao: {fileID: 0}
+  titulo: {fileID: 21027132}
+  descricao: {fileID: 623842627}
   falar: {fileID: 1391911510}
   pages:
   - "isso \xE9 um teste, ne? Eu to achando que isso deve ser um teste mesmo. Em um
@@ -2873,7 +2872,8 @@ MonoBehaviour:
   telaDeQuest: {fileID: 798882275}
   TemQuest: 1
   QuestID: 0
-  G: {fileID: 1494539231}
+  G: {fileID: 0}
+  completado: 0
   "IniciarMiss\xE3o": 0
   "miss\xE3oIniciada": 0
 --- !u!70 &506851187
@@ -4413,7 +4413,7 @@ MonoBehaviour:
     alvos:
     - {fileID: 1313415716}
     "a\xE7\xE3o": 0
-  completado: 0
+  T: {fileID: 0}
   gm: {fileID: 0}
   missaoPreparada: 0
 --- !u!4 &687392878
@@ -5564,18 +5564,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91b8627b80f41c5488ff989a66b5112d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Tela:
-    titulo: {fileID: 0}
-    descricao: {fileID: 0}
+  titulo: {fileID: 21027132}
+  descricao: {fileID: 623842627}
   falar: {fileID: 1391911510}
   pages:
   - oi voce
   - 'tchau '
   player: {fileID: 482671402}
-  telaDeQuest: {fileID: 0}
+  telaDeQuest: {fileID: 798882275}
   TemQuest: 0
   QuestID: 0
   G: {fileID: 0}
+  completado: 0
   "IniciarMiss\xE3o": 0
   "miss\xE3oIniciada": 0
 --- !u!1 &924289425
@@ -8992,6 +8992,7 @@ MonoBehaviour:
   - {fileID: 486521734}
   - {fileID: 687392877}
   "miss\xE3oAtual": {fileID: 0}
+  indexQuest: 0
 --- !u!4 &1494539232
 Transform:
   m_ObjectHideFlags: 0

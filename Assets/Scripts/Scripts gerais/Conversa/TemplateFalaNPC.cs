@@ -3,16 +3,13 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-[System.Serializable]
-public class TelaDeMissao
-{
-    public TextMeshProUGUI titulo;
-    public TextMeshProUGUI descricao;
-}
+
 
 public class TemplateFalaNPC : MonoBehaviour
 {
-    [SerializeField] TelaDeMissao Tela;
+    [SerializeField] TextMeshProUGUI titulo;
+
+    [SerializeField] TextMeshProUGUI descricao;
 
     [SerializeField] Dialogo falar;
 
@@ -33,7 +30,7 @@ public class TemplateFalaNPC : MonoBehaviour
     public static TemplateFalaNPC Temp;
 
 
-
+    public bool completado;
     private float dist;
     private bool _podeFalar;
     public bool IniciarMissão;
@@ -48,6 +45,7 @@ public class TemplateFalaNPC : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
         telaDeQuest.SetActive(false);
 
         IniciarMissão = false;
@@ -71,30 +69,35 @@ public class TemplateFalaNPC : MonoBehaviour
 
 
                 if (TemQuest == true)
-                {   
-                    FindObjectOfType<PlayerController>()._playerSpeed = 0f;
-                    telaDeQuest.SetActive(true);
-                    Tela.titulo.text += G.missãoAtual?.PegarNomeDeObjetivo();
-                    Tela.descricao.text += G.missãoAtual?.PegarDescriçãoDeObjetivo();
-                    
-                    if (Input.GetKeyDown(KeyCode.E)) {
-                        Tela.titulo.text = " ";
-                        Tela.descricao.text = " ";
+                {
+                    if (completado) {
+                        FindObjectOfType<PlayerController>()._playerSpeed = 0f;
+                        telaDeQuest.SetActive(true);
                         G.IndexQuest = QuestID;
-                        IniciarMissão = true;
-                        falar.dialogoTerminado = false;
-                        telaDeQuest.SetActive(false);
-                        FindObjectOfType<PlayerController>()._playerSpeed = 8f;
+                        titulo.text = G.missões[G.indexQuest].PegarNomeDeObjetivo();
+                        descricao.text = G.missões[G.indexQuest].PegarDescriçãoDeObjetivo();
 
-                        Debug.Log("G.indexQuest: " + G.IndexQuest);
-                    }
-                    else if (Input.GetKeyDown(KeyCode.Q))
-                    {
-                        Tela.titulo.text = " ";
-                        Tela.descricao.text = " ";
-                        telaDeQuest.SetActive(false);
-                        falar.dialogoTerminado = false;
-                        FindObjectOfType<PlayerController>()._playerSpeed = 8f;
+                        if (Input.GetKeyDown(KeyCode.E))
+                        {
+                            titulo.text = " ";
+                            descricao.text = " ";
+                            //G.IndexQuest = QuestID;
+                            IniciarMissão = true;
+                            falar.dialogoTerminado = false;
+                            telaDeQuest.SetActive(false);
+                            FindObjectOfType<PlayerController>()._playerSpeed = 8f;
+
+                            Debug.Log("G.indexQuest: " + G.IndexQuest);
+                        }
+                        else if (Input.GetKeyDown(KeyCode.Q))
+                        {
+                            G.IndexQuest = 0;
+                            titulo.text = " ";
+                            descricao.text = " ";
+                            telaDeQuest.SetActive(false);
+                            falar.dialogoTerminado = false;
+                            FindObjectOfType<PlayerController>()._playerSpeed = 8f;
+                        }
                     }
                 }
             }

@@ -7,7 +7,7 @@ public class GerenciadorDeMissões : MonoBehaviour
     public DefiniçãoDeMissão[] missões;
     public DefiniçãoDeMissão missãoAtual;
 
-    private int indexQuest;
+    public int indexQuest;
     public int IndexQuest { get => indexQuest; set => indexQuest = value; }
 
     public static GerenciadorDeMissões Gerencia;
@@ -19,9 +19,9 @@ public class GerenciadorDeMissões : MonoBehaviour
 
     void Start()
     {
-        missões = GetComponentsInChildren<DefiniçãoDeMissão>();
+        missões = gameObject.GetComponentsInChildren<DefiniçãoDeMissão>();
         missãoAtual = null;
-
+        indexQuest = -1;
     }
 
     void Update()
