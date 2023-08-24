@@ -27,10 +27,10 @@ public class DefiniçãoDeMissão : MonoBehaviour
     private List<GameObject> objetosDeMissão = new List<GameObject>();
     private int ObjetivoAtual;
 
-    [SerializeField] TemplateFalaNPC T;
-
-    public GerenciadorDeMissões gm;
-    public bool missaoPreparada;
+    [HideInInspector] public TemplateFalaNPC T;
+    [HideInInspector] public GerenciadorDeMissões gm;
+    [HideInInspector] public bool missaoPreparada;
+    
     private bool podeCompletar;
     private bool objetivoCompleto;
 

@@ -17,7 +17,7 @@ public class TemplateFalaNPC : MonoBehaviour
 
     [SerializeField] string[] pages;
 
-    [SerializeField] GameObject player;
+    private GameObject player;
 
     [SerializeField] GameObject telaDeQuest;
 
@@ -25,7 +25,7 @@ public class TemplateFalaNPC : MonoBehaviour
 
     [SerializeField] int QuestID;
 
-    public GerenciadorDeMissões G;
+    [HideInInspector] public GerenciadorDeMissões G;
 
     public static TemplateFalaNPC Temp;
 
@@ -33,9 +33,9 @@ public class TemplateFalaNPC : MonoBehaviour
     public bool completado;
     private float dist;
     private bool _podeFalar;
-    public bool IniciarMissão;
+    [HideInInspector] public bool IniciarMissão;
     
-    public bool missãoIniciada;
+    [HideInInspector] public bool missãoIniciada;
 
     void Awake()
     {
@@ -55,6 +55,8 @@ public class TemplateFalaNPC : MonoBehaviour
         _podeFalar = false;
 
         G = GerenciadorDeMissões.Gerencia;
+
+        player = GameObject.FindGameObjectWithTag("Player");
     }
 
     // Update is called once per frame
