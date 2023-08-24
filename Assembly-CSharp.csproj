@@ -81,6 +81,7 @@
     <Compile Include="Assets\Scripts\Scripts player\PlayerController.cs" />
     <Compile Include="Assets\Scripts\Cena1\Temporizador.cs" />
     <Compile Include="Assets\Scripts\Scripts gerais\Quest System\ControleUIdeMissão.cs" />
+    <Compile Include="Assets\Scripts\Scripts gerais\Quest System\ObjDeArea.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

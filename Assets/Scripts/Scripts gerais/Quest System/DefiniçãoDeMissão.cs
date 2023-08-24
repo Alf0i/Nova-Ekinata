@@ -22,24 +22,24 @@ public class DefiniçãoObjetivo
 
 public class DefiniçãoDeMissão : MonoBehaviour
 {
-    
+
     public List<DefiniçãoObjetivo> objetivos;
     private List<GameObject> objetosDeMissão = new List<GameObject>();
     private int ObjetivoAtual;
 
-    [HideInInspector] public TemplateFalaNPC T;
     [HideInInspector] public GerenciadorDeMissões gm;
     [HideInInspector] public bool missaoPreparada;
-    
+
     private bool podeCompletar;
     private bool objetivoCompleto;
+    public bool completado;
 
-    
 
     void Start()
     {
+        completado = false;
         objetivoCompleto = false;
-        podeCompletar =false;
+        podeCompletar = false;
         missaoPreparada = false;
         gm = GerenciadorDeMissões.Gerencia;
     }
@@ -67,7 +67,7 @@ public class DefiniçãoDeMissão : MonoBehaviour
 
             if (ObjetivoAtual < objetivos.Count)
             {
-                
+
                 AtualizarMissão(objetivos[ObjetivoAtual].alvos);
 
                 if (AtualizarMissão(objetivos[ObjetivoAtual].alvos))
@@ -77,7 +77,7 @@ public class DefiniçãoDeMissão : MonoBehaviour
 
                 if (podeCompletar)
                 {
-                    
+
                     objetivoCompleto = true;
                     CompletarObjetivo();
                     podeCompletar = false;
@@ -115,7 +115,7 @@ public class DefiniçãoDeMissão : MonoBehaviour
                     objetosDeMissão.Add(alvo.gameObject);
                     alvo.gameObject.SetActive(true);
                 }
-                
+
             }
         }
 
@@ -131,7 +131,7 @@ public class DefiniçãoDeMissão : MonoBehaviour
             if (o == null)
             {
                 result = true;
-                
+
             }
             else
             {
@@ -139,34 +139,34 @@ public class DefiniçãoDeMissão : MonoBehaviour
                 break;
             }
         }
-        
-        
+
+
         return result;
     }
 
     public void CancelarMissão()
     {
-       /* foreach (DefiniçãoObjetivo objetivo in objetivos)
-        {
-            foreach (Transform alvo in objetivo.alvos)
-            {
-                if (alvo != null)
-                {
-                    objetosDeMissão.Remove(alvo.gameObject);
-                    alvo.gameObject.SetActive(false);
-                }
+        /* foreach (DefiniçãoObjetivo objetivo in objetivos)
+         {
+             foreach (Transform alvo in objetivo.alvos)
+             {
+                 if (alvo != null)
+                 {
+                     objetosDeMissão.Remove(alvo.gameObject);
+                     alvo.gameObject.SetActive(false);
+                 }
 
-            }
-        }
-        foreach (GameObject objetoDeMissão in objetosDeMissão)
-        {
-            Destroy(objetoDeMissão);
-           
-        }
-        gm.indexQuest = -1;
-        missaoPreparada = false;
-        gm.missãoAtual = null;
-        Debug.Log("Cancelou a missão" );*/
+             }
+         }
+         foreach (GameObject objetoDeMissão in objetosDeMissão)
+         {
+             Destroy(objetoDeMissão);
+
+         }
+         gm.indexQuest = -1;
+         missaoPreparada = false;
+         gm.missãoAtual = null;
+         Debug.Log("Cancelou a missão" );*/
     }
 
     public void CompletarObjetivo()
@@ -182,14 +182,12 @@ public class DefiniçãoDeMissão : MonoBehaviour
             }
             objetivoCompleto = false;
         }
-            
+
     }
 
     public void CompletarMissão()
     {
-        gm.missãoAtual = null;
         Debug.Log("Completado");
-        T.completado = true;
-        gm.IndexQuest = -1;
+        completado = true;
     }
 }

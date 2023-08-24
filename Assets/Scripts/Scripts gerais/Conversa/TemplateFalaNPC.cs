@@ -27,20 +27,14 @@ public class TemplateFalaNPC : MonoBehaviour
 
     [HideInInspector] public GerenciadorDeMissões G;
 
-    public static TemplateFalaNPC Temp;
 
-
-    public bool completado;
+    public bool completo;
     private float dist;
     private bool _podeFalar;
     [HideInInspector] public bool IniciarMissão;
     
     [HideInInspector] public bool missãoIniciada;
 
-    void Awake()
-    {
-        Temp = this;
-    }
 
     // Start is called before the first frame update
     void Start()
@@ -64,6 +58,17 @@ public class TemplateFalaNPC : MonoBehaviour
     {
         dist = Vector2.Distance(gameObject.transform.position, player.transform.position);
 
+        if (G.indexQuest == QuestID)
+        {
+            if (G.missãoAtual.completado)
+            {
+                missãoIniciada = false;
+                this.completo = true;
+                G.indexQuest = -1;
+                G.missãoAtual = null;
+            }
+        }
+
         if(dist <= 2)
         {
             if (falar.dialogoTerminado == true)
@@ -72,7 +77,7 @@ public class TemplateFalaNPC : MonoBehaviour
 
                 if (TemQuest == true)
                 {
-                    if (!completado) {
+                    if (!completo) {
                         FindObjectOfType<PlayerController>()._playerSpeed = 0f;
                         telaDeQuest.SetActive(true);
                         G.IndexQuest = QuestID;
@@ -102,6 +107,10 @@ public class TemplateFalaNPC : MonoBehaviour
                             falar.dialogoTerminado = false;
                             FindObjectOfType<PlayerController>()._playerSpeed = 8f;
                         }
+                    }
+                    else
+                    {
+                        falar.dialogoTerminado = false;
                     }
                 }
             }
