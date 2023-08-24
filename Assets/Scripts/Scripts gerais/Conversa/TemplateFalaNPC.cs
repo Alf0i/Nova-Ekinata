@@ -27,20 +27,18 @@ public class TemplateFalaNPC : MonoBehaviour
 
     [HideInInspector] public GerenciadorDeMissões G;
 
-    public static TemplateFalaNPC Temp;
-
-
-    public bool completado;
+    public bool completo;
     private float dist;
     private bool _podeFalar;
+<<<<<<< Updated upstream
     [HideInInspector] public bool IniciarMissão;
     
     [HideInInspector] public bool missãoIniciada;
+=======
+    public bool IniciarMissão;
+>>>>>>> Stashed changes
 
-    void Awake()
-    {
-        Temp = this;
-    }
+    public bool missãoIniciada;
 
     // Start is called before the first frame update
     void Start()
@@ -56,15 +54,31 @@ public class TemplateFalaNPC : MonoBehaviour
 
         G = GerenciadorDeMissões.Gerencia;
 
+<<<<<<< Updated upstream
         player = GameObject.FindGameObjectWithTag("Player");
+=======
+        completo = false;
+>>>>>>> Stashed changes
     }
 
     // Update is called once per frame
     void Update()
     {
+        
         dist = Vector2.Distance(gameObject.transform.position, player.transform.position);
 
-        if(dist <= 2)
+        if(G.IndexQuest == QuestID)
+        {
+            if (G.missãoAtual.completado)
+            {
+                missãoIniciada = false;
+                this.completo = true;
+                G.IndexQuest = -1;
+                G.missãoAtual = null;
+            }
+        }
+
+        if (dist <= 2)
         {
             if (falar.dialogoTerminado == true)
             {
@@ -72,7 +86,8 @@ public class TemplateFalaNPC : MonoBehaviour
 
                 if (TemQuest == true)
                 {
-                    if (!completado) {
+                    
+                    if (!completo) {
                         FindObjectOfType<PlayerController>()._playerSpeed = 0f;
                         telaDeQuest.SetActive(true);
                         G.IndexQuest = QuestID;
@@ -103,20 +118,27 @@ public class TemplateFalaNPC : MonoBehaviour
                             FindObjectOfType<PlayerController>()._playerSpeed = 8f;
                         }
                     }
+                    else
+                    {
+                        falar.dialogoTerminado = false;
+                    }
                 }
             }
         }
+        
 
         if (missãoIniciada == false)
         {
             if (IniciarMissão == true)
-            {   
+            {
+                
                 missãoIniciada = true;
                 G.ComeçarMissão();
                 
                 IniciarMissão = false;
             }
         }
+
 
         if (Input.GetKeyDown(KeyCode.F) && _podeFalar == true)
         {

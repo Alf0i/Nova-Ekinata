@@ -22,30 +22,43 @@ public class DefiniçãoObjetivo
 
 public class DefiniçãoDeMissão : MonoBehaviour
 {
-    
+    public static DefiniçãoDeMissão def;
     public List<DefiniçãoObjetivo> objetivos;
     private List<GameObject> objetosDeMissão = new List<GameObject>();
     private int ObjetivoAtual;
 
+<<<<<<< Updated upstream
     [HideInInspector] public TemplateFalaNPC T;
     [HideInInspector] public GerenciadorDeMissões gm;
     [HideInInspector] public bool missaoPreparada;
     
+=======
+    public bool completado;
+
+    public GerenciadorDeMissões gm;
+    public bool missaoPreparada;
+>>>>>>> Stashed changes
     private bool podeCompletar;
     private bool objetivoCompleto;
 
-    
 
+    private void Awake()
+    {
+        def = this;
+    }
     void Start()
     {
+        completado = false;
         objetivoCompleto = false;
         podeCompletar =false;
         missaoPreparada = false;
         gm = GerenciadorDeMissões.Gerencia;
+        
     }
 
     void Update()
     {
+        
         if (Input.GetKeyDown(KeyCode.L) && gm.missãoAtual != null)
         {
             CancelarMissão();
@@ -187,9 +200,9 @@ public class DefiniçãoDeMissão : MonoBehaviour
 
     public void CompletarMissão()
     {
-        gm.missãoAtual = null;
+        
         Debug.Log("Completado");
-        T.completado = true;
-        gm.IndexQuest = -1;
+        completado = true;
+        
     }
 }
