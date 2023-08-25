@@ -2616,12 +2616,11 @@ MonoBehaviour:
   pages:
   - oi prazer
   - "onde \xE9 que a gente esta?"
-  player: {fileID: 482671402}
   telaDeQuest: {fileID: 798882275}
   TemQuest: 1
   QuestID: 1
   G: {fileID: 1494539231}
-  completado: 0
+  completo: 0
   "IniciarMiss\xE3o": 0
   "miss\xE3oIniciada": 0
 --- !u!1 &482671402
@@ -2886,9 +2885,9 @@ MonoBehaviour:
     alvos:
     - {fileID: 2054967406}
     "a\xE7\xE3o": 0
-  T: {fileID: 0}
   gm: {fileID: 1494539231}
   missaoPreparada: 0
+  completado: 0
 --- !u!1 &506851184
 GameObject:
   m_ObjectHideFlags: 0
@@ -2944,12 +2943,11 @@ MonoBehaviour:
     minuto eu n\xE3o era nada e agora puff... "
   - "estou aqui nesse corredor com dois estranhos. falando nisso... Quem \xE9 voce?? "
   - testa o outro cara tambem.
-  player: {fileID: 482671402}
   telaDeQuest: {fileID: 798882275}
   TemQuest: 1
   QuestID: 0
   G: {fileID: 1494539231}
-  completado: 0
+  completo: 0
   "IniciarMiss\xE3o": 0
   "miss\xE3oIniciada": 0
 --- !u!70 &506851187
@@ -4489,9 +4487,9 @@ MonoBehaviour:
     alvos:
     - {fileID: 1313415716}
     "a\xE7\xE3o": 0
-  T: {fileID: 0}
   gm: {fileID: 1494539231}
   missaoPreparada: 0
+  completado: 0
 --- !u!4 &687392878
 Transform:
   m_ObjectHideFlags: 0
@@ -5650,12 +5648,11 @@ MonoBehaviour:
   pages:
   - oi voce
   - 'tchau '
-  player: {fileID: 482671402}
   telaDeQuest: {fileID: 798882275}
   TemQuest: 0
-  QuestID: 0
+  QuestID: -2
   G: {fileID: 0}
-  completado: 0
+  completo: 0
   "IniciarMiss\xE3o": 0
   "miss\xE3oIniciada": 0
 --- !u!1 &924289425

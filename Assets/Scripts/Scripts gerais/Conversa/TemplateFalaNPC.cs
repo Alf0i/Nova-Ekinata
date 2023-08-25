@@ -11,7 +11,7 @@ public class TemplateFalaNPC : MonoBehaviour
 
     [SerializeField] TextMeshProUGUI descricao;
 
-    [SerializeField] Dialogo falar;
+    public Dialogo falar;
 
     [TextArea(5, 8)]
 
@@ -113,6 +113,7 @@ public class TemplateFalaNPC : MonoBehaviour
                         falar.dialogoTerminado = false;
                     }
                 }
+                
             }
         }
 

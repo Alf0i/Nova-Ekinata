@@ -25,7 +25,7 @@ public class DefiniçãoDeMissão : MonoBehaviour
 
     public List<DefiniçãoObjetivo> objetivos;
     private List<GameObject> objetosDeMissão = new List<GameObject>();
-    private int ObjetivoAtual;
+    [HideInInspector] public int ObjetivoAtual;
 
     [HideInInspector] public GerenciadorDeMissões gm;
     [HideInInspector] public bool missaoPreparada;
