@@ -7,6 +7,8 @@ using UnityEngine;
 
 public class TemplateFalaNPC : MonoBehaviour
 {
+    public static TemplateFalaNPC Temp;
+
     [SerializeField] TextMeshProUGUI titulo;
 
     [SerializeField] TextMeshProUGUI descricao;
@@ -35,7 +37,10 @@ public class TemplateFalaNPC : MonoBehaviour
     
     [HideInInspector] public bool missãoIniciada;
 
-
+    private void Awake()
+    {
+        Temp = this;
+    }
     // Start is called before the first frame update
     void Start()
     {
@@ -68,44 +73,50 @@ public class TemplateFalaNPC : MonoBehaviour
                 G.missãoAtual = null;
             }
         }
-
-        if(dist <= 2)
+        if (missãoIniciada == false)
         {
-            if (falar.dialogoTerminado == true)
+            if (dist <= 2)
             {
-
-
-                if (TemQuest == true)
+                if (falar.dialogoTerminado == true)
                 {
-                    if (!completo) {
-                        FindObjectOfType<PlayerController>()._playerSpeed = 0f;
-                        telaDeQuest.SetActive(true);
-                        G.IndexQuest = QuestID;
-                        G.missãoAtual = G.missões[G.indexQuest];
-                        titulo.text = G.missãoAtual?.PegarNomeDeObjetivo();
-                        descricao.text = G.missãoAtual?.PegarDescriçãoDeObjetivo();
 
-                        if (Input.GetKeyDown(KeyCode.E))
-                        {
-                            titulo.text = " ";
-                            descricao.text = " ";
+
+                    if (TemQuest == true)
+                    {
+                        if (!completo) {
+                            FindObjectOfType<PlayerController>()._playerSpeed = 0f;
+                            telaDeQuest.SetActive(true);
+                            G.IndexQuest = QuestID;
+                            G.missãoAtual = G.missões[G.indexQuest];
+                            titulo.text = G.missãoAtual?.PegarNomeDeObjetivo();
+                            descricao.text = G.missãoAtual?.PegarDescriçãoDeObjetivo();
+
+                            if (Input.GetKeyDown(KeyCode.E))
+                            {
+                                titulo.text = " ";
+                                descricao.text = " ";
                             
-                            IniciarMissão = true;
-                            falar.dialogoTerminado = false;
-                            telaDeQuest.SetActive(false);
-                            FindObjectOfType<PlayerController>()._playerSpeed = 8f;
+                                IniciarMissão = true;
+                                falar.dialogoTerminado = false;
+                                telaDeQuest.SetActive(false);
+                                FindObjectOfType<PlayerController>()._playerSpeed = 8f;
 
-                            Debug.Log("G.indexQuest: " + G.IndexQuest);
+                                Debug.Log("G.indexQuest: " + G.IndexQuest);
+                            }
+                            else if (Input.GetKeyDown(KeyCode.Q))
+                            {
+                                G.missãoAtual = null;
+                                G.IndexQuest = -1;
+                                titulo.text = " ";
+                                descricao.text = " ";
+                                telaDeQuest.SetActive(false);
+                                falar.dialogoTerminado = false;
+                                FindObjectOfType<PlayerController>()._playerSpeed = 8f;
+                            }
                         }
-                        else if (Input.GetKeyDown(KeyCode.Q))
+                        else
                         {
-                            G.missãoAtual = null;
-                            G.IndexQuest = -1;
-                            titulo.text = " ";
-                            descricao.text = " ";
-                            telaDeQuest.SetActive(false);
                             falar.dialogoTerminado = false;
-                            FindObjectOfType<PlayerController>()._playerSpeed = 8f;
                         }
                     }
                     else
@@ -113,12 +124,9 @@ public class TemplateFalaNPC : MonoBehaviour
                         falar.dialogoTerminado = false;
                     }
                 }
-                
             }
-        }
 
-        if (missãoIniciada == false)
-        {
+        
             if (IniciarMissão == true)
             {   
                 missãoIniciada = true;
@@ -126,6 +134,12 @@ public class TemplateFalaNPC : MonoBehaviour
                 
                 IniciarMissão = false;
             }
+        }
+        else
+        {
+            
+                falar.dialogoTerminado = false;
+            
         }
 
         if (Input.GetKeyDown(KeyCode.F) && _podeFalar == true)
