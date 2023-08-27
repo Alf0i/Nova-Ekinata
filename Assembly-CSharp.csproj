@@ -74,15 +74,16 @@
     <Compile Include="Assets\Scripts\Cena1\MostraSala.cs" />
     <Compile Include="Assets\Scripts\Scripts gerais\HoraRelogio.cs" />
     <Compile Include="Assets\Scripts\Scripts gerais\Quest System\ObjdeMissao\ObjColetavel.cs" />
+    <Compile Include="Assets\Scripts\Scripts gerais\Quest System\ObjdeMissao\ObjDeArea.cs" />
     <Compile Include="Assets\Scripts\Scripts gerais\Inventario\InvSprite.cs" />
     <Compile Include="Assets\Scripts\Cena1\Scripts de Entrega\EntregaItems.cs" />
     <Compile Include="Assets\Scripts\Scripts gerais\Itens\ItemAdquirido.cs" />
     <Compile Include="Assets\Scripts\Scripts gerais\Quest System\GerenciadorDeMissões.cs" />
     <Compile Include="Assets\Scripts\Scripts player\PlayerController.cs" />
     <Compile Include="Assets\Scripts\Cena1\Temporizador.cs" />
-    <Compile Include="Assets\Scripts\Scripts gerais\Quest System\ControleUIdeMissão.cs" />
-    <Compile Include="Assets\Scripts\Scripts gerais\Quest System\ObjdeMissao\ObjDeArea.cs" />
     <Compile Include="Assets\Scripts\Scripts gerais\Quest System\ObjdeMissao\Objdefala.cs" />
+    <Compile Include="Assets\Scripts\Scripts gerais\Quest System\ControleUIdeMissão.cs" />
+    <Compile Include="Assets\Scripts\Scripts gerais\Experiencia.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

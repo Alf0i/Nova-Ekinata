@@ -124,6 +124,7 @@ public class TemplateFalaNPC : MonoBehaviour
                         falar.dialogoTerminado = false;
                     }
                 }
+                
             }
 
         
@@ -135,16 +136,11 @@ public class TemplateFalaNPC : MonoBehaviour
                 IniciarMissão = false;
             }
         }
-        else
-        {
-            
-                falar.dialogoTerminado = false;
-            
-        }
+        
 
         if (Input.GetKeyDown(KeyCode.F) && _podeFalar == true)
         {
-
+            falar.dialogoTerminado = false;
             falar.AbrirDialogo(pages);    
 
         }

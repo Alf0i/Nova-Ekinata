@@ -12,6 +12,13 @@ public enum AçãoDeObjetivo
 }
 
 [System.Serializable]
+public class RecompensaObjetivo
+{
+    public GameObject[] item;
+
+}
+
+[System.Serializable]
 public class DefiniçãoObjetivo
 {
     public string descrição;
@@ -22,7 +29,9 @@ public class DefiniçãoObjetivo
 
 public class DefiniçãoDeMissão : MonoBehaviour
 {
-
+    public float recEXP;
+    [HideInInspector] public Experiencia E;
+    public List<RecompensaObjetivo> recompensas;
     public List<DefiniçãoObjetivo> objetivos;
     private List<GameObject> objetosDeMissão = new List<GameObject>();
     [HideInInspector] public int ObjetivoAtual;
@@ -42,6 +51,7 @@ public class DefiniçãoDeMissão : MonoBehaviour
         podeCompletar = false;
         missaoPreparada = false;
         gm = GerenciadorDeMissões.Gerencia;
+        E = Experiencia.Experienc;
     }
 
     void Update()
@@ -131,7 +141,6 @@ public class DefiniçãoDeMissão : MonoBehaviour
             if (o == null)
             {
                 result = true;
-
             }
             else
             {
@@ -189,5 +198,16 @@ public class DefiniçãoDeMissão : MonoBehaviour
     {
         Debug.Log("Completado");
         completado = true;
+        ColetarRecompensa();
+        missaoPreparada = false;
+    }
+
+    public void ColetarRecompensa()
+    {
+        foreach(RecompensaObjetivo o in recompensas)
+        {
+            //adicionar cada game object em uma lista de items do inventario
+        }
+        E.AdicionarExp(recEXP);
     }
 }

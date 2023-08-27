@@ -20,10 +20,10 @@ public class Objdefala : MonoBehaviour
 
         if (dist <= 2)
         {
-            if (Input.GetKeyUp(KeyCode.Space) && t.falar.dialogoTerminado)
+            if (Input.GetKeyUp(KeyCode.Space) && !t.falar.dialogoTerminado)
             {
                 Destroy(gameObject);
-                t.falar.dialogoTerminado = false;
+                t.falar.dialogoTerminado = true;
             }
         }
     }
