@@ -27,9 +27,10 @@ public class DefiniçãoObjetivo
 
 }
 
+
 public class DefiniçãoDeMissão : MonoBehaviour
 {
-    public DefiniçãoDeMissão[] preRequisitos;
+    //public DefiniçãoDeMissão[] preRequisitos;
     public float recEXP;
     [HideInInspector] public Experiencia E;
     public List<RecompensaObjetivo> recompensas;
@@ -201,6 +202,7 @@ public class DefiniçãoDeMissão : MonoBehaviour
         completado = true;
         ColetarRecompensa();
         missaoPreparada = false;
+        Destroy(gameObject);
     }
 
     public void ColetarRecompensa()
@@ -212,16 +214,15 @@ public class DefiniçãoDeMissão : MonoBehaviour
         E.AdicionarExp(recEXP);
     }
 
-    public bool RequisitosCompletos()
+   /* public bool RequisitosCompletos()
     {
-        int cont = 0;
         bool result = false;
         foreach (var o in preRequisitos)
         {
             if (o.completado)
             {
-                cont++;
-                if (cont >= preRequisitos.Length)
+
+                if (o == null)
                 {
                     result = true;
                 }
@@ -229,8 +230,9 @@ public class DefiniçãoDeMissão : MonoBehaviour
             else
             {
                 result = false;
+                break;
             }
         }
         return result;
-    }
+    }*/
 }

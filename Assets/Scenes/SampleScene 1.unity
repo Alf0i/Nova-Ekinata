@@ -2958,7 +2958,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e03d9b936930ee4da11ff68c0fa8149, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  preRequisitos: []
   recEXP: 60
   E: {fileID: 0}
   recompensas: []
@@ -4570,8 +4569,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e03d9b936930ee4da11ff68c0fa8149, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  preRequisitos:
-  - {fileID: 486521734}
   recEXP: 70
   E: {fileID: 0}
   recompensas: []

@@ -35,8 +35,9 @@ public class TemplateFalaNPC : MonoBehaviour
     public bool completo;
     private float dist;
     private bool _podeFalar;
+    private bool _podeVerificarRequisitos;
     [HideInInspector] public bool IniciarMissão;
-    
+
     [HideInInspector] public bool missãoIniciada;
 
     private void Awake()
@@ -46,8 +47,8 @@ public class TemplateFalaNPC : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
-        
+
+        _podeVerificarRequisitos = false;
 
         telaDeQuest.SetActive(false);
 
@@ -89,14 +90,14 @@ public class TemplateFalaNPC : MonoBehaviour
 
                     if (TemQuest == true)
                     {
-                        G.missãoAtual.RequisitosCompletos();
-
                         
-                        if (!completo) {
-                            if (G.missãoAtual.RequisitosCompletos())
-                            {
+                        if (!completo)
+                        {
+                            _podeVerificarRequisitos = true;
+                            //if (G.missãoAtual.RequisitosCompletos())
+//{
 
-                                
+
                                 FindObjectOfType<PlayerController>()._playerSpeed = 0f;
                                 telaDeQuest.SetActive(true);
                                 G.IndexQuest = QuestID;
@@ -108,7 +109,7 @@ public class TemplateFalaNPC : MonoBehaviour
                                 {
                                     titulo.text = " ";
                                     descricao.text = " ";
-                            
+
                                     IniciarMissão = true;
                                     falar.dialogoTerminado = false;
                                     telaDeQuest.SetActive(false);
@@ -126,54 +127,58 @@ public class TemplateFalaNPC : MonoBehaviour
                                     falar.dialogoTerminado = false;
                                     FindObjectOfType<PlayerController>()._playerSpeed = 8f;
                                 }
-                            }
+                            //}
+                            // se nao tiver os prerequisitos nao aceita e mostra a tela de requisitos
+                           /* else
+                            {
+                                FindObjectOfType<PlayerController>()._playerSpeed = 0f;
+                                telaDeRequisito.SetActive(true);
+
+                                if (Input.GetKeyDown(KeyCode.Q))
+                                {
+                                    telaDeRequisito.SetActive(false);
+                                    falar.dialogoTerminado = false;
+                                    FindObjectOfType<PlayerController>()._playerSpeed = 8f;
+                                }
+                            }*/
                         }
                         else
                         {
                             falar.dialogoTerminado = false;
                         }
                     }
-                        // se nao tiver os prerequisitos nao aceita e mostra a tela de requisitos
-                        else
-                        {
-                            FindObjectOfType<PlayerController>()._playerSpeed = 0f;
-                            telaDeRequisito.SetActive(true);
-
-                            if (Input.GetKeyDown(KeyCode.Q))
-                            {
-                                telaDeRequisito.SetActive(false);
-                                falar.dialogoTerminado = false;
-                                FindObjectOfType<PlayerController>()._playerSpeed = 8f;
-                            }
-                        }
-                    }
-                    else
-                    {
-                        falar.dialogoTerminado = false;
-                    }
+                    
                 }
-                
+                else
+                {
+                    falar.dialogoTerminado = false;
+                }
             }
 
-        
-            if (IniciarMissão == true)
-            {   
-                missãoIniciada = true;
-                G.ComeçarMissão();
-                
-                IniciarMissão = false;
-            }
         }
-        
+
+        if (_podeVerificarRequisitos)
+        {
+            //G.missãoAtual.RequisitosCompletos();
+        }
+
+        if (IniciarMissão == true)
+        {
+            missãoIniciada = true;
+            G.ComeçarMissão();
+
+            IniciarMissão = false;
+        }
+
 
         if (Input.GetKeyDown(KeyCode.F) && _podeFalar == true)
         {
             falar.dialogoTerminado = false;
-            falar.AbrirDialogo(pages);    
+            falar.AbrirDialogo(pages);
 
         }
-            
-        
+
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

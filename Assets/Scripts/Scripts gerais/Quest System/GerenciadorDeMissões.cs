@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class GerenciadorDeMissões : MonoBehaviour
 {
+
     
     public DefiniçãoDeMissão[] missões;
     public DefiniçãoDeMissão missãoAtual;
@@ -37,5 +38,5 @@ public class GerenciadorDeMissões : MonoBehaviour
         
     }
 
-    
+   
 }
