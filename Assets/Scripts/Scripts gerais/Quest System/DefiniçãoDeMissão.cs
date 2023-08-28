@@ -30,7 +30,8 @@ public class DefiniçãoObjetivo
 
 public class DefiniçãoDeMissão : MonoBehaviour
 {
-    //public DefiniçãoDeMissão[] preRequisitos;
+    [SerializeField] DefiniçãoDeMissão[] preRequisitos;
+    [HideInInspector] public EstadoMissao _est;
     public float recEXP;
     [HideInInspector] public Experiencia E;
     public List<RecompensaObjetivo> recompensas;
@@ -48,6 +49,7 @@ public class DefiniçãoDeMissão : MonoBehaviour
 
     void Start()
     {
+        
         completado = false;
         objetivoCompleto = false;
         podeCompletar = false;
@@ -65,18 +67,7 @@ public class DefiniçãoDeMissão : MonoBehaviour
 
         if (missaoPreparada)
         {
-            /*foreach (DefiniçãoObjetivo objetivo in objetivos)
-            {
-                
-                AtualizarMissão(objetivo.alvos);
-
-                if (AtualizarMissão(objetivo.alvos) && podeCompletar)
-                    objetivoCompleto = true;
-                    CompletarObjetivo();
-                    podeCompletar = false;
-            }*/
-
-
+           
             if (ObjetivoAtual < objetivos.Count)
             {
 
@@ -110,12 +101,9 @@ public class DefiniçãoDeMissão : MonoBehaviour
 
     public void PrepararMissão()
     {
+        
         ObjetivoAtual = 0;
-        /*foreach (GameObject objetoDeMissão in objetosDeMissão)
-        {
-            //Destroy(objetoDeMissão);
-            objetoDeMissão.SetActive(true);
-        }*/
+       
         foreach (DefiniçãoObjetivo objetivo in objetivos)
         {
             foreach (Transform alvo in objetivo.alvos)
@@ -214,25 +202,26 @@ public class DefiniçãoDeMissão : MonoBehaviour
         E.AdicionarExp(recEXP);
     }
 
-   /* public bool RequisitosCompletos()
+    public bool RequisitosCompletos()
     {
-        bool result = false;
-        foreach (var o in preRequisitos)
+        bool result = true;
+        
+        if (preRequisitos != null)
         {
-            if (o.completado)
+            foreach (var o in preRequisitos)
             {
-
-                if (o == null)
+                if (o.completado)
                 {
                     result = true;
                 }
+                else
+                {
+                    result = false;
+                    break;
+                }
             }
-            else
-            {
-                result = false;
-                break;
-            }
-        }
+        }        
+               
         return result;
-    }*/
+    }
 }

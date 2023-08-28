@@ -19,6 +19,8 @@ public class TemplateFalaNPC : MonoBehaviour
 
     [SerializeField] string[] pages;
 
+    [SerializeField] string[] pagesAfterMission;
+
     private GameObject player;
 
     [SerializeField] GameObject telaDeQuest;
@@ -35,7 +37,6 @@ public class TemplateFalaNPC : MonoBehaviour
     public bool completo;
     private float dist;
     private bool _podeFalar;
-    private bool _podeVerificarRequisitos;
     [HideInInspector] public bool IniciarMissão;
 
     [HideInInspector] public bool missãoIniciada;
@@ -47,8 +48,6 @@ public class TemplateFalaNPC : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
-        _podeVerificarRequisitos = false;
 
         telaDeQuest.SetActive(false);
 
@@ -68,6 +67,7 @@ public class TemplateFalaNPC : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         dist = Vector2.Distance(gameObject.transform.position, player.transform.position);
 
         if (G.indexQuest == QuestID)
@@ -93,15 +93,17 @@ public class TemplateFalaNPC : MonoBehaviour
                         
                         if (!completo)
                         {
-                            _podeVerificarRequisitos = true;
-                            //if (G.missãoAtual.RequisitosCompletos())
-//{
+                            FindObjectOfType<PlayerController>()._playerSpeed = 0f;
+                                
+                            G.IndexQuest = QuestID;
+                            G.missãoAtual = G.missões[G.indexQuest];
+                            
+                            G.missãoAtual.RequisitosCompletos();
 
 
-                                FindObjectOfType<PlayerController>()._playerSpeed = 0f;
+                            if (G.missãoAtual.RequisitosCompletos())
+                            {
                                 telaDeQuest.SetActive(true);
-                                G.IndexQuest = QuestID;
-                                G.missãoAtual = G.missões[G.indexQuest];
                                 titulo.text = G.missãoAtual?.PegarNomeDeObjetivo();
                                 descricao.text = G.missãoAtual?.PegarDescriçãoDeObjetivo();
 
@@ -127,10 +129,11 @@ public class TemplateFalaNPC : MonoBehaviour
                                     falar.dialogoTerminado = false;
                                     FindObjectOfType<PlayerController>()._playerSpeed = 8f;
                                 }
-                            //}
+                            }
                             // se nao tiver os prerequisitos nao aceita e mostra a tela de requisitos
-                           /* else
+                            else
                             {
+
                                 FindObjectOfType<PlayerController>()._playerSpeed = 0f;
                                 telaDeRequisito.SetActive(true);
 
@@ -139,8 +142,9 @@ public class TemplateFalaNPC : MonoBehaviour
                                     telaDeRequisito.SetActive(false);
                                     falar.dialogoTerminado = false;
                                     FindObjectOfType<PlayerController>()._playerSpeed = 8f;
+                                    G.IndexQuest = -1;
                                 }
-                            }*/
+                            }
                         }
                         else
                         {
@@ -157,24 +161,35 @@ public class TemplateFalaNPC : MonoBehaviour
 
         }
 
-        if (_podeVerificarRequisitos)
-        {
-            //G.missãoAtual.RequisitosCompletos();
-        }
+        
 
-        if (IniciarMissão == true)
-        {
-            missãoIniciada = true;
-            G.ComeçarMissão();
+        
 
-            IniciarMissão = false;
-        }
+            if (IniciarMissão == true)
+            {
+                missãoIniciada = true;
+                G.ComeçarMissão();
 
+                IniciarMissão = false;
+            }
+        
 
+        //momentos em que pode falar com o npc
         if (Input.GetKeyDown(KeyCode.F) && _podeFalar == true)
         {
             falar.dialogoTerminado = false;
-            falar.AbrirDialogo(pages);
+            if (!completo && TemQuest && !falar.dialogoTerminado)
+            {
+                falar.AbrirDialogo(pages);
+            }
+            else if(completo && TemQuest && !falar.dialogoTerminado)
+            {
+                falar.AbrirDialogo(pagesAfterMission);
+            }
+            else if (!TemQuest && !falar.dialogoTerminado)
+            {
+                falar.AbrirDialogo(pages);
+            }
 
         }
 
