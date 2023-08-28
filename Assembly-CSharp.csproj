@@ -60,30 +60,30 @@
     <Compile Include="Assets\Scripts\Cena1\Scripts de Entrega\RequisitoSprite.cs" />
     <Compile Include="Assets\Scripts\Scripts gerais\Conversa\TemplateFalaNPC.cs" />
     <Compile Include="Assets\Scripts\Scripts gerais\ExecAtividade.cs" />
-    <Compile Include="Assets\Scripts\Scripts gerais\Itens\ColetaTinta.cs" />
+    <Compile Include="Assets\Scripts\Scripts gerais\Items\ColetaTinta.cs" />
     <Compile Include="Assets\Scripts\Scripts gerais\Check.cs" />
+    <Compile Include="Assets\Scripts\Scripts gerais\HUD\Experiencia.cs" />
     <Compile Include="Assets\Scripts\Cena1\Scripts de Entrega\Entrega final\EntregaFinal.cs" />
     <Compile Include="Assets\Scripts\Cena1\Scripts de Entrega\ExecEntrega.cs" />
     <Compile Include="Assets\Scripts\Scripts gerais\MovimentoNpc.cs" />
-    <Compile Include="Assets\Scripts\Scripts gerais\Contador.cs" />
+    <Compile Include="Assets\Scripts\Scripts gerais\HUD\Contador.cs" />
     <Compile Include="Assets\Scripts\Scripts player\CameraSC.cs" />
-    <Compile Include="Assets\Scripts\Scripts gerais\Itens\ColetaPasta.cs" />
+    <Compile Include="Assets\Scripts\Scripts gerais\Items\ColetaPasta.cs" />
     <Compile Include="Assets\Scripts\Scripts gerais\Quest System\HandlerDeMissão.cs" />
     <Compile Include="Assets\Scripts\Scripts gerais\Conversa\Dialogo.cs" />
     <Compile Include="Assets\Scripts\Cena1\Impressora\ExecImpressora.cs" />
     <Compile Include="Assets\Scripts\Cena1\MostraSala.cs" />
-    <Compile Include="Assets\Scripts\Scripts gerais\HoraRelogio.cs" />
+    <Compile Include="Assets\Scripts\Scripts gerais\HUD\HoraRelogio.cs" />
     <Compile Include="Assets\Scripts\Scripts gerais\Quest System\ObjdeMissao\ObjColetavel.cs" />
     <Compile Include="Assets\Scripts\Scripts gerais\Quest System\ObjdeMissao\ObjDeArea.cs" />
     <Compile Include="Assets\Scripts\Scripts gerais\Inventario\InvSprite.cs" />
     <Compile Include="Assets\Scripts\Cena1\Scripts de Entrega\EntregaItems.cs" />
-    <Compile Include="Assets\Scripts\Scripts gerais\Itens\ItemAdquirido.cs" />
+    <Compile Include="Assets\Scripts\Scripts gerais\Items\ItemAdquirido.cs" />
     <Compile Include="Assets\Scripts\Scripts gerais\Quest System\GerenciadorDeMissões.cs" />
     <Compile Include="Assets\Scripts\Scripts player\PlayerController.cs" />
     <Compile Include="Assets\Scripts\Cena1\Temporizador.cs" />
     <Compile Include="Assets\Scripts\Scripts gerais\Quest System\ObjdeMissao\Objdefala.cs" />
     <Compile Include="Assets\Scripts\Scripts gerais\Quest System\ControleUIdeMissão.cs" />
-    <Compile Include="Assets\Scripts\Scripts gerais\Experiencia.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

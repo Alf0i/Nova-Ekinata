@@ -7,6 +7,8 @@ TagManager:
   - Box
   - Object
   - NPC
+  - TelaQuest
+  - TelaRequisito
   layers:
   - Default
   - TransparentFX

@@ -23,6 +23,8 @@ public class TemplateFalaNPC : MonoBehaviour
 
     [SerializeField] GameObject telaDeQuest;
 
+    [SerializeField] GameObject telaDeRequisito;
+
     public bool TemQuest;
 
     [SerializeField] int QuestID;
@@ -44,8 +46,12 @@ public class TemplateFalaNPC : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
+        
 
         telaDeQuest.SetActive(false);
+
+        telaDeRequisito.SetActive(false);
 
         IniciarMissão = false;
 
@@ -83,40 +89,62 @@ public class TemplateFalaNPC : MonoBehaviour
 
                     if (TemQuest == true)
                     {
+                        G.missãoAtual.RequisitosCompletos();
+
+                        
                         if (!completo) {
-                            FindObjectOfType<PlayerController>()._playerSpeed = 0f;
-                            telaDeQuest.SetActive(true);
-                            G.IndexQuest = QuestID;
-                            G.missãoAtual = G.missões[G.indexQuest];
-                            titulo.text = G.missãoAtual?.PegarNomeDeObjetivo();
-                            descricao.text = G.missãoAtual?.PegarDescriçãoDeObjetivo();
-
-                            if (Input.GetKeyDown(KeyCode.E))
+                            if (G.missãoAtual.RequisitosCompletos())
                             {
-                                titulo.text = " ";
-                                descricao.text = " ";
+
+                                
+                                FindObjectOfType<PlayerController>()._playerSpeed = 0f;
+                                telaDeQuest.SetActive(true);
+                                G.IndexQuest = QuestID;
+                                G.missãoAtual = G.missões[G.indexQuest];
+                                titulo.text = G.missãoAtual?.PegarNomeDeObjetivo();
+                                descricao.text = G.missãoAtual?.PegarDescriçãoDeObjetivo();
+
+                                if (Input.GetKeyDown(KeyCode.E))
+                                {
+                                    titulo.text = " ";
+                                    descricao.text = " ";
                             
-                                IniciarMissão = true;
-                                falar.dialogoTerminado = false;
-                                telaDeQuest.SetActive(false);
-                                FindObjectOfType<PlayerController>()._playerSpeed = 8f;
+                                    IniciarMissão = true;
+                                    falar.dialogoTerminado = false;
+                                    telaDeQuest.SetActive(false);
+                                    FindObjectOfType<PlayerController>()._playerSpeed = 8f;
 
-                                Debug.Log("G.indexQuest: " + G.IndexQuest);
-                            }
-                            else if (Input.GetKeyDown(KeyCode.Q))
-                            {
-                                G.missãoAtual = null;
-                                G.IndexQuest = -1;
-                                titulo.text = " ";
-                                descricao.text = " ";
-                                telaDeQuest.SetActive(false);
-                                falar.dialogoTerminado = false;
-                                FindObjectOfType<PlayerController>()._playerSpeed = 8f;
+                                    Debug.Log("G.indexQuest: " + G.IndexQuest);
+                                }
+                                else if (Input.GetKeyDown(KeyCode.Q))
+                                {
+                                    G.missãoAtual = null;
+                                    G.IndexQuest = -1;
+                                    titulo.text = " ";
+                                    descricao.text = " ";
+                                    telaDeQuest.SetActive(false);
+                                    falar.dialogoTerminado = false;
+                                    FindObjectOfType<PlayerController>()._playerSpeed = 8f;
+                                }
                             }
                         }
                         else
                         {
                             falar.dialogoTerminado = false;
+                        }
+                    }
+                        // se nao tiver os prerequisitos nao aceita e mostra a tela de requisitos
+                        else
+                        {
+                            FindObjectOfType<PlayerController>()._playerSpeed = 0f;
+                            telaDeRequisito.SetActive(true);
+
+                            if (Input.GetKeyDown(KeyCode.Q))
+                            {
+                                telaDeRequisito.SetActive(false);
+                                falar.dialogoTerminado = false;
+                                FindObjectOfType<PlayerController>()._playerSpeed = 8f;
+                            }
                         }
                     }
                     else
