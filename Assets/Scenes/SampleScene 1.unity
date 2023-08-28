@@ -2697,6 +2697,10 @@ MonoBehaviour:
   pages:
   - oi prazer
   - "onde \xE9 que a gente esta?"
+  pagesAfterMission:
+  - oi
+  - teste
+  - acabou
   telaDeQuest: {fileID: 798882275}
   telaDeRequisito: {fileID: 743348211}
   TemQuest: 1
@@ -2958,6 +2962,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e03d9b936930ee4da11ff68c0fa8149, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  preRequisitos: []
+  _est: 0
   recEXP: 60
   E: {fileID: 0}
   recompensas: []
@@ -3029,6 +3035,9 @@ MonoBehaviour:
     minuto eu n\xE3o era nada e agora puff... "
   - "estou aqui nesse corredor com dois estranhos. falando nisso... Quem \xE9 voce?? "
   - testa o outro cara tambem.
+  pagesAfterMission:
+  - tomara
+  - que rode
   telaDeQuest: {fileID: 798882275}
   telaDeRequisito: {fileID: 743348211}
   TemQuest: 1
@@ -4569,6 +4578,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e03d9b936930ee4da11ff68c0fa8149, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  preRequisitos:
+  - {fileID: 486521734}
+  _est: 0
   recEXP: 70
   E: {fileID: 0}
   recompensas: []
@@ -5821,6 +5833,7 @@ MonoBehaviour:
   pages:
   - oi voce
   - 'tchau '
+  pagesAfterMission: []
   telaDeQuest: {fileID: 798882275}
   telaDeRequisito: {fileID: 743348211}
   TemQuest: 0
