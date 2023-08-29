@@ -151,7 +151,11 @@ public class TemplateFalaNPC : MonoBehaviour
                             falar.dialogoTerminado = false;
                         }
                     }
-                    
+                    else
+                    {
+                        falar.dialogoTerminado = false;
+                    }
+
                 }
                 else
                 {
