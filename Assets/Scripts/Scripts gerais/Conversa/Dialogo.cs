@@ -88,6 +88,7 @@ public class Dialogo : MonoBehaviour
             gameObject.SetActive(false);
             StopCoroutine(Ditar());
             dialogoTerminado = true;
+            index = 0;
         }
     }
 }

@@ -12,6 +12,13 @@ public enum AçãoDeObjetivo
 }
 
 [System.Serializable]
+public class RecompensaObjetivo
+{
+    public GameObject[] item;
+
+}
+
+[System.Serializable]
 public class DefiniçãoObjetivo
 {
     public string descrição;
@@ -20,12 +27,17 @@ public class DefiniçãoObjetivo
 
 }
 
+
 public class DefiniçãoDeMissão : MonoBehaviour
 {
-
+    [SerializeField] DefiniçãoDeMissão[] preRequisitos;
+    [HideInInspector] public EstadoMissao _est;
+    public float recEXP;
+    [HideInInspector] public Experiencia E;
+    public List<RecompensaObjetivo> recompensas;
     public List<DefiniçãoObjetivo> objetivos;
     private List<GameObject> objetosDeMissão = new List<GameObject>();
-    private int ObjetivoAtual;
+    [HideInInspector] public int ObjetivoAtual;
 
     [HideInInspector] public GerenciadorDeMissões gm;
     [HideInInspector] public bool missaoPreparada;
@@ -37,11 +49,13 @@ public class DefiniçãoDeMissão : MonoBehaviour
 
     void Start()
     {
+        
         completado = false;
         objetivoCompleto = false;
         podeCompletar = false;
         missaoPreparada = false;
         gm = GerenciadorDeMissões.Gerencia;
+        E = Experiencia.Experienc;
     }
 
     void Update()
@@ -53,18 +67,7 @@ public class DefiniçãoDeMissão : MonoBehaviour
 
         if (missaoPreparada)
         {
-            /*foreach (DefiniçãoObjetivo objetivo in objetivos)
-            {
-                
-                AtualizarMissão(objetivo.alvos);
-
-                if (AtualizarMissão(objetivo.alvos) && podeCompletar)
-                    objetivoCompleto = true;
-                    CompletarObjetivo();
-                    podeCompletar = false;
-            }*/
-
-
+           
             if (ObjetivoAtual < objetivos.Count)
             {
 
@@ -98,12 +101,9 @@ public class DefiniçãoDeMissão : MonoBehaviour
 
     public void PrepararMissão()
     {
+        
         ObjetivoAtual = 0;
-        /*foreach (GameObject objetoDeMissão in objetosDeMissão)
-        {
-            //Destroy(objetoDeMissão);
-            objetoDeMissão.SetActive(true);
-        }*/
+       
         foreach (DefiniçãoObjetivo objetivo in objetivos)
         {
             foreach (Transform alvo in objetivo.alvos)
@@ -131,7 +131,6 @@ public class DefiniçãoDeMissão : MonoBehaviour
             if (o == null)
             {
                 result = true;
-
             }
             else
             {
@@ -189,5 +188,40 @@ public class DefiniçãoDeMissão : MonoBehaviour
     {
         Debug.Log("Completado");
         completado = true;
+        ColetarRecompensa();
+        missaoPreparada = false;
+        Destroy(gameObject);
+    }
+
+    public void ColetarRecompensa()
+    {
+        foreach(RecompensaObjetivo o in recompensas)
+        {
+            //adicionar cada game object em uma lista de items do inventario
+        }
+        E.AdicionarExp(recEXP);
+    }
+
+    public bool RequisitosCompletos()
+    {
+        bool result = true;
+        
+        if (preRequisitos != null)
+        {
+            foreach (var o in preRequisitos)
+            {
+                if (o.completado)
+                {
+                    result = true;
+                }
+                else
+                {
+                    result = false;
+                    break;
+                }
+            }
+        }        
+               
+        return result;
     }
 }
