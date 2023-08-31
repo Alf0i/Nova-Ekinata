@@ -36,6 +36,7 @@ public class TemplateFalaNPC : MonoBehaviour
 
     public bool completo;
     private float dist;
+    public float limiteDist;
     private bool _podeFalar;
     [HideInInspector] public bool IniciarMissão;
     private bool feito;
@@ -85,7 +86,7 @@ public class TemplateFalaNPC : MonoBehaviour
         }
         if (missãoIniciada == false)
         {
-            if (dist <= 2)
+            if (dist <= limiteDist)
             {
                 if (falar.dialogoTerminado == true)
                 {
@@ -152,6 +153,7 @@ public class TemplateFalaNPC : MonoBehaviour
                         else
                         {
                             falar.dialogoTerminado = false;
+                            TemQuest = false;
                         }
                     }
                     else
@@ -189,11 +191,11 @@ public class TemplateFalaNPC : MonoBehaviour
             {
                 falar.AbrirDialogo(pages);
             }
-            else if(completo && TemQuest && !falar.dialogoTerminado)
+            else if(completo && !TemQuest && !falar.dialogoTerminado)
             {
                 falar.AbrirDialogo(pagesAfterMission);
             }
-            else if (!TemQuest && !falar.dialogoTerminado)
+            else if (!completo && !TemQuest && !falar.dialogoTerminado)
             {
                 falar.AbrirDialogo(pages);
             }

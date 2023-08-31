@@ -1820,6 +1820,7 @@ MonoBehaviour:
   QuestID: 0
   G: {fileID: 0}
   completo: 0
+  limiteDist: 2
   "IniciarMiss\xE3o": 0
   "miss\xE3oIniciada": 0
 --- !u!1 &199343861
@@ -2620,6 +2621,7 @@ MonoBehaviour:
   QuestID: 1
   G: {fileID: 0}
   completo: 0
+  limiteDist: 4
   "IniciarMiss\xE3o": 0
   "miss\xE3oIniciada": 0
 --- !u!61 &259132604
@@ -3743,8 +3745,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -816, y: 494}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: -576.25, y: 494}
+  m_SizeDelta: {x: 679.51, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &363643271
 MonoBehaviour:
@@ -3829,7 +3831,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: 3.9111335, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -4386,6 +4388,7 @@ MonoBehaviour:
   QuestID: 0
   G: {fileID: 0}
   completo: 0
+  limiteDist: 2
   "IniciarMiss\xE3o": 0
   "miss\xE3oIniciada": 0
 --- !u!1 &413710280
@@ -8373,6 +8376,75 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.4871616, y: 1.2238159}
   m_EdgeRadius: 0
+--- !u!1001 &787168626
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1133772195}
+    m_Modifications:
+    - target: {fileID: 2791557580151055435, guid: 1bda09aef7a540f4f8d0b27eb092efb4, type: 3}
+      propertyPath: m_Name
+      value: Circle (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2791557580151055436, guid: 1bda09aef7a540f4f8d0b27eb092efb4, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2791557580151055436, guid: 1bda09aef7a540f4f8d0b27eb092efb4, type: 3}
+      propertyPath: m_Color.g
+      value: 0.95441294
+      objectReference: {fileID: 0}
+    - target: {fileID: 2791557580151055436, guid: 1bda09aef7a540f4f8d0b27eb092efb4, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2791557580151055437, guid: 1bda09aef7a540f4f8d0b27eb092efb4, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2791557580151055437, guid: 1bda09aef7a540f4f8d0b27eb092efb4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 26.74
+      objectReference: {fileID: 0}
+    - target: {fileID: 2791557580151055437, guid: 1bda09aef7a540f4f8d0b27eb092efb4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 34.89
+      objectReference: {fileID: 0}
+    - target: {fileID: 2791557580151055437, guid: 1bda09aef7a540f4f8d0b27eb092efb4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1325.476
+      objectReference: {fileID: 0}
+    - target: {fileID: 2791557580151055437, guid: 1bda09aef7a540f4f8d0b27eb092efb4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2791557580151055437, guid: 1bda09aef7a540f4f8d0b27eb092efb4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2791557580151055437, guid: 1bda09aef7a540f4f8d0b27eb092efb4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2791557580151055437, guid: 1bda09aef7a540f4f8d0b27eb092efb4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2791557580151055437, guid: 1bda09aef7a540f4f8d0b27eb092efb4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2791557580151055437, guid: 1bda09aef7a540f4f8d0b27eb092efb4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2791557580151055437, guid: 1bda09aef7a540f4f8d0b27eb092efb4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1bda09aef7a540f4f8d0b27eb092efb4, type: 3}
 --- !u!1 &807318188
 GameObject:
   m_ObjectHideFlags: 0
@@ -9873,6 +9945,7 @@ MonoBehaviour:
   QuestID: 0
   G: {fileID: 0}
   completo: 0
+  limiteDist: 2
   "IniciarMiss\xE3o": 0
   "miss\xE3oIniciada": 0
 --- !u!1 &915459440
@@ -10014,6 +10087,7 @@ MonoBehaviour:
   QuestID: 0
   G: {fileID: 0}
   completo: 0
+  limiteDist: 4
   "IniciarMiss\xE3o": 0
   "miss\xE3oIniciada": 0
 --- !u!61 &915459447
@@ -11302,6 +11376,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1022335175}
   m_CullTransparentMesh: 1
+--- !u!4 &1033696926 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2791557580151055437, guid: 1bda09aef7a540f4f8d0b27eb092efb4, type: 3}
+  m_PrefabInstance: {fileID: 787168626}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1040021499
 GameObject:
   m_ObjectHideFlags: 0
@@ -12544,9 +12623,13 @@ MonoBehaviour:
   E: {fileID: 0}
   recompensas: []
   objetivos:
-  - "descri\xE7\xE3o": colete o circulo
+  - "descri\xE7\xE3o": colete o circulo vermelho
     alvos:
     - {fileID: 37062389}
+    "a\xE7\xE3o": 0
+  - "descri\xE7\xE3o": colete o circulo amarelo
+    alvos:
+    - {fileID: 1033696926}
     "a\xE7\xE3o": 0
   ObjetivoAtual: 0
   gm: {fileID: 0}
@@ -12565,6 +12648,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 37062389}
+  - {fileID: 1033696926}
   m_Father: {fileID: 1528088483}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -41096,8 +41180,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -723.27, y: 352.52}
-  m_SizeDelta: {x: 385.45, y: 232.97}
+  m_AnchoredPosition: {x: -576.24, y: 352.52}
+  m_SizeDelta: {x: 679.5, y: 232.97}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1752705766
 MonoBehaviour:
