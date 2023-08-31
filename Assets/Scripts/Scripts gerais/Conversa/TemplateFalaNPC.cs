@@ -38,7 +38,7 @@ public class TemplateFalaNPC : MonoBehaviour
     private float dist;
     private bool _podeFalar;
     [HideInInspector] public bool IniciarMissão;
-
+    private bool feito;
     [HideInInspector] public bool missãoIniciada;
 
     private void Awake()
@@ -48,6 +48,7 @@ public class TemplateFalaNPC : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        feito = false;
 
         telaDeQuest.SetActive(false);
 
@@ -74,6 +75,8 @@ public class TemplateFalaNPC : MonoBehaviour
         {
             if (G.missãoAtual.completado)
             {
+                feito = false;
+                IniciarMissão = false;
                 missãoIniciada = false;
                 this.completo = true;
                 G.indexQuest = -1;
@@ -165,16 +168,16 @@ public class TemplateFalaNPC : MonoBehaviour
 
         }
 
-        
 
-        
 
-            if (IniciarMissão == true)
+
+
+        if (IniciarMissão == true && feito == false)
             {
                 missãoIniciada = true;
                 G.ComeçarMissão();
 
-                IniciarMissão = false;
+                feito = true;
             }
         
 
