@@ -62,6 +62,7 @@
     <Compile Include="Assets\Scripts\Scripts gerais\ExecAtividade.cs" />
     <Compile Include="Assets\Scripts\Scripts gerais\Items\ColetaTinta.cs" />
     <Compile Include="Assets\Scripts\Scripts gerais\Check.cs" />
+    <Compile Include="Assets\Scripts\Scripts gerais\HUD\Experiencia.cs" />
     <Compile Include="Assets\Scripts\Cena1\Scripts de Entrega\Entrega final\EntregaFinal.cs" />
     <Compile Include="Assets\Scripts\Cena1\Scripts de Entrega\ExecEntrega.cs" />
     <Compile Include="Assets\Scripts\Scripts gerais\MovimentoNpc.cs" />
@@ -81,10 +82,9 @@
     <Compile Include="Assets\Scripts\Scripts gerais\Quest System\GerenciadorDeMissões.cs" />
     <Compile Include="Assets\Scripts\Scripts player\PlayerController.cs" />
     <Compile Include="Assets\Scripts\Cena1\Temporizador.cs" />
-    <Compile Include="Assets\Scripts\Scripts gerais\Quest System\ControleUIdeMissão.cs" />
-    <Compile Include="Assets\Scripts\Scripts gerais\HUD\Experiencia.cs" />
-    <Compile Include="Assets\Scripts\Scripts gerais\Quest System\ObjdeMissao\Objdefala.cs" />
     <Compile Include="Assets\Scripts\Scripts gerais\Quest System\EstadoMissao.cs" />
+    <Compile Include="Assets\Scripts\Scripts gerais\Quest System\ObjdeMissao\Objdefala.cs" />
+    <Compile Include="Assets\Scripts\Scripts gerais\Quest System\ControleUIdeMissão.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
