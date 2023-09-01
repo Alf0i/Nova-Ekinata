@@ -153,7 +153,7 @@ public class TemplateFalaNPC : MonoBehaviour
                         else
                         {
                             falar.dialogoTerminado = false;
-                            TemQuest = false;
+                            //TemQuest = false;
                         }
                     }
                     else
@@ -191,7 +191,7 @@ public class TemplateFalaNPC : MonoBehaviour
             {
                 falar.AbrirDialogo(pages);
             }
-            else if(completo && !TemQuest && !falar.dialogoTerminado)
+            else if(completo && TemQuest && !falar.dialogoTerminado)
             {
                 falar.AbrirDialogo(pagesAfterMission);
             }

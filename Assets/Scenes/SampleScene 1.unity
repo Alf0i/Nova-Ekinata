@@ -1700,8 +1700,8 @@ Transform:
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1379038721}
-  m_RootOrder: 1
+  m_Father: {fileID: 457089599}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!70 &196390477
 CapsuleCollider2D:
@@ -1812,12 +1812,14 @@ MonoBehaviour:
   titulo: {fileID: 126132138}
   descricao: {fileID: 2125784204}
   falar: {fileID: 1391911510}
-  pages: []
+  pages:
+  - 1
+  - 2
   pagesAfterMission: []
   telaDeQuest: {fileID: 394327854}
   telaDeRequisito: {fileID: 743348211}
   TemQuest: 0
-  QuestID: 0
+  QuestID: -2
   G: {fileID: 0}
   completo: 0
   limiteDist: 2
@@ -2510,12 +2512,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 259132597}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 11.14, y: -15.93, z: 1.8439555}
+  m_LocalPosition: {x: 11.140001, y: -15.93, z: 1.8439555}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1379038721}
-  m_RootOrder: 4
+  m_Father: {fileID: 1586225918}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &259132600
 BoxCollider2D:
@@ -4261,13 +4263,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 405808922}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 23.76, y: -2.62, z: 1.8439555}
+  m_LocalPosition: {x: 23.76, y: -2.619999, z: 1.8439555}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 971127854}
-  m_Father: {fileID: 1379038721}
-  m_RootOrder: 3
+  m_Father: {fileID: 457089599}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!70 &405808924
 CapsuleCollider2D:
@@ -4385,7 +4387,7 @@ MonoBehaviour:
   telaDeQuest: {fileID: 394327854}
   telaDeRequisito: {fileID: 743348211}
   TemQuest: 0
-  QuestID: 0
+  QuestID: 302
   G: {fileID: 0}
   completo: 0
   limiteDist: 2
@@ -4697,6 +4699,40 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &457089598
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 457089599}
+  m_Layer: 0
+  m_Name: NPCSemMissao
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &457089599
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 457089598}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 405808923}
+  - {fileID: 914049123}
+  - {fileID: 196390476}
+  m_Father: {fileID: 1379038721}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &471154183
 GameObject:
   m_ObjectHideFlags: 0
@@ -9825,8 +9861,8 @@ Transform:
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1379038721}
-  m_RootOrder: 2
+  m_Father: {fileID: 457089599}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!70 &914049124
 CapsuleCollider2D:
@@ -9937,12 +9973,16 @@ MonoBehaviour:
   titulo: {fileID: 126132138}
   descricao: {fileID: 2125784204}
   falar: {fileID: 1391911510}
-  pages: []
-  pagesAfterMission: []
+  pages:
+  - 1
+  - 2
+  pagesAfterMission:
+  - 3
+  - 4
   telaDeQuest: {fileID: 394327854}
   telaDeRequisito: {fileID: 743348211}
   TemQuest: 0
-  QuestID: 0
+  QuestID: -2
   G: {fileID: 0}
   completo: 0
   limiteDist: 2
@@ -10028,11 +10068,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 915459440}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.07, y: 4.59, z: 1.8439555}
+  m_LocalPosition: {x: 0.069999695, y: 4.59, z: 1.8439555}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1379038721}
+  m_Father: {fileID: 1586225918}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &915459444
@@ -15003,11 +15043,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 915459443}
-  - {fileID: 196390476}
-  - {fileID: 914049123}
-  - {fileID: 405808923}
-  - {fileID: 259132598}
+  - {fileID: 457089599}
+  - {fileID: 1586225918}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -17180,6 +17217,39 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2, y: 4}
   m_EdgeRadius: 0
+--- !u!1 &1586225917
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1586225918}
+  m_Layer: 0
+  m_Name: NPCComMissao
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1586225918
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1586225917}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 915459443}
+  - {fileID: 259132598}
+  m_Father: {fileID: 1379038721}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1594651429
 GameObject:
   m_ObjectHideFlags: 0
