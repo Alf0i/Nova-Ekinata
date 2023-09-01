@@ -114,6 +114,10 @@ public class DefiniçãoDeMissão : MonoBehaviour
                     handler.SetarMissão(this, objetivo);
                     objetosDeMissão.Add(alvo.gameObject);
                     alvo.gameObject.SetActive(true);
+                    if(alvo.gameObject.activeSelf == true)
+                    {
+                        Debug.Log("Ta funfando");
+                    }    
                 }
 
             }
