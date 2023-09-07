@@ -85,6 +85,7 @@
     <Compile Include="Assets\Scripts\Scripts gerais\Quest System\EstadoMissao.cs" />
     <Compile Include="Assets\Scripts\Scripts gerais\Quest System\ObjdeMissao\Objdefala.cs" />
     <Compile Include="Assets\Scripts\Scripts gerais\Quest System\ControleUIdeMissão.cs" />
+    <Compile Include="Assets\Scripts\Scripts npc\NpcAI.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
