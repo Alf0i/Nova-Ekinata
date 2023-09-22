@@ -124,7 +124,7 @@ public class TemplateFalaNPC : MonoBehaviour
                                     falar.dialogoTerminado = false;
                                     telaDeQuest.SetActive(false);
                                     FindObjectOfType<PlayerController>()._playerSpeed = 8f;
-                                    mov.ContinuaMov();
+                                    if (gameObject.GetComponent<MovimentoNpc>() != null) mov.ContinuaMov();
                                     Debug.Log("G.indexQuest: " + G.IndexQuest);
                                 }
                                 else if (Input.GetKeyDown(KeyCode.Q))
@@ -136,7 +136,7 @@ public class TemplateFalaNPC : MonoBehaviour
                                     telaDeQuest.SetActive(false);
                                     falar.dialogoTerminado = false;
                                     FindObjectOfType<PlayerController>()._playerSpeed = 8f;
-                                    mov.ContinuaMov();
+                                    if (gameObject.GetComponent<MovimentoNpc>() != null) mov.ContinuaMov();
                                 }
                             }
                             // se nao tiver os prerequisitos nao aceita e mostra a tela de requisitos
@@ -152,7 +152,7 @@ public class TemplateFalaNPC : MonoBehaviour
                                     falar.dialogoTerminado = false;
                                     FindObjectOfType<PlayerController>()._playerSpeed = 8f;
                                     G.IndexQuest = -1;
-                                    mov.ContinuaMov();
+                                    if (gameObject.GetComponent<MovimentoNpc>() != null) mov.ContinuaMov();
                                 }
                             }
                         }
@@ -165,7 +165,7 @@ public class TemplateFalaNPC : MonoBehaviour
                     else
                     {
                         falar.dialogoTerminado = false;
-                        mov.ContinuaMov();
+                        if (gameObject.GetComponent<MovimentoNpc>() != null) mov.ContinuaMov();
                     }
 
                 }
@@ -193,7 +193,8 @@ public class TemplateFalaNPC : MonoBehaviour
         //momentos em que pode falar com o npc
         if (Input.GetKeyDown(KeyCode.F) && _podeFalar == true)
         {
-            mov.ParaMov();
+            if(gameObject.GetComponent<MovimentoNpc>() != null) { mov.ParaMov(); }
+            
 
             falar.dialogoTerminado = false;
             if (!completo && TemQuest && !falar.dialogoTerminado)

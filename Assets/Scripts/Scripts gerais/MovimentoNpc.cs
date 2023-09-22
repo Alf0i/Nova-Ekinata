@@ -39,9 +39,9 @@ public class MovimentoNpc : MonoBehaviour
 		if (transform.position == waypoints [waypointIndex].transform.position ) 
 		{
 			anim.SetBool("isRunning", true);
-			if (waypointIndex == waypoints.Length - 1)
+			if (waypointIndex >= waypoints.Length - 1)
 			{
-				waypointIndex = 0;
+				waypointIndex = 1;
 			}
             else waypointIndex += 1;
 		}		
