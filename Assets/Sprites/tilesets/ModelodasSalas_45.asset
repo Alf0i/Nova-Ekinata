@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: ModelodasSalas_45
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: -127772871, guid: cbe2b591cb97505438bf227964b38b2d, type: 3}
+  m_Sprite: {fileID: -23220724, guid: cbe2b591cb97505438bf227964b38b2d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1
