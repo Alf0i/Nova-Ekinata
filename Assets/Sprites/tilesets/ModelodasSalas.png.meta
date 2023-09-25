@@ -108,7 +108,7 @@ TextureImporter:
       name: ModelodasSalas_0
       rect:
         serializedVersion: 2
-        x: 64
+        x: 0
         y: 576
         width: 64
         height: 64
@@ -119,8 +119,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 935bbb02e82592c4a97ae6c9d12b4c8c
-      internalID: -1834875412
+      spriteID: 097082c413dee5f4692f250595830b35
+      internalID: 1616766054
       vertices: []
       indices: 
       edges: []
@@ -129,7 +129,7 @@ TextureImporter:
       name: ModelodasSalas_1
       rect:
         serializedVersion: 2
-        x: 128
+        x: 64
         y: 576
         width: 64
         height: 64
@@ -140,8 +140,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1563c6fc032fc1941b13ed0bb47ae338
-      internalID: 1527322579
+      spriteID: fb0edb48c952b61498cef3d0dbeb7790
+      internalID: 1000550495
       vertices: []
       indices: 
       edges: []
@@ -150,7 +150,7 @@ TextureImporter:
       name: ModelodasSalas_2
       rect:
         serializedVersion: 2
-        x: 192
+        x: 128
         y: 576
         width: 64
         height: 64
@@ -161,8 +161,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 63c78ed948727e143b39e403b1a39b30
-      internalID: 1834099926
+      spriteID: dc12f2cace64ef34db67ed6793dca56d
+      internalID: -1388888971
       vertices: []
       indices: 
       edges: []
@@ -171,7 +171,7 @@ TextureImporter:
       name: ModelodasSalas_3
       rect:
         serializedVersion: 2
-        x: 256
+        x: 192
         y: 576
         width: 64
         height: 64
@@ -182,8 +182,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 04fa0b11047a70e41a134eda5bfb75cc
-      internalID: -1719264744
+      spriteID: 43a3331a9ba5bb44187c9a39cbf82511
+      internalID: 1260457636
       vertices: []
       indices: 
       edges: []
@@ -192,7 +192,7 @@ TextureImporter:
       name: ModelodasSalas_4
       rect:
         serializedVersion: 2
-        x: 320
+        x: 256
         y: 576
         width: 64
         height: 64
@@ -203,8 +203,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8e32b4114ff22794b99392d2760586f4
-      internalID: -1054150324
+      spriteID: 83e7b0d8b01a46a46a149894e10c3196
+      internalID: 1664134595
       vertices: []
       indices: 
       edges: []
@@ -213,7 +213,7 @@ TextureImporter:
       name: ModelodasSalas_5
       rect:
         serializedVersion: 2
-        x: 384
+        x: 320
         y: 576
         width: 64
         height: 64
@@ -224,8 +224,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c6adece52610e4c45a0f204285daad5b
-      internalID: 500603167
+      spriteID: 4684228587331c1479dcdb2185be41f3
+      internalID: -2029726409
       vertices: []
       indices: 
       edges: []
@@ -234,6 +234,27 @@ TextureImporter:
       name: ModelodasSalas_6
       rect:
         serializedVersion: 2
+        x: 384
+        y: 576
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cc30a1f07d22b74c8085f35c4668ed7
+      internalID: 2104489693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModelodasSalas_7
+      rect:
+        serializedVersion: 2
         x: 448
         y: 576
         width: 64
@@ -245,29 +266,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 88819e1cd44c4ed468a00eb4525f2df4
-      internalID: 1728997278
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ModelodasSalas_7
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 512
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b29b372dbb25a9d4b930cb7d0d1835d5
-      internalID: 928934979
+      spriteID: f58629c0d9d776245bd47af37e8b167e
+      internalID: 1350579840
       vertices: []
       indices: 
       edges: []
@@ -276,8 +276,8 @@ TextureImporter:
       name: ModelodasSalas_8
       rect:
         serializedVersion: 2
-        x: 64
-        y: 512
+        x: 512
+        y: 576
         width: 64
         height: 64
       alignment: 0
@@ -287,8 +287,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 37b2c0283d61f324fa8db1af4573abcc
-      internalID: 659413899
+      spriteID: afbf9aff610235240b5e4a30a7145009
+      internalID: 1128176622
       vertices: []
       indices: 
       edges: []
@@ -297,7 +297,7 @@ TextureImporter:
       name: ModelodasSalas_9
       rect:
         serializedVersion: 2
-        x: 128
+        x: 0
         y: 512
         width: 64
         height: 64
@@ -308,8 +308,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 616e62c15a24067488fd2916dfb17cc2
-      internalID: -147658890
+      spriteID: 997d6fd37fd55aa4c9c5aee9a1cecabd
+      internalID: -1936936572
       vertices: []
       indices: 
       edges: []
@@ -318,7 +318,7 @@ TextureImporter:
       name: ModelodasSalas_10
       rect:
         serializedVersion: 2
-        x: 192
+        x: 64
         y: 512
         width: 64
         height: 64
@@ -329,8 +329,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f49264a4c87523545823bd75be158c3a
-      internalID: -1474224667
+      spriteID: bf93e43bf58ad6f4c9d1f7ca61cfea04
+      internalID: 677538650
       vertices: []
       indices: 
       edges: []
@@ -339,7 +339,7 @@ TextureImporter:
       name: ModelodasSalas_11
       rect:
         serializedVersion: 2
-        x: 256
+        x: 128
         y: 512
         width: 64
         height: 64
@@ -350,8 +350,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a10a880ef867dda45b0ad19a210dfece
-      internalID: -444600690
+      spriteID: 082ae65128bee5046944437aedcf1124
+      internalID: -1624151102
       vertices: []
       indices: 
       edges: []
@@ -360,7 +360,7 @@ TextureImporter:
       name: ModelodasSalas_12
       rect:
         serializedVersion: 2
-        x: 320
+        x: 192
         y: 512
         width: 64
         height: 64
@@ -371,8 +371,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 02c04ed9a3b5199418a00128d282bc5c
-      internalID: -26253670
+      spriteID: 6daed11b089b14e47a691069017a15cc
+      internalID: -375711107
       vertices: []
       indices: 
       edges: []
@@ -381,7 +381,7 @@ TextureImporter:
       name: ModelodasSalas_13
       rect:
         serializedVersion: 2
-        x: 384
+        x: 256
         y: 512
         width: 64
         height: 64
@@ -392,8 +392,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e89ce8a683aebe542a2099b92e916483
-      internalID: -968891162
+      spriteID: d8102516066661d4883200eb81314e48
+      internalID: 1462667905
       vertices: []
       indices: 
       edges: []
@@ -402,6 +402,48 @@ TextureImporter:
       name: ModelodasSalas_14
       rect:
         serializedVersion: 2
+        x: 320
+        y: 512
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9332e1be8a13e54294f8bb43f10707e
+      internalID: 1036709302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModelodasSalas_15
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 512
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06a2204240a09f1488c0d730e44c4b90
+      internalID: 1964039202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModelodasSalas_16
+      rect:
+        serializedVersion: 2
         x: 448
         y: 512
         width: 64
@@ -413,50 +455,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7c32e5de5e2113e4e94a088d0a9f716f
-      internalID: -884574920
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ModelodasSalas_15
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 448
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1fb4fcc68fd2b8e4e83a377e6deac6d3
-      internalID: -1327642091
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ModelodasSalas_16
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 448
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a6540e3d24bd79449a0e207ba7bd4a63
-      internalID: -1922743409
+      spriteID: c262d01f55397f74c808519ffef1ba96
+      internalID: 1216254698
       vertices: []
       indices: 
       edges: []
@@ -465,8 +465,8 @@ TextureImporter:
       name: ModelodasSalas_17
       rect:
         serializedVersion: 2
-        x: 128
-        y: 448
+        x: 512
+        y: 512
         width: 64
         height: 64
       alignment: 0
@@ -476,8 +476,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f3dd0088049e0ee4a9db19bd2da477ea
-      internalID: 525110203
+      spriteID: 9f8449c75aeb3564290381a65ef18b01
+      internalID: -1591651825
       vertices: []
       indices: 
       edges: []
@@ -486,7 +486,7 @@ TextureImporter:
       name: ModelodasSalas_18
       rect:
         serializedVersion: 2
-        x: 192
+        x: 0
         y: 448
         width: 64
         height: 64
@@ -497,8 +497,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9ab116f1e272dd543835fb218005dd84
-      internalID: 494068932
+      spriteID: fabdd01561a12f142ab3c984b49197c0
+      internalID: -896214916
       vertices: []
       indices: 
       edges: []
@@ -507,7 +507,7 @@ TextureImporter:
       name: ModelodasSalas_19
       rect:
         serializedVersion: 2
-        x: 256
+        x: 64
         y: 448
         width: 64
         height: 64
@@ -518,8 +518,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 09c8d2acecdee1f43a73b955743479b1
-      internalID: -1538551642
+      spriteID: c6bf80c0be682514aa23b5bbab786722
+      internalID: 370075575
       vertices: []
       indices: 
       edges: []
@@ -528,7 +528,7 @@ TextureImporter:
       name: ModelodasSalas_20
       rect:
         serializedVersion: 2
-        x: 320
+        x: 128
         y: 448
         width: 64
         height: 64
@@ -539,8 +539,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ce61292428bb91d49a23984c6f70c2b0
-      internalID: 297585141
+      spriteID: 73475d9f83bd2d04c95ae2296621a132
+      internalID: -1116488279
       vertices: []
       indices: 
       edges: []
@@ -549,7 +549,7 @@ TextureImporter:
       name: ModelodasSalas_21
       rect:
         serializedVersion: 2
-        x: 384
+        x: 192
         y: 448
         width: 64
         height: 64
@@ -560,8 +560,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 712f28cd62db54940833c0fa5892ff17
-      internalID: -672764656
+      spriteID: 84d9a3101b683b84c8bac3b13ebd1e50
+      internalID: -1624651818
       vertices: []
       indices: 
       edges: []
@@ -570,7 +570,7 @@ TextureImporter:
       name: ModelodasSalas_22
       rect:
         serializedVersion: 2
-        x: 448
+        x: 256
         y: 448
         width: 64
         height: 64
@@ -581,8 +581,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3dec3012c58177547aeac5d864248bb8
-      internalID: 1264727534
+      spriteID: 8719dcbb40403a9498f082aa6f5c9d4b
+      internalID: 519956951
       vertices: []
       indices: 
       edges: []
@@ -591,6 +591,69 @@ TextureImporter:
       name: ModelodasSalas_23
       rect:
         serializedVersion: 2
+        x: 320
+        y: 448
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 306e91cf7dbf6c74a87d47d6157a688e
+      internalID: -1196151389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModelodasSalas_24
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 448
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c906a666634bc144d9a0837499cb4f8b
+      internalID: -1764508070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModelodasSalas_25
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 448
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d9e97a6aa53e124f9a3510dcdb87ec0
+      internalID: 1869374834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModelodasSalas_26
+      rect:
+        serializedVersion: 2
         x: 512
         y: 448
         width: 64
@@ -602,14 +665,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ebb7855771942c54fbaa082ae32a1a93
-      internalID: -800464156
+      spriteID: 4738c57b472d2754db4a85f529826ff0
+      internalID: -452370917
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ModelodasSalas_24
+      name: ModelodasSalas_27
       rect:
         serializedVersion: 2
         x: 576
@@ -623,14 +686,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 57e6380142df2c4419be0213690d44cd
-      internalID: 784815574
+      spriteID: cdbefeaca8e1c9f4784448288f7d41b9
+      internalID: -555514963
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ModelodasSalas_25
+      name: ModelodasSalas_28
       rect:
         serializedVersion: 2
         x: 0
@@ -644,14 +707,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6c76fea5a275b2f45a8b3c0336b252bf
-      internalID: -1200215970
+      spriteID: 95352b0acc162194890013d842a28e5e
+      internalID: 1496554221
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ModelodasSalas_26
+      name: ModelodasSalas_29
       rect:
         serializedVersion: 2
         x: 64
@@ -665,14 +728,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 74f7bbd40c108bb41a5ecc481eb24ccf
-      internalID: -2140793401
+      spriteID: 8aeb3296b26138444905bc45ff2a2e65
+      internalID: 765450824
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ModelodasSalas_27
+      name: ModelodasSalas_30
       rect:
         serializedVersion: 2
         x: 128
@@ -686,14 +749,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9c5a2553daa110a4eaac6ce682a5ec7d
-      internalID: -1605532746
+      spriteID: 20a124ecc14d0444ea01ca315d45a924
+      internalID: -782565963
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ModelodasSalas_28
+      name: ModelodasSalas_31
       rect:
         serializedVersion: 2
         x: 192
@@ -707,14 +770,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 229bf0a56036e1c44bcca605857dddfb
-      internalID: -149926784
+      spriteID: b8efa75ee829a1946b0b29f243930d56
+      internalID: 1300670027
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ModelodasSalas_29
+      name: ModelodasSalas_32
       rect:
         serializedVersion: 2
         x: 256
@@ -728,14 +791,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8a747478156edba4eb6d993f119b7b08
-      internalID: 1029675886
+      spriteID: 7a7be29320dc5c948885fa8b09d7d23b
+      internalID: -151559207
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ModelodasSalas_30
+      name: ModelodasSalas_33
       rect:
         serializedVersion: 2
         x: 320
@@ -749,14 +812,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e90ff2fd3c47ab34fa9b8c60fcc74891
-      internalID: 481078937
+      spriteID: 18950e2a0e5b49a4d99b614ebca0bf60
+      internalID: -1437577265
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ModelodasSalas_31
+      name: ModelodasSalas_34
       rect:
         serializedVersion: 2
         x: 384
@@ -770,14 +833,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 554c6ebfeade150468cdd715ac1d925c
-      internalID: 1298114235
+      spriteID: 35fe2e1c46893ac459ca92387080d118
+      internalID: -775498435
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ModelodasSalas_32
+      name: ModelodasSalas_35
       rect:
         serializedVersion: 2
         x: 448
@@ -791,14 +854,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9a3476c0e993b804e96e254809b907cc
-      internalID: -795318067
+      spriteID: 2a1a5dce53367584aa370b54adaaec03
+      internalID: 1976094863
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ModelodasSalas_33
+      name: ModelodasSalas_36
       rect:
         serializedVersion: 2
         x: 512
@@ -812,14 +875,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 67adfffa6228bf44297fc314240eb278
-      internalID: -49376
+      spriteID: 0f69552b76960b04aa1c8cdf0b8b0cd1
+      internalID: 568041597
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ModelodasSalas_34
+      name: ModelodasSalas_37
       rect:
         serializedVersion: 2
         x: 576
@@ -833,119 +896,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: df82dd903fa97224daae3fb5a21e0efc
-      internalID: 1703509865
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ModelodasSalas_35
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 320
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d6583a1349c0d244387652997967ae93
-      internalID: 470214437
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ModelodasSalas_36
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 320
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 38d51c78c501d1f4584e2cfaa69b73f4
-      internalID: 177798808
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ModelodasSalas_37
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 320
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 930c0b76f4bab984eb50f0acd5e40f4a
-      internalID: -1546591055
+      spriteID: 2fde190c201ad55498446b85fe4afaf6
+      internalID: -1383329854
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
       name: ModelodasSalas_38
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 320
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e65d7e137cc7c714c873e8427a118293
-      internalID: 1872932090
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ModelodasSalas_39
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 320
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b579060106c96de429c1117905fe0703
-      internalID: -1307663043
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ModelodasSalas_40
       rect:
         serializedVersion: 2
         x: 320
@@ -959,14 +917,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cbfb971ee95235b4ab4a63bc97f5d4d7
-      internalID: 1913128297
+      spriteID: 6a37ed1407ab15a4fb208233a62cf1bb
+      internalID: -1537066993
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ModelodasSalas_41
+      name: ModelodasSalas_39
       rect:
         serializedVersion: 2
         x: 384
@@ -980,8 +938,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 99bddeeef35927647a686ff7e28d303b
-      internalID: 55624511
+      spriteID: 357c65a5e91a19342a27704defd1e9e2
+      internalID: 1146724789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModelodasSalas_40
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64e1f41059a645d46bea05f18fe58909
+      internalID: 1690270509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModelodasSalas_41
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: affe53531578f37498822e8c544111aa
+      internalID: -452187789
       vertices: []
       indices: 
       edges: []
@@ -1001,8 +1001,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cfe4e146aaa4f5347b756aeff8ecc736
-      internalID: 1776431818
+      spriteID: ccb8140502404ca468534c87fae09d71
+      internalID: 943307245
       vertices: []
       indices: 
       edges: []
@@ -1022,8 +1022,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 60224d07b7ecbf54dabcf58799c2dbe4
-      internalID: 1293471093
+      spriteID: d4754139da67d9b4ab532fb87def686e
+      internalID: 719534113
       vertices: []
       indices: 
       edges: []
@@ -1043,8 +1043,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a781886e97150a64288e9b932938f10f
-      internalID: -1761124741
+      spriteID: e07a07c851d7afb4c9d539e34a76053c
+      internalID: 1966432955
       vertices: []
       indices: 
       edges: []
@@ -1064,8 +1064,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 868dbef448c3d8d4ab5c24a179b008b1
-      internalID: -127772871
+      spriteID: 1784bd2d4c72ace47b601fd166823002
+      internalID: -23220724
       vertices: []
       indices: 
       edges: []
@@ -1085,8 +1085,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a559959d965877e41aee5208f9cadd53
-      internalID: -1595611751
+      spriteID: d49c0f96d8e954c4a844e43422e4931b
+      internalID: -73375836
       vertices: []
       indices: 
       edges: []
@@ -1106,8 +1106,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 64d33e6247f975e4fa1368d3e328063f
-      internalID: 283820743
+      spriteID: fb061eef3b6a6a84896239ea2101231b
+      internalID: 1943963434
       vertices: []
       indices: 
       edges: []
@@ -1127,8 +1127,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a7a53cd0c287c134195234380cd5f147
-      internalID: 1737658987
+      spriteID: 12e16d6b818deeb48816a9cb910ddd35
+      internalID: -192498436
       vertices: []
       indices: 
       edges: []
@@ -1137,8 +1137,8 @@ TextureImporter:
       name: ModelodasSalas_49
       rect:
         serializedVersion: 2
-        x: 64
-        y: 192
+        x: 512
+        y: 256
         width: 64
         height: 64
       alignment: 0
@@ -1148,8 +1148,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 23354123440ff6942b0eddeaed99e8ac
-      internalID: 174559018
+      spriteID: d22352bab32a75945a7dfca6196ba1c6
+      internalID: -309138638
       vertices: []
       indices: 
       edges: []
@@ -1158,8 +1158,8 @@ TextureImporter:
       name: ModelodasSalas_50
       rect:
         serializedVersion: 2
-        x: 128
-        y: 192
+        x: 576
+        y: 256
         width: 64
         height: 64
       alignment: 0
@@ -1169,8 +1169,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 03ed55541e730404580a8c22bd6dc74a
-      internalID: -1259105885
+      spriteID: 401dd8ebad0edf24797731e62780c155
+      internalID: -804248705
       vertices: []
       indices: 
       edges: []
@@ -1179,7 +1179,7 @@ TextureImporter:
       name: ModelodasSalas_51
       rect:
         serializedVersion: 2
-        x: 192
+        x: 0
         y: 192
         width: 64
         height: 64
@@ -1190,8 +1190,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 066f294a865f76b45a68b4910503fad4
-      internalID: 1827288633
+      spriteID: f92219f9214138c418783b8ab9596fba
+      internalID: -1578979961
       vertices: []
       indices: 
       edges: []
@@ -1200,7 +1200,7 @@ TextureImporter:
       name: ModelodasSalas_52
       rect:
         serializedVersion: 2
-        x: 256
+        x: 64
         y: 192
         width: 64
         height: 64
@@ -1211,8 +1211,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8c097a36e39d09647854e1a4d0dfb538
-      internalID: -632512440
+      spriteID: ab6772a9502a7474388bf93b8af0a4de
+      internalID: -319039552
       vertices: []
       indices: 
       edges: []
@@ -1221,7 +1221,7 @@ TextureImporter:
       name: ModelodasSalas_53
       rect:
         serializedVersion: 2
-        x: 320
+        x: 128
         y: 192
         width: 64
         height: 64
@@ -1232,8 +1232,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1453e81fb242b9b41ae430310ca70545
-      internalID: 550764675
+      spriteID: 5ce128d7c1860f14690d329731826e4e
+      internalID: 1407826096
       vertices: []
       indices: 
       edges: []
@@ -1242,6 +1242,69 @@ TextureImporter:
       name: ModelodasSalas_54
       rect:
         serializedVersion: 2
+        x: 192
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53134da80af2ec340a4cb24b38d2b216
+      internalID: 958257242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModelodasSalas_55
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f88f92b81d742084b8f2f45cb01b7f41
+      internalID: 229321062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModelodasSalas_56
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16f66d264a9c91542a6d3a855bdf4be7
+      internalID: 1043258654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModelodasSalas_57
+      rect:
+        serializedVersion: 2
         x: 384
         y: 192
         width: 64
@@ -1253,71 +1316,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 63aa8ceb572c1774783ef42dc40e1fb4
-      internalID: -190546460
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ModelodasSalas_55
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 128
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4c727215f844cc346abc70f7318d5a9c
-      internalID: -553655850
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ModelodasSalas_56
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 128
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8db15ecc622cfee4689b002cb794815d
-      internalID: 708954811
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ModelodasSalas_57
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 128
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8d8d9449331a35949b3e4097014ac4de
-      internalID: 1744498926
+      spriteID: 5aea001d6885a484bbb8724b43100fbb
+      internalID: 1434871348
       vertices: []
       indices: 
       edges: []
@@ -1326,6 +1326,153 @@ TextureImporter:
       name: ModelodasSalas_58
       rect:
         serializedVersion: 2
+        x: 448
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a30416cdc64b1545896700102a59348
+      internalID: 2061991802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModelodasSalas_59
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27938f356f17dfd489154a0c2a36e0b9
+      internalID: -1104681434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModelodasSalas_60
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bff8582a3caf6c648ba916a2069eb100
+      internalID: -716055420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModelodasSalas_61
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a99bca613fbb5df46a24fcb0acbecf35
+      internalID: 1022220101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModelodasSalas_62
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f466fb6d14b0dd448adbedbea62c312a
+      internalID: -1635294048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModelodasSalas_63
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f23874effeb0e143a9b6f3ad33ffcef
+      internalID: -369892629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModelodasSalas_64
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 310585d57df73254686196469f9cad76
+      internalID: 221342871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModelodasSalas_65
+      rect:
+        serializedVersion: 2
         x: 256
         y: 128
         width: 64
@@ -1337,14 +1484,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8327f20ac26034e4aab65767901b6ed6
-      internalID: -2042013825
+      spriteID: 8186a5d6551a3324fb3fefaa8e50c36c
+      internalID: -69624362
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ModelodasSalas_59
+      name: ModelodasSalas_66
       rect:
         serializedVersion: 2
         x: 320
@@ -1358,14 +1505,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9bfd73e583f346349b292bc002936aab
-      internalID: 65208096
+      spriteID: 097bfd11dae7a9c40b00e4b9a159e4a8
+      internalID: -1742286769
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ModelodasSalas_60
+      name: ModelodasSalas_67
       rect:
         serializedVersion: 2
         x: 384
@@ -1379,14 +1526,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dcc69cba830875845ae05280c0844ec5
-      internalID: 1611550804
+      spriteID: 5a41cf9b659431c4f9da0b4e2689ba09
+      internalID: -1868060122
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ModelodasSalas_61
+      name: ModelodasSalas_68
       rect:
         serializedVersion: 2
         x: 448
@@ -1400,18 +1547,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 65daf97df3c7da3468ae9e243cc74d57
-      internalID: 1747669676
+      spriteID: a993b6b1f4ff80749ae6ede8c42b85a4
+      internalID: -1838858788
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ModelodasSalas_62
+      name: ModelodasSalas_69
       rect:
         serializedVersion: 2
-        x: 512
-        y: 128
+        x: 0
+        y: 64
         width: 64
         height: 64
       alignment: 0
@@ -1421,35 +1568,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3d0c565ab9b0a65469ef8f3704422368
-      internalID: 354393442
+      spriteID: e8e275024b3458c4e9bf3916387180a5
+      internalID: 1365854391
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ModelodasSalas_63
-      rect:
-        serializedVersion: 2
-        x: 576
-        y: 128
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 994c8bb0c6395ad48ac6eb00881f3476
-      internalID: 2043874833
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ModelodasSalas_64
+      name: ModelodasSalas_70
       rect:
         serializedVersion: 2
         x: 64
@@ -1463,14 +1589,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c900dec3e8c430544ac9e3e5e6470748
-      internalID: 1786362280
+      spriteID: a855581453b03b946af7f5ffdf425ace
+      internalID: 330244468
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ModelodasSalas_65
+      name: ModelodasSalas_71
       rect:
         serializedVersion: 2
         x: 128
@@ -1484,14 +1610,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f811f7645f27ebe419b2a30250007bf8
-      internalID: 810866918
+      spriteID: 5bf362ff06b8b054083a5b5e3b76f4d5
+      internalID: 1169426890
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ModelodasSalas_66
+      name: ModelodasSalas_72
       rect:
         serializedVersion: 2
         x: 192
@@ -1505,134 +1631,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 409944869e1ba8044a67979d659608eb
-      internalID: -806552657
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ModelodasSalas_67
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 64
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 52bdc011ab18cd74a8a648bc5aa55e51
-      internalID: -841027532
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ModelodasSalas_68
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 64
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fabe9e1ab687ffe4eb9c417c84a983b7
-      internalID: 337369238
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ModelodasSalas_69
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 64
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 806592bb9ad62c94591ea2e7453628a5
-      internalID: 88074924
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ModelodasSalas_70
-      rect:
-        serializedVersion: 2
-        x: 448
-        y: 64
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1ddba7a725b2183498ddb3e8a1a94a07
-      internalID: 1233021592
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ModelodasSalas_71
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 64
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7b3c1794752098c4c95ad878cb15c84f
-      internalID: -463069172
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ModelodasSalas_72
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8804dc7b88e740f4381a7af93b06e115
-      internalID: -816089548
+      spriteID: b266cda0f15acd3408d8dee9e14e4f05
+      internalID: 1674988974
       vertices: []
       indices: 
       edges: []
@@ -1641,8 +1641,8 @@ TextureImporter:
       name: ModelodasSalas_73
       rect:
         serializedVersion: 2
-        x: 320
-        y: 0
+        x: 256
+        y: 64
         width: 64
         height: 64
       alignment: 0
@@ -1652,8 +1652,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9620a5270d08c32478676c63d377c124
-      internalID: 819821235
+      spriteID: 680c904f4e10eec42a4e417c240bdba5
+      internalID: -1422914110
       vertices: []
       indices: 
       edges: []
@@ -1662,8 +1662,8 @@ TextureImporter:
       name: ModelodasSalas_74
       rect:
         serializedVersion: 2
-        x: 384
-        y: 0
+        x: 320
+        y: 64
         width: 64
         height: 64
       alignment: 0
@@ -1673,8 +1673,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cf7b8920998caa54aa72459c45d7105f
-      internalID: 1284906219
+      spriteID: e8583562a0e40bb419376fa3bde1bf42
+      internalID: 112111778
       vertices: []
       indices: 
       edges: []
@@ -1683,8 +1683,8 @@ TextureImporter:
       name: ModelodasSalas_75
       rect:
         serializedVersion: 2
-        x: 448
-        y: 0
+        x: 384
+        y: 64
         width: 64
         height: 64
       alignment: 0
@@ -1694,8 +1694,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 76da2b7e4e47bec438a0b614b7858cf3
-      internalID: 1772022763
+      spriteID: 9b06dd5af2638ac47ba6ba8874821bac
+      internalID: 213492406
       vertices: []
       indices: 
       edges: []
@@ -1704,7 +1704,7 @@ TextureImporter:
       name: ModelodasSalas_76
       rect:
         serializedVersion: 2
-        x: 512
+        x: 0
         y: 0
         width: 64
         height: 64
@@ -1715,8 +1715,92 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 482537c995af98e43bb79c441001f584
-      internalID: -2116347405
+      spriteID: 64da19ef623b6564b8649e2a8108ce42
+      internalID: 1460635839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModelodasSalas_77
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24b289670a8cf2d40aef971c4abefd4f
+      internalID: 68296270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModelodasSalas_78
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5107e9ab120b40e4cb21c30d5efad715
+      internalID: -1401470919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModelodasSalas_79
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b75e6b5b4cf64a442a62d74dcccb7f51
+      internalID: -238966731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ModelodasSalas_80
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 233f4b4ac3405e149bacf1b63a0d6671
+      internalID: 1528386040
       vertices: []
       indices: 
       edges: []
@@ -1732,83 +1816,87 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      ModelodasSalas_0: -1834875412
-      ModelodasSalas_1: 1527322579
-      ModelodasSalas_10: -1474224667
-      ModelodasSalas_11: -444600690
-      ModelodasSalas_12: -26253670
-      ModelodasSalas_13: -968891162
-      ModelodasSalas_14: -884574920
-      ModelodasSalas_15: -1327642091
-      ModelodasSalas_16: -1922743409
-      ModelodasSalas_17: 525110203
-      ModelodasSalas_18: 494068932
-      ModelodasSalas_19: -1538551642
-      ModelodasSalas_2: 1834099926
-      ModelodasSalas_20: 297585141
-      ModelodasSalas_21: -672764656
-      ModelodasSalas_22: 1264727534
-      ModelodasSalas_23: -800464156
-      ModelodasSalas_24: 784815574
-      ModelodasSalas_25: -1200215970
-      ModelodasSalas_26: -2140793401
-      ModelodasSalas_27: -1605532746
-      ModelodasSalas_28: -149926784
-      ModelodasSalas_29: 1029675886
-      ModelodasSalas_3: -1719264744
-      ModelodasSalas_30: 481078937
-      ModelodasSalas_31: 1298114235
-      ModelodasSalas_32: -795318067
-      ModelodasSalas_33: -49376
-      ModelodasSalas_34: 1703509865
-      ModelodasSalas_35: 470214437
-      ModelodasSalas_36: 177798808
-      ModelodasSalas_37: -1546591055
-      ModelodasSalas_38: 1872932090
-      ModelodasSalas_39: -1307663043
-      ModelodasSalas_4: -1054150324
-      ModelodasSalas_40: 1913128297
-      ModelodasSalas_41: 55624511
-      ModelodasSalas_42: 1776431818
-      ModelodasSalas_43: 1293471093
-      ModelodasSalas_44: -1761124741
-      ModelodasSalas_45: -127772871
-      ModelodasSalas_46: -1595611751
-      ModelodasSalas_47: 283820743
-      ModelodasSalas_48: 1737658987
-      ModelodasSalas_49: 174559018
-      ModelodasSalas_5: 500603167
-      ModelodasSalas_50: -1259105885
-      ModelodasSalas_51: 1827288633
-      ModelodasSalas_52: -632512440
-      ModelodasSalas_53: 550764675
-      ModelodasSalas_54: -190546460
-      ModelodasSalas_55: -553655850
-      ModelodasSalas_56: 708954811
-      ModelodasSalas_57: 1744498926
-      ModelodasSalas_58: -2042013825
-      ModelodasSalas_59: 65208096
-      ModelodasSalas_6: 1728997278
-      ModelodasSalas_60: 1611550804
-      ModelodasSalas_61: 1747669676
-      ModelodasSalas_62: 354393442
-      ModelodasSalas_63: 2043874833
-      ModelodasSalas_64: 1786362280
-      ModelodasSalas_65: 810866918
-      ModelodasSalas_66: -806552657
-      ModelodasSalas_67: -841027532
-      ModelodasSalas_68: 337369238
-      ModelodasSalas_69: 88074924
-      ModelodasSalas_7: 928934979
-      ModelodasSalas_70: 1233021592
-      ModelodasSalas_71: -463069172
-      ModelodasSalas_72: -816089548
-      ModelodasSalas_73: 819821235
-      ModelodasSalas_74: 1284906219
-      ModelodasSalas_75: 1772022763
-      ModelodasSalas_76: -2116347405
-      ModelodasSalas_8: 659413899
-      ModelodasSalas_9: -147658890
+      ModelodasSalas_0: 1616766054
+      ModelodasSalas_1: 1000550495
+      ModelodasSalas_10: 677538650
+      ModelodasSalas_11: -1624151102
+      ModelodasSalas_12: -375711107
+      ModelodasSalas_13: 1462667905
+      ModelodasSalas_14: 1036709302
+      ModelodasSalas_15: 1964039202
+      ModelodasSalas_16: 1216254698
+      ModelodasSalas_17: -1591651825
+      ModelodasSalas_18: -896214916
+      ModelodasSalas_19: 370075575
+      ModelodasSalas_2: -1388888971
+      ModelodasSalas_20: -1116488279
+      ModelodasSalas_21: -1624651818
+      ModelodasSalas_22: 519956951
+      ModelodasSalas_23: -1196151389
+      ModelodasSalas_24: -1764508070
+      ModelodasSalas_25: 1869374834
+      ModelodasSalas_26: -452370917
+      ModelodasSalas_27: -555514963
+      ModelodasSalas_28: 1496554221
+      ModelodasSalas_29: 765450824
+      ModelodasSalas_3: 1260457636
+      ModelodasSalas_30: -782565963
+      ModelodasSalas_31: 1300670027
+      ModelodasSalas_32: -151559207
+      ModelodasSalas_33: -1437577265
+      ModelodasSalas_34: -775498435
+      ModelodasSalas_35: 1976094863
+      ModelodasSalas_36: 568041597
+      ModelodasSalas_37: -1383329854
+      ModelodasSalas_38: -1537066993
+      ModelodasSalas_39: 1146724789
+      ModelodasSalas_4: 1664134595
+      ModelodasSalas_40: 1690270509
+      ModelodasSalas_41: -452187789
+      ModelodasSalas_42: 943307245
+      ModelodasSalas_43: 719534113
+      ModelodasSalas_44: 1966432955
+      ModelodasSalas_45: -23220724
+      ModelodasSalas_46: -73375836
+      ModelodasSalas_47: 1943963434
+      ModelodasSalas_48: -192498436
+      ModelodasSalas_49: -309138638
+      ModelodasSalas_5: -2029726409
+      ModelodasSalas_50: -804248705
+      ModelodasSalas_51: -1578979961
+      ModelodasSalas_52: -319039552
+      ModelodasSalas_53: 1407826096
+      ModelodasSalas_54: 958257242
+      ModelodasSalas_55: 229321062
+      ModelodasSalas_56: 1043258654
+      ModelodasSalas_57: 1434871348
+      ModelodasSalas_58: 2061991802
+      ModelodasSalas_59: -1104681434
+      ModelodasSalas_6: 2104489693
+      ModelodasSalas_60: -716055420
+      ModelodasSalas_61: 1022220101
+      ModelodasSalas_62: -1635294048
+      ModelodasSalas_63: -369892629
+      ModelodasSalas_64: 221342871
+      ModelodasSalas_65: -69624362
+      ModelodasSalas_66: -1742286769
+      ModelodasSalas_67: -1868060122
+      ModelodasSalas_68: -1838858788
+      ModelodasSalas_69: 1365854391
+      ModelodasSalas_7: 1350579840
+      ModelodasSalas_70: 330244468
+      ModelodasSalas_71: 1169426890
+      ModelodasSalas_72: 1674988974
+      ModelodasSalas_73: -1422914110
+      ModelodasSalas_74: 112111778
+      ModelodasSalas_75: 213492406
+      ModelodasSalas_76: 1460635839
+      ModelodasSalas_77: 68296270
+      ModelodasSalas_78: -1401470919
+      ModelodasSalas_79: -238966731
+      ModelodasSalas_8: 1128176622
+      ModelodasSalas_80: 1528386040
+      ModelodasSalas_9: -1936936572
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
