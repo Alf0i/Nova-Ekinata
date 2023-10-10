@@ -939,6 +939,7 @@ GameObject:
   m_Component:
   - component: {fileID: 96786036}
   - component: {fileID: 96786037}
+  - component: {fileID: 96786038}
   m_Layer: 0
   m_Name: Deposito3 (7)
   m_TagString: Untagged
@@ -1001,7 +1002,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1202691121
   m_SortingLayer: 1
-  m_SortingOrder: 0
+  m_SortingOrder: 9
   m_Sprite: {fileID: 21300000, guid: 29eea1a832eb93946b43d9fc126c8fa9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1013,6 +1014,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &96786038
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 96786035}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.009674966, y: -0.65437907}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 2, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.0905617, y: 0.5714127}
+  m_EdgeRadius: 0
 --- !u!1 &116209813
 GameObject:
   m_ObjectHideFlags: 0
@@ -1606,6 +1633,7 @@ GameObject:
   m_Component:
   - component: {fileID: 161372768}
   - component: {fileID: 161372769}
+  - component: {fileID: 161372770}
   m_Layer: 0
   m_Name: Deposito3 (1)
   m_TagString: Untagged
@@ -1668,7 +1696,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 9
   m_Sprite: {fileID: 21300000, guid: 29eea1a832eb93946b43d9fc126c8fa9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1680,6 +1708,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &161372770
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 161372767}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.009674966, y: -0.65437907}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 2, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.0905617, y: 0.5714127}
+  m_EdgeRadius: 0
 --- !u!1 &175072652
 GameObject:
   m_ObjectHideFlags: 0
@@ -4202,6 +4256,7 @@ GameObject:
   m_Component:
   - component: {fileID: 323720811}
   - component: {fileID: 323720812}
+  - component: {fileID: 323720813}
   m_Layer: 0
   m_Name: PiaLado
   m_TagString: Untagged
@@ -4276,6 +4331,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &323720813
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 323720810}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.24056625, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 2, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.5188675, y: 2}
+  m_EdgeRadius: 0
 --- !u!1 &343882705
 GameObject:
   m_ObjectHideFlags: 0
@@ -4286,6 +4367,7 @@ GameObject:
   m_Component:
   - component: {fileID: 343882706}
   - component: {fileID: 343882707}
+  - component: {fileID: 343882708}
   m_Layer: 0
   m_Name: Deposito1 (8)
   m_TagString: Untagged
@@ -4348,7 +4430,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 9
   m_Sprite: {fileID: 21300000, guid: dedbaf8342fd7c24980deb58cc0375ac, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -4360,6 +4442,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &343882708
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 343882705}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.009674966, y: -0.65437907}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 2, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.0905617, y: 0.5714127}
+  m_EdgeRadius: 0
 --- !u!1 &354728390
 GameObject:
   m_ObjectHideFlags: 0
@@ -6145,6 +6253,7 @@ GameObject:
   m_Component:
   - component: {fileID: 449113964}
   - component: {fileID: 449113965}
+  - component: {fileID: 449113966}
   m_Layer: 0
   m_Name: Deposito1
   m_TagString: Untagged
@@ -6207,7 +6316,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 9
   m_Sprite: {fileID: 21300000, guid: dedbaf8342fd7c24980deb58cc0375ac, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -6219,6 +6328,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &449113966
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 449113963}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.009674966, y: -0.65437907}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 2, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.0905617, y: 0.5714127}
+  m_EdgeRadius: 0
 --- !u!1 &457089598
 GameObject:
   m_ObjectHideFlags: 0
@@ -7136,6 +7271,7 @@ GameObject:
   m_Component:
   - component: {fileID: 519403866}
   - component: {fileID: 519403867}
+  - component: {fileID: 519403868}
   m_Layer: 0
   m_Name: Deposito2 (4)
   m_TagString: Untagged
@@ -7198,7 +7334,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 9
   m_Sprite: {fileID: 21300000, guid: 2af67350ea4846f46a99533c406298c3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -7210,6 +7346,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &519403868
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519403865}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.009674966, y: -0.65437907}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 2, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.0905617, y: 0.5714127}
+  m_EdgeRadius: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -9038,6 +9200,7 @@ GameObject:
   m_Component:
   - component: {fileID: 663470653}
   - component: {fileID: 663470654}
+  - component: {fileID: 663470655}
   m_Layer: 0
   m_Name: Deposito1 (3)
   m_TagString: Untagged
@@ -9100,7 +9263,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 9
   m_Sprite: {fileID: 21300000, guid: dedbaf8342fd7c24980deb58cc0375ac, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -9112,6 +9275,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &663470655
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 663470652}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.009674966, y: -0.65437907}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 2, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.0905617, y: 0.5714127}
+  m_EdgeRadius: 0
 --- !u!1 &666720587
 GameObject:
   m_ObjectHideFlags: 0
@@ -9629,6 +9818,7 @@ GameObject:
   m_Component:
   - component: {fileID: 679787090}
   - component: {fileID: 679787091}
+  - component: {fileID: 679787092}
   m_Layer: 0
   m_Name: Deposito3 (2)
   m_TagString: Untagged
@@ -9691,7 +9881,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 9
   m_Sprite: {fileID: 21300000, guid: 29eea1a832eb93946b43d9fc126c8fa9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -9703,6 +9893,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &679787092
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 679787089}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.009674966, y: -0.65437907}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 2, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.0905617, y: 0.5714127}
+  m_EdgeRadius: 0
 --- !u!1 &685803198
 GameObject:
   m_ObjectHideFlags: 0
@@ -10198,6 +10414,7 @@ GameObject:
   m_Component:
   - component: {fileID: 718627932}
   - component: {fileID: 718627933}
+  - component: {fileID: 718627934}
   m_Layer: 0
   m_Name: WindowWallHospital1
   m_TagString: Untagged
@@ -10272,6 +10489,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &718627934
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 718627931}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.030849934, y: -2.1247663}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 10, y: 6}
+    newSize: {x: 10, y: 6}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 6.431571, y: 0.834702}
+  m_EdgeRadius: 0
 --- !u!1 &722081621
 GameObject:
   m_ObjectHideFlags: 0
@@ -10427,6 +10670,7 @@ GameObject:
   m_Component:
   - component: {fileID: 742261791}
   - component: {fileID: 742261792}
+  - component: {fileID: 742261793}
   m_Layer: 0
   m_Name: Deposito2 (2)
   m_TagString: Untagged
@@ -10489,7 +10733,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 9
   m_Sprite: {fileID: 21300000, guid: 2af67350ea4846f46a99533c406298c3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -10501,6 +10745,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &742261793
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 742261790}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.009674966, y: -0.65437907}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 2, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.0905617, y: 0.5714127}
+  m_EdgeRadius: 0
 --- !u!1 &743348211
 GameObject:
   m_ObjectHideFlags: 0
@@ -11039,6 +11309,7 @@ GameObject:
   m_Component:
   - component: {fileID: 774064643}
   - component: {fileID: 774064644}
+  - component: {fileID: 774064645}
   m_Layer: 0
   m_Name: WindowWallHospital1 (2)
   m_TagString: Untagged
@@ -11113,6 +11384,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &774064645
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 774064642}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.030849934, y: -2.1247663}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 10, y: 6}
+    newSize: {x: 10, y: 6}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 6.431571, y: 0.834702}
+  m_EdgeRadius: 0
 --- !u!1 &777784863
 GameObject:
   m_ObjectHideFlags: 0
@@ -11525,6 +11822,7 @@ GameObject:
   m_Component:
   - component: {fileID: 802325198}
   - component: {fileID: 802325199}
+  - component: {fileID: 802325200}
   m_Layer: 0
   m_Name: Baby2
   m_TagString: Untagged
@@ -11540,12 +11838,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 802325197}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 17.59, y: 8.72, z: 0.41841567}
+  m_LocalPosition: {x: 7.3900023, y: 4.750001, z: 0.41841567}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1502706659}
-  m_RootOrder: 1
+  m_Father: {fileID: 2102901969}
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &802325199
 SpriteRenderer:
@@ -11599,6 +11897,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &802325200
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 802325197}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0029029846, y: -0.07316589}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 2, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.2973747, y: 1.7839851}
+  m_EdgeRadius: 0
 --- !u!1 &806319685
 GameObject:
   m_ObjectHideFlags: 0
@@ -12194,6 +12518,7 @@ GameObject:
   m_Component:
   - component: {fileID: 830370891}
   - component: {fileID: 830370892}
+  - component: {fileID: 830370893}
   m_Layer: 0
   m_Name: Deposito1 (1)
   m_TagString: Untagged
@@ -12256,7 +12581,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 9
   m_Sprite: {fileID: 21300000, guid: dedbaf8342fd7c24980deb58cc0375ac, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -12268,6 +12593,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &830370893
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 830370890}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.009674966, y: -0.65437907}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 2, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.0905617, y: 0.5714127}
+  m_EdgeRadius: 0
 --- !u!1 &833106277
 GameObject:
   m_ObjectHideFlags: 0
@@ -12810,6 +13161,7 @@ GameObject:
   m_Component:
   - component: {fileID: 877311339}
   - component: {fileID: 877311340}
+  - component: {fileID: 877311341}
   m_Layer: 0
   m_Name: Deposito1 (7)
   m_TagString: Untagged
@@ -12872,7 +13224,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 9
   m_Sprite: {fileID: 21300000, guid: dedbaf8342fd7c24980deb58cc0375ac, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -12884,6 +13236,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &877311341
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 877311338}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.009674966, y: -0.65437907}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 2, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.0905617, y: 0.5714127}
+  m_EdgeRadius: 0
 --- !u!1 &899751105
 GameObject:
   m_ObjectHideFlags: 0
@@ -13674,6 +14052,7 @@ GameObject:
   m_Component:
   - component: {fileID: 933954586}
   - component: {fileID: 933954587}
+  - component: {fileID: 933954588}
   m_Layer: 0
   m_Name: Deposito1 (9)
   m_TagString: Untagged
@@ -13736,7 +14115,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 9
   m_Sprite: {fileID: 21300000, guid: dedbaf8342fd7c24980deb58cc0375ac, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -13748,6 +14127,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &933954588
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 933954585}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.009674966, y: -0.65437907}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 2, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.0905617, y: 0.5714127}
+  m_EdgeRadius: 0
 --- !u!1 &937449192
 GameObject:
   m_ObjectHideFlags: 0
@@ -14461,6 +14866,7 @@ GameObject:
   m_Component:
   - component: {fileID: 991797128}
   - component: {fileID: 991797129}
+  - component: {fileID: 991797130}
   m_Layer: 0
   m_Name: PiaLado (2)
   m_TagString: Untagged
@@ -14535,6 +14941,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &991797130
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 991797127}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.24056625, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 2, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.5188675, y: 2}
+  m_EdgeRadius: 0
 --- !u!1 &995939804
 GameObject:
   m_ObjectHideFlags: 0
@@ -15830,6 +16262,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1037175611}
   - component: {fileID: 1037175612}
+  - component: {fileID: 1037175613}
   m_Layer: 0
   m_Name: Baby1
   m_TagString: Untagged
@@ -15845,12 +16278,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1037175610}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.03, y: 8.72, z: 0.41841567}
+  m_LocalPosition: {x: -1.1699991, y: 4.750001, z: 0.41841567}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1502706659}
-  m_RootOrder: 2
+  m_Father: {fileID: 2102901969}
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1037175612
 SpriteRenderer:
@@ -15904,6 +16337,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1037175613
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1037175610}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0029029846, y: -0.07316589}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 2, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.2973747, y: 1.7839851}
+  m_EdgeRadius: 0
 --- !u!1 &1040021499
 GameObject:
   m_ObjectHideFlags: 0
@@ -16136,6 +16595,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1048829261}
   - component: {fileID: 1048829262}
+  - component: {fileID: 1048829263}
   m_Layer: 0
   m_Name: Deposito3 (6)
   m_TagString: Untagged
@@ -16198,7 +16658,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 9
   m_Sprite: {fileID: 21300000, guid: 29eea1a832eb93946b43d9fc126c8fa9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -16210,6 +16670,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1048829263
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1048829260}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.009674966, y: -0.65437907}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 2, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.0905617, y: 0.5714127}
+  m_EdgeRadius: 0
 --- !u!1 &1052247233
 GameObject:
   m_ObjectHideFlags: 0
@@ -16542,6 +17028,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1076448607}
   - component: {fileID: 1076448608}
+  - component: {fileID: 1076448609}
   m_Layer: 0
   m_Name: VendingMachine
   m_TagString: Untagged
@@ -16616,6 +17103,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1076448609
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1076448606}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 4}
+    newSize: {x: 2, y: 4}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2, y: 4}
+  m_EdgeRadius: 0
 --- !u!1 &1088770682
 GameObject:
   m_ObjectHideFlags: 0
@@ -18308,6 +18821,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1198403621}
   - component: {fileID: 1198403622}
+  - component: {fileID: 1198403623}
   m_Layer: 0
   m_Name: Deposito2 (3)
   m_TagString: Untagged
@@ -18370,7 +18884,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 9
   m_Sprite: {fileID: 21300000, guid: 2af67350ea4846f46a99533c406298c3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -18382,6 +18896,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1198403623
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1198403620}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.009674966, y: -0.65437907}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 2, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.0905617, y: 0.5714127}
+  m_EdgeRadius: 0
 --- !u!1 &1200924415
 GameObject:
   m_ObjectHideFlags: 0
@@ -19225,6 +19765,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1251999429}
   - component: {fileID: 1251999430}
+  - component: {fileID: 1251999431}
   m_Layer: 0
   m_Name: Deposito3 (5)
   m_TagString: Untagged
@@ -19287,7 +19828,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 9
   m_Sprite: {fileID: 21300000, guid: 29eea1a832eb93946b43d9fc126c8fa9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -19299,6 +19840,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1251999431
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1251999428}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.009674966, y: -0.65437907}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 2, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.0905617, y: 0.5714127}
+  m_EdgeRadius: 0
 --- !u!1 &1281419318
 GameObject:
   m_ObjectHideFlags: 0
@@ -20180,6 +20747,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1330377454}
   - component: {fileID: 1330377455}
+  - component: {fileID: 1330377456}
   m_Layer: 0
   m_Name: Deposito1 (4)
   m_TagString: Untagged
@@ -20242,7 +20810,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 9
   m_Sprite: {fileID: 21300000, guid: dedbaf8342fd7c24980deb58cc0375ac, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -20254,6 +20822,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1330377456
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1330377453}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.009674966, y: -0.65437907}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 2, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.0905617, y: 0.5714127}
+  m_EdgeRadius: 0
 --- !u!1 &1342859291
 GameObject:
   m_ObjectHideFlags: 0
@@ -20738,6 +21332,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1365737654}
   - component: {fileID: 1365737655}
+  - component: {fileID: 1365737656}
   m_Layer: 0
   m_Name: Deposito1 (6)
   m_TagString: Untagged
@@ -20800,7 +21395,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 9
   m_Sprite: {fileID: 21300000, guid: dedbaf8342fd7c24980deb58cc0375ac, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -20812,6 +21407,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1365737656
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1365737653}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.009674966, y: -0.65437907}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 2, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.0905617, y: 0.5714127}
+  m_EdgeRadius: 0
 --- !u!1 &1366206445
 GameObject:
   m_ObjectHideFlags: 0
@@ -21405,6 +22026,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1404080595}
   - component: {fileID: 1404080596}
+  - component: {fileID: 1404080597}
   m_Layer: 0
   m_Name: Deposito1 (5)
   m_TagString: Untagged
@@ -21467,7 +22089,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 9
   m_Sprite: {fileID: 21300000, guid: dedbaf8342fd7c24980deb58cc0375ac, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -21479,6 +22101,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1404080597
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1404080594}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.009674966, y: -0.65437907}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 2, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.0905617, y: 0.5714127}
+  m_EdgeRadius: 0
 --- !u!1 &1411301365
 GameObject:
   m_ObjectHideFlags: 0
@@ -22044,6 +22692,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1455456523}
   - component: {fileID: 1455456524}
+  - component: {fileID: 1455456525}
   m_Layer: 0
   m_Name: Deposito1 (2)
   m_TagString: Untagged
@@ -22106,7 +22755,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 9
   m_Sprite: {fileID: 21300000, guid: dedbaf8342fd7c24980deb58cc0375ac, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -22118,6 +22767,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1455456525
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1455456522}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.009674966, y: -0.65437907}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 2, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.0905617, y: 0.5714127}
+  m_EdgeRadius: 0
 --- !u!1 &1461739088
 GameObject:
   m_ObjectHideFlags: 0
@@ -22323,6 +22998,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1473330865}
   - component: {fileID: 1473330866}
+  - component: {fileID: 1473330867}
   m_Layer: 0
   m_Name: TrashCan
   m_TagString: Untagged
@@ -22397,6 +23073,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1473330867
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1473330864}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.01019901, y: -0.03059706}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 2, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.2452644, y: 1.3268552}
+  m_EdgeRadius: 0
 --- !u!1 &1474576565
 GameObject:
   m_ObjectHideFlags: 0
@@ -22634,6 +23336,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1481292657}
   - component: {fileID: 1481292658}
+  - component: {fileID: 1481292659}
   m_Layer: 0
   m_Name: WindowWallHospital1 (1)
   m_TagString: Untagged
@@ -22708,6 +23411,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1481292659
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1481292656}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.030849934, y: -2.1247663}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 10, y: 6}
+    newSize: {x: 10, y: 6}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 6.431571, y: 0.834702}
+  m_EdgeRadius: 0
 --- !u!1 &1482658376
 GameObject:
   m_ObjectHideFlags: 0
@@ -22965,8 +23694,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2009100259}
-  - {fileID: 802325198}
-  - {fileID: 1037175611}
   m_Father: {fileID: 1996436858}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -26485,6 +27212,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1643318697}
   - component: {fileID: 1643318698}
+  - component: {fileID: 1643318699}
   m_Layer: 0
   m_Name: Deposito2
   m_TagString: Untagged
@@ -26547,7 +27275,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 9
   m_Sprite: {fileID: 21300000, guid: 2af67350ea4846f46a99533c406298c3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -26559,6 +27287,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1643318699
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1643318696}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.009674966, y: -0.65437907}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 2, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.0905617, y: 0.5714127}
+  m_EdgeRadius: 0
 --- !u!1 &1645632303
 GameObject:
   m_ObjectHideFlags: 0
@@ -26680,6 +27434,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1646857135}
   - component: {fileID: 1646857136}
+  - component: {fileID: 1646857137}
   m_Layer: 0
   m_Name: Deposito2 (1)
   m_TagString: Untagged
@@ -26742,7 +27497,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 9
   m_Sprite: {fileID: 21300000, guid: 2af67350ea4846f46a99533c406298c3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -26754,6 +27509,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1646857137
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1646857134}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.009674966, y: -0.65437907}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 2, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.0905617, y: 0.5714127}
+  m_EdgeRadius: 0
 --- !u!1 &1649934066
 GameObject:
   m_ObjectHideFlags: 0
@@ -26848,6 +27629,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1662542270}
   - component: {fileID: 1662542271}
+  - component: {fileID: 1662542272}
   m_Layer: 0
   m_Name: Deposito2 (6)
   m_TagString: Untagged
@@ -26910,7 +27692,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 9
   m_Sprite: {fileID: 21300000, guid: 2af67350ea4846f46a99533c406298c3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -26922,6 +27704,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1662542272
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1662542269}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.009674966, y: -0.65437907}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 2, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.0905617, y: 0.5714127}
+  m_EdgeRadius: 0
 --- !u!1 &1669505283
 GameObject:
   m_ObjectHideFlags: 0
@@ -27713,6 +28521,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1732742840}
   - component: {fileID: 1732742841}
+  - component: {fileID: 1732742842}
   m_Layer: 0
   m_Name: WindowWallHospital1 (3)
   m_TagString: Untagged
@@ -27787,6 +28596,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1732742842
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1732742839}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.030849934, y: -2.1247663}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 10, y: 6}
+    newSize: {x: 10, y: 6}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 6.431571, y: 0.834702}
+  m_EdgeRadius: 0
 --- !u!1 &1739747553
 GameObject:
   m_ObjectHideFlags: 0
@@ -27992,6 +28827,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1752393404}
   - component: {fileID: 1752393405}
+  - component: {fileID: 1752393406}
   m_Layer: 0
   m_Name: Deposito3 (4)
   m_TagString: Untagged
@@ -28054,7 +28890,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 9
   m_Sprite: {fileID: 21300000, guid: 29eea1a832eb93946b43d9fc126c8fa9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -28066,6 +28902,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1752393406
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1752393403}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.009674966, y: -0.65437907}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 2, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.0905617, y: 0.5714127}
+  m_EdgeRadius: 0
 --- !u!1 &1752705764
 GameObject:
   m_ObjectHideFlags: 0
@@ -28322,6 +29184,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1766949694}
   - component: {fileID: 1766949695}
+  - component: {fileID: 1766949696}
   m_Layer: 0
   m_Name: Deposito2 (5)
   m_TagString: Untagged
@@ -28384,7 +29247,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 9
   m_Sprite: {fileID: 21300000, guid: 2af67350ea4846f46a99533c406298c3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -28396,6 +29259,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1766949696
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1766949693}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.009674966, y: -0.65437907}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 2, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.0905617, y: 0.5714127}
+  m_EdgeRadius: 0
 --- !u!1 &1767167213
 GameObject:
   m_ObjectHideFlags: 0
@@ -69875,6 +70764,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1822975071}
   - component: {fileID: 1822975072}
+  - component: {fileID: 1822975073}
   m_Layer: 0
   m_Name: Deposito3
   m_TagString: Untagged
@@ -69937,7 +70827,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 9
   m_Sprite: {fileID: 21300000, guid: 29eea1a832eb93946b43d9fc126c8fa9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -69949,6 +70839,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1822975073
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1822975070}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.009674966, y: -0.65437907}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 2, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.0905617, y: 0.5714127}
+  m_EdgeRadius: 0
 --- !u!1 &1826733479
 GameObject:
   m_ObjectHideFlags: 0
@@ -73265,6 +74181,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2039616561}
   - component: {fileID: 2039616562}
+  - component: {fileID: 2039616563}
   m_Layer: 0
   m_Name: sofa
   m_TagString: Untagged
@@ -73339,6 +74256,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &2039616563
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2039616560}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 6, y: 2}
+    newSize: {x: 6, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 6, y: 2}
+  m_EdgeRadius: 0
 --- !u!1 &2048041974
 GameObject:
   m_ObjectHideFlags: 0
@@ -73682,6 +74625,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2059498334}
   - component: {fileID: 2059498335}
+  - component: {fileID: 2059498336}
   m_Layer: 0
   m_Name: Deposito3 (3)
   m_TagString: Untagged
@@ -73744,7 +74688,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 9
   m_Sprite: {fileID: 21300000, guid: 29eea1a832eb93946b43d9fc126c8fa9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -73756,6 +74700,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &2059498336
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2059498333}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.009674966, y: -0.65437907}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 2, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.0905617, y: 0.5714127}
+  m_EdgeRadius: 0
 --- !u!1 &2060112043
 GameObject:
   m_ObjectHideFlags: 0
@@ -74751,6 +75721,8 @@ Transform:
   - {fileID: 199343862}
   - {fileID: 1956319906}
   - {fileID: 500166309}
+  - {fileID: 802325198}
+  - {fileID: 1037175611}
   m_Father: {fileID: 1996436858}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -74999,6 +75971,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2123800606}
   - component: {fileID: 2123800607}
+  - component: {fileID: 2123800608}
   m_Layer: 0
   m_Name: PiaLado (1)
   m_TagString: Untagged
@@ -75073,6 +76046,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &2123800608
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2123800605}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.24056625, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 2, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.5188675, y: 2}
+  m_EdgeRadius: 0
 --- !u!1 &2125450768
 GameObject:
   m_ObjectHideFlags: 0
