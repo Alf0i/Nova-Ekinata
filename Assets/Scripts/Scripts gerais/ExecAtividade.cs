@@ -19,6 +19,7 @@ public class ExecAtividade : MonoBehaviour
 
     public GameObject obj2;
     public GameObject prefabCheck;
+    public GameObject fotog;
     private void Awake()
     {
         _ExecAtividade = this;
@@ -49,11 +50,13 @@ public class ExecAtividade : MonoBehaviour
             {
                 _isNear = true;
                 gameObject.GetComponent<SpriteRenderer>().sortingLayerName = "up";
+                fotog.GetComponent<SpriteRenderer>().sortingLayerName = "up";
             }
             else
             {
                 _isNear = false;
                 gameObject.GetComponent<SpriteRenderer>().sortingLayerName = "Default";
+                fotog.GetComponent<SpriteRenderer>().sortingLayerName = "Default";
             }
         }
         else

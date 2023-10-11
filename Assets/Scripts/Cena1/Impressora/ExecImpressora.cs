@@ -24,9 +24,17 @@ public class ExecImpressora : MonoBehaviour
     public GameObject Obj;
     public Transform _posicaoInstancia;
 
-    public GameObject obj2;
+    public GameObject objCheck;
     public GameObject prefabCheck;
+
+    private GameObject objFoto;
+    public GameObject prefabFoto;
+    public Transform _posicaoInstanciaFoto;
+
+    public GameObject Fotografo;
+    private Animator AnimFot;
     
+
     private void Awake()
     {
         _ExecImpressora = this;
@@ -43,6 +51,7 @@ public class ExecImpressora : MonoBehaviour
         _CurrentTimeCanUse = 0f;
         _CurrentTime = 0f;
         
+        
 
         _isNear = false;
     }
@@ -50,7 +59,8 @@ public class ExecImpressora : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-         if (distancia <= 1.5f)
+        AnimFot = Fotografo.GetComponent<Animator>();
+        if (distancia <= 1.5f)
                 {
                     _isNear = true;
          }
@@ -102,21 +112,32 @@ public class ExecImpressora : MonoBehaviour
                     if (_CurrentTime >= _UsingTime)
                     {
                         ItemAdquirido._ItemAdquirido.tipoItemColetado = ItemAdquirido.TipoItem.ItemD;
-                        obj2 = Instantiate(prefabCheck, gameObject.transform.position + new Vector3(1f, 1f, 0f), prefabCheck.transform.rotation) as GameObject;
-                        obj2.name = "check";
-                        Destroy(obj2, 3f);
+                        objCheck = Instantiate(prefabCheck, gameObject.transform.position + new Vector3(1f, 1f, 0f), prefabCheck.transform.rotation) as GameObject;
+                        objCheck.name = "check";
+                        Destroy(objCheck, 3f);
                         Debug.Log("item D coletado");
                         _CurrentTime = 0f;
                         _isUsingObj = false;               
                         
                     }
                 }
+                else
+                {
+                    
+                    objFoto = Instantiate(prefabFoto, _posicaoInstanciaFoto.transform.position, _posicaoInstanciaFoto.transform.rotation) as GameObject;
+                    objFoto.name = "Sem Foto";
+                    AnimFot.SetBool("chamar", true);
+                    
+                    Destroy(objFoto, 3f);
+                }
             }
+            
+            
         // IDENTIFICACAO DE APROXIMACAO
             else if (_isUsingObj == false)
             {
 
-
+                AnimFot.SetBool("chamar", false);
                 gameObject.GetComponent<SpriteRenderer>().color = CorDeAproximacao;
             }
         }

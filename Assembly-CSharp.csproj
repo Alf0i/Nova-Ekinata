@@ -86,6 +86,26 @@
     <Compile Include="Assets\Scripts\Scripts gerais\Quest System\ObjdeMissao\Objdefala.cs" />
     <Compile Include="Assets\Scripts\Scripts gerais\Quest System\ControleUIdeMissão.cs" />
     <Compile Include="Assets\Scripts\Scripts npc\NpcAI.cs" />
+    <Compile Include="Assets\_\Stuff\CodeMonkey\Utils\Button_Sprite.cs" />
+    <Compile Include="Assets\_\Stuff\CodeMonkey\MonoBehaviours\CameraFollow.cs" />
+    <Compile Include="Assets\_\Stuff\CodeMonkey\Utils\UI_Sprite.cs" />
+    <Compile Include="Assets\_\Stuff\CodeMonkey\Utils\FunctionPeriodic.cs" />
+    <Compile Include="Assets\_\Stuff\CodeMonkey\Utils\World_Bar.cs" />
+    <Compile Include="Assets\HighscoreTable\HighscoreTable.cs" />
+    <Compile Include="Assets\_\Stuff\CodeMonkey\Assets.cs" />
+    <Compile Include="Assets\_\Stuff\CodeMonkey\MonoBehaviours\ComponentActions.cs" />
+    <Compile Include="Assets\_\Stuff\CodeMonkey\Utils\UI_Bar.cs" />
+    <Compile Include="Assets\_\Stuff\CodeMonkey\MonoBehaviours\PositionRendererSorter.cs" />
+    <Compile Include="Assets\_\Stuff\CodeMonkey\Utils\UI_BarMultiple.cs" />
+    <Compile Include="Assets\_\Stuff\CodeMonkey\Utils\World_Mesh.cs" />
+    <Compile Include="Assets\_\Stuff\CodeMonkey\Utils\UtilsClass.cs" />
+    <Compile Include="Assets\_\Stuff\CodeMonkey\CMDebug.cs" />
+    <Compile Include="Assets\_\Stuff\CodeMonkey\Utils\Button_UI.cs" />
+    <Compile Include="Assets\_\Stuff\CodeMonkey\Utils\FunctionTimer.cs" />
+    <Compile Include="Assets\_\Stuff\CodeMonkey\Utils\FunctionUpdater.cs" />
+    <Compile Include="Assets\_\Stuff\CodeMonkey\Utils\World_Sprite.cs" />
+    <Compile Include="Assets\_\Stuff\CodeMonkey\MonoBehaviours\CameraFollowSetup.cs" />
+    <Compile Include="Assets\_\Stuff\CodeMonkey\Utils\UI_TextComplex.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
