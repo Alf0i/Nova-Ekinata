@@ -6,15 +6,11 @@ using UnityEngine.UI;
 public class HoraRelogio : MonoBehaviour
 {
     public Text timerText;
-
-    private float contms;
-    private float conts;
-    private float contm;
-    private float conth;
+    public float contms;
+    public float conts;
+    public float contm;
+    public float conth;
     private bool _isPaused;
-
-
-
 
     void Start()
     {

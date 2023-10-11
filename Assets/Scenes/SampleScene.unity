@@ -258,6 +258,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55678312977970d4cb31a972deda7795, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  min: 0
+  sec: 0
   timerText: {fileID: 70156144}
   totalTime: 220
 --- !u!114 &70156144
@@ -1310,7 +1312,7 @@ MonoBehaviour:
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 0.82
-  m_ReferenceResolution: {x: 1280, y: 720}
+  m_ReferenceResolution: {x: 1920, y: 180}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 1
   m_PhysicalUnit: 3
@@ -2700,6 +2702,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e89dddbc2e3128c4db3241ad073bfdfc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pontos: 0
+  nome: 
 --- !u!114 &625301795
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12129,7 +12133,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
   m_SortingOrder: 10
   m_TargetDisplay: 0

@@ -52,7 +52,7 @@ public class HighscoreTable : MonoBehaviour {
         Transform entryTransform = Instantiate(entryTemplate, container);
         RectTransform entryRectTransform = entryTransform.GetComponent<RectTransform>();
         entryRectTransform.anchoredPosition = new Vector2(0, -templateHeight * transformList.Count);
-        entryTransform.gameObject.SetActive(true);
+//        entryTransform.gameObject.SetActive(true);
 
         int rank = transformList.Count + 1;
         string rankString;
@@ -101,7 +101,9 @@ public class HighscoreTable : MonoBehaviour {
         transformList.Add(entryTransform);
     }
 
-    private void AddHighscoreEntry(int score, string name) {
+    public void AddHighscoreEntry(int score, string name) {
+        entryTemplate.gameObject.SetActive(true); 
+        
         HighscoreEntry highscoreEntry = new HighscoreEntry { score = score, name = name };
         
         string jsonString = PlayerPrefs.GetString("highscoreTable");

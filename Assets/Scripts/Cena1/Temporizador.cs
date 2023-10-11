@@ -5,6 +5,10 @@ using UnityEngine.UI;
 
 public class Temporizador : MonoBehaviour
 {
+    public int min;
+
+    public int sec;
+    public static Temporizador t;
     public Text timerText;
     private float startTime;
     private bool finished = false;
@@ -13,6 +17,10 @@ public class Temporizador : MonoBehaviour
     // Tempo total do temporizador em segundos
     public float totalTime = 60f;
     
+    void Awake()
+    {
+        t = this;
+    }
     void Start()
     {
         startTime = Time.time;
@@ -42,9 +50,9 @@ public class Temporizador : MonoBehaviour
 
         }
        
-        // DEFINIÇÕES DE VARIAVEIS
-        int min = Mathf.FloorToInt(remainingTime / 60f);
-        int sec = Mathf.FloorToInt(remainingTime % 60f);
+        // DEFINIï¿½ï¿½ES DE VARIAVEIS
+        min = Mathf.FloorToInt(remainingTime / 60f);
+        sec = Mathf.FloorToInt(remainingTime % 60f);
 
         string timeString = string.Format("{0:00}:{1:00}", min, sec);
 
