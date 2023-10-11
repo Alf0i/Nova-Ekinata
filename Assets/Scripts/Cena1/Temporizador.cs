@@ -13,6 +13,7 @@ public class Temporizador : MonoBehaviour
     private float startTime;
     private bool finished = false;
     private bool _isPaused;
+    public float remainingTime;
 
     // Tempo total do temporizador em segundos
     public float totalTime = 60f;
@@ -37,7 +38,7 @@ public class Temporizador : MonoBehaviour
             return;
         }
 
-        float remainingTime = totalTime - (Time.time);
+        remainingTime = totalTime - (Time.time);
 
         // TERMINA DE CONTAR
         if (remainingTime < 1)

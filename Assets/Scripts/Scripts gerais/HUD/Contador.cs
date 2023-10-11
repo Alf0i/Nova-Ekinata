@@ -7,14 +7,14 @@ public class Contador : MonoBehaviour
 {
     
     
-    private Temporizador temp;
-    private HighscoreTable hst;
+    public Temporizador temp;
+    public HighscoreTable hst;
     private bool finished = false;
     private bool _isPaused;
     public int pontos;
     public string nome;
-    private Transform entryContainer;
-    private Transform entryTemplate;
+    int saveMin;
+    int saveSec;
 
     // Start is called before the first frame update
     void Start()
@@ -41,12 +41,13 @@ public class Contador : MonoBehaviour
             finished = true;
             Debug.Log("VOCE GANHOU");
             
-            pontos = (temp.min * 60) + temp.sec;
-
-            nome = "AAA";
+            
 
             Pausar();
         }
+
+
+        if (Input.GetKeyDown(KeyCode.Tab)) Pausar();
         
     }
 
@@ -57,9 +58,14 @@ public class Contador : MonoBehaviour
     {
         if (_isPaused == false)
         {
+            saveMin = temp.min;
+            saveSec = temp.sec;
+            pontos = (saveMin * 60) + saveSec;
+
+            nome = "AAA";
+            hst.AddHighscoreEntry(pontos, nome);
             Time.timeScale = 0f;
             _isPaused = true;
-            hst.AddHighscoreEntry(pontos, nome);
         }
         else
         {

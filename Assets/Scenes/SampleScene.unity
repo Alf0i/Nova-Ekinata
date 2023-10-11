@@ -261,6 +261,7 @@ MonoBehaviour:
   min: 0
   sec: 0
   timerText: {fileID: 70156144}
+  remainingTime: 0
   totalTime: 220
 --- !u!114 &70156144
 MonoBehaviour:
@@ -2702,6 +2703,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e89dddbc2e3128c4db3241ad073bfdfc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  temp: {fileID: 70156143}
+  hst: {fileID: 980654984}
   pontos: 0
   nome: 
 --- !u!114 &625301795
