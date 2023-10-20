@@ -92,6 +92,7 @@
     <Compile Include="Assets\Scripts\Scripts gerais\Quest System\GerenciadorDeMissões.cs" />
     <Compile Include="Assets\_\Stuff\CodeMonkey\Assets.cs" />
     <Compile Include="Assets\_\Stuff\CodeMonkey\Utils\World_Sprite.cs" />
+    <Compile Include="Assets\Scripts\Scripts gerais\HUD\Paginas.cs" />
     <Compile Include="Assets\Scripts\Scripts player\PlayerController.cs" />
     <Compile Include="Assets\_\Stuff\CodeMonkey\Utils\UtilsClass.cs" />
     <Compile Include="Assets\_\Stuff\CodeMonkey\MonoBehaviours\PositionRendererSorter.cs" />
