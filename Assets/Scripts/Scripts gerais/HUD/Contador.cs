@@ -54,7 +54,7 @@ public class Contador : MonoBehaviour
         int Count = EntregaFinal._EntregaFinal.ContadorFinal;
 
         // TERMINA DE CONTAR
-        if ((Count == 1 || Input.GetKeyDown(KeyCode.P)) && !contado && Time.timeScale == 1f)
+        if ((Count == 3 || Input.GetKeyDown(KeyCode.P)) && !contado && Time.timeScale == 1f)
         {
             contado = true;
             finished = true;
