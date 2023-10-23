@@ -5,6 +5,10 @@ using UnityEngine.UI;
 
 public class Temporizador : MonoBehaviour
 {
+    private ScoreUI sc;
+    private InfoPanelScore info;
+    public GameObject scObj;
+    public GameObject infoObj;
     public int min;
 
     public int sec;
@@ -13,6 +17,7 @@ public class Temporizador : MonoBehaviour
     private float startTime;
     private bool finished = false;
     private bool _isPaused;
+    public bool lido;
     public float remainingTime;
 
     // Tempo total do temporizador em segundos
@@ -26,28 +31,34 @@ public class Temporizador : MonoBehaviour
     {
         startTime = Time.time;
         _isPaused = false;
-        Time.timeScale = 1f;
-        
+        info = infoObj.GetComponent<InfoPanelScore>();
+        sc = scObj.GetComponent<ScoreUI>();
+        lido = false;
     }
 
     void Update()
     {
         //DELIGA O CONTADOR
-        if (finished)
+        if (finished && _isPaused && !lido)
         {
-            return;
+            
+            sc.MostrarScoreSemPontos();
+            finished = false;
+            lido = true;
         }
 
         remainingTime = totalTime - (Time.time);
 
         // TERMINA DE CONTAR
-        if (remainingTime < 1)
+        if ((remainingTime < 1 || Input.GetKeyDown(KeyCode.M)) && Time.timeScale == 1f)
         {
             remainingTime = 0;
             finished = true;
             Debug.Log("Timer finished!");
             Pausar();
-            
+
+            //info.MostrarTelaPlayer();
+
 
         }
        
@@ -67,10 +78,6 @@ public class Temporizador : MonoBehaviour
             Time.timeScale = 0f;
             _isPaused = true;
         }
-        else
-        {
-            Time.timeScale = 1f;
-            _isPaused = false;
-        }
+        
     }
 }

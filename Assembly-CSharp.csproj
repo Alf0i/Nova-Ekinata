@@ -58,6 +58,7 @@
   <ItemGroup>
     <Compile Include="Assets\_\Stuff\CodeMonkey\Utils\Button_UI.cs" />
     <Compile Include="Assets\Scripts\Scripts gerais\Quest System\DefiniçãoDeMissão.cs" />
+    <Compile Include="Assets\Scripts\Scripts gerais\HUD\Score\ScoreUI.cs" />
     <Compile Include="Assets\Scripts\Cena1\Scripts de Entrega\RequisitoSprite.cs" />
     <Compile Include="Assets\Scripts\Scripts gerais\Conversa\TemplateFalaNPC.cs" />
     <Compile Include="Assets\Scripts\Scripts gerais\ExecAtividade.cs" />
@@ -71,6 +72,7 @@
     <Compile Include="Assets\Scripts\Cena1\Scripts de Entrega\Entrega final\EntregaFinal.cs" />
     <Compile Include="Assets\_\Stuff\CodeMonkey\Utils\FunctionUpdater.cs" />
     <Compile Include="Assets\Scripts\Cena1\Scripts de Entrega\ExecEntrega.cs" />
+    <Compile Include="Assets\Scripts\Scripts gerais\HUD\Score\RowUI.cs" />
     <Compile Include="Assets\_\Stuff\CodeMonkey\Utils\FunctionTimer.cs" />
     <Compile Include="Assets\Scripts\Scripts gerais\MovimentoNpc.cs" />
     <Compile Include="Assets\Scripts\Scripts gerais\HUD\Contador.cs" />
@@ -98,11 +100,14 @@
     <Compile Include="Assets\_\Stuff\CodeMonkey\MonoBehaviours\PositionRendererSorter.cs" />
     <Compile Include="Assets\Scripts\Cena1\Temporizador.cs" />
     <Compile Include="Assets\Scripts\Scripts gerais\Quest System\EstadoMissao.cs" />
+    <Compile Include="Assets\Scripts\Scripts gerais\HUD\Score\ScoreManager.cs" />
     <Compile Include="Assets\Scripts\Scripts gerais\Quest System\ObjdeMissao\Objdefala.cs" />
     <Compile Include="Assets\_\Stuff\CodeMonkey\Utils\UI_Bar.cs" />
+    <Compile Include="Assets\Scripts\Scripts gerais\HUD\Score\Score.cs" />
     <Compile Include="Assets\Scripts\Scripts gerais\Quest System\ControleUIdeMissão.cs" />
+    <Compile Include="Assets\Scripts\Scripts gerais\HUD\Score\InfoPanelScore.cs" />
+    <Compile Include="Assets\Scripts\Scripts gerais\HUD\Score\ScoreData.cs" />
     <Compile Include="Assets\Scripts\Scripts npc\NpcAI.cs" />
-    <Compile Include="Assets\Scripts\Cena1\HighscoreTable.cs" />
     <Compile Include="Assets\_\Stuff\CodeMonkey\MonoBehaviours\ComponentActions.cs" />
     <Compile Include="Assets\_\Stuff\CodeMonkey\Utils\UI_BarMultiple.cs" />
     <Compile Include="Assets\_\Stuff\CodeMonkey\CMDebug.cs" />

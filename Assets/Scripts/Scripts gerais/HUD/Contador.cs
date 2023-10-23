@@ -5,45 +5,65 @@ using UnityEngine.UI;
 
 public class Contador : MonoBehaviour
 {
-    
-    
+    private ScoreUI sc;
+    private InfoPanelScore info;
+    public GameObject scObj;
+    public GameObject infoObj;
+
     public Temporizador temp;
-    public HighscoreTable hst;
     private bool finished = false;
     private bool _isPaused;
-    public int pontos;
-    public string nome;
+    private bool contado;
+    private int pontos;
     int saveMin;
     int saveSec;
 
     // Start is called before the first frame update
     void Start()
-    {   
+    {
+        contado = false;
         _isPaused = false;
-        Time.timeScale = 1f;
+        info = infoObj.GetComponent<InfoPanelScore>();
+        sc = scObj.GetComponent<ScoreUI>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        //DELIGA O CONTADOR
-        if (finished)
+        if (contado && !finished)
         {
-            return;
+            if (Input.GetKeyDown(KeyCode.F8))
+            {
+                sc.Remover();
+            }
+        }
+        
+        //DELIGA O CONTADOR
+        if (finished && _isPaused)
+        {
+            temp.lido = true;
+            info.FecharTelaPlayer();
+            if (info.telafechada)
+            {
+                
+                sc.MostrarScore(info.n, pontos);
+                finished = false;
+            }
         }
 
-        float Count = EntregaFinal._EntregaFinal.ContadorFinal;
+        int Count = EntregaFinal._EntregaFinal.ContadorFinal;
 
         // TERMINA DE CONTAR
-        if (Count == 3)
+        if ((Count == 1 || Input.GetKeyDown(KeyCode.P)) && !contado && Time.timeScale == 1f)
         {
-            Count = 0;
+            contado = true;
             finished = true;
             Debug.Log("VOCE GANHOU");
             
             
 
             Pausar();
+            info.MostrarTelaPlayer();
         }
 
 
@@ -58,19 +78,15 @@ public class Contador : MonoBehaviour
     {
         if (_isPaused == false)
         {
-            saveMin = temp.min;
-            saveSec = temp.sec;
-            pontos = (saveMin * 60) + saveSec;
-
-            nome = "AAA";
-            hst.AddHighscoreEntry(pontos, nome);
+            
+            pontos =  Mathf.FloorToInt((temp.remainingTime/ 60) + (temp.remainingTime));
+            
             Time.timeScale = 0f;
+
+            
             _isPaused = true;
+
         }
-        else
-        {
-            Time.timeScale = 1f;
-            _isPaused = false;
-        }
+        
     }
 }

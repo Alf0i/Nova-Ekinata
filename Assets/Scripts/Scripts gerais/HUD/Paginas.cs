@@ -63,7 +63,7 @@ public class Paginas : MonoBehaviour
         }
         else if(!aberto)
         {
-            Time.timeScale = 1f;
+            
             if (Input.GetKeyDown(KeyCode.H)) {
             explicacao.SetActive(true);
             aberto = true;
