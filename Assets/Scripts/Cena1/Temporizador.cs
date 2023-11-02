@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -19,6 +20,7 @@ public class Temporizador : MonoBehaviour
     private bool _isPaused;
     public bool lido;
     public float remainingTime;
+    private bool reiniciouTimer;
 
     // Tempo total do temporizador em segundos
     public float totalTime = 60f;
@@ -34,41 +36,55 @@ public class Temporizador : MonoBehaviour
         info = infoObj.GetComponent<InfoPanelScore>();
         sc = scObj.GetComponent<ScoreUI>();
         lido = false;
+        remainingTime = totalTime;
     }
-
+    
     void Update()
     {
-        //DELIGA O CONTADOR
-        if (finished && _isPaused && !lido)
+        if (!GameControl._PauseGeral)
         {
+            if (!reiniciouTimer)
+            {
+                remainingTime = totalTime;
+                reiniciouTimer = true;
+            }
+            else
+            {
+                //DELIGA O CONTADOR
+                if (finished && _isPaused && !lido)
+                {
+
+                    sc.MostrarScoreSemPontos();
+                    finished = false;
+                    lido = true;
+                }
+
+                remainingTime -= (Time.deltaTime);
+
+                // TERMINA DE CONTAR
+                if ((remainingTime < 1 || Input.GetKeyDown(KeyCode.M)) && Time.timeScale == 1f)
+                {
+                    remainingTime = 0;
+                    finished = true;
+                    Debug.Log("Timer finished!");
+                    Pausar();
+
+                    //info.MostrarTelaPlayer();
+
+
+                }
+
+                // DEFINI��ES DE VARIAVEIS
+                min = Mathf.FloorToInt(remainingTime / 60f);
+                sec = Mathf.FloorToInt(remainingTime % 60f);
+
+                string timeString = string.Format("{0:00}:{1:00}", min, sec);
+
+                timerText.text = timeString;
+            }
             
-            sc.MostrarScoreSemPontos();
-            finished = false;
-            lido = true;
+            
         }
-
-        remainingTime = totalTime - (Time.time);
-
-        // TERMINA DE CONTAR
-        if ((remainingTime < 1 || Input.GetKeyDown(KeyCode.M)) && Time.timeScale == 1f)
-        {
-            remainingTime = 0;
-            finished = true;
-            Debug.Log("Timer finished!");
-            Pausar();
-
-            //info.MostrarTelaPlayer();
-
-
-        }
-       
-        // DEFINI��ES DE VARIAVEIS
-        min = Mathf.FloorToInt(remainingTime / 60f);
-        sec = Mathf.FloorToInt(remainingTime % 60f);
-
-        string timeString = string.Format("{0:00}:{1:00}", min, sec);
-
-        timerText.text = timeString;
     }
 
     private void Pausar()
@@ -80,4 +96,8 @@ public class Temporizador : MonoBehaviour
         }
         
     }
+
+    
+        
+    
 }

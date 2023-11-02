@@ -88,11 +88,13 @@ public class ExecImpressora : MonoBehaviour
     }
     void FixedUpdate()
     {
-        distancia = Vector2.Distance(gameObject.transform.position, player.transform.position);
-       
-        Coletar();
-        TempoDeFuncionamento();
-        
+        if (!GameControl._PauseGeral)
+        {
+            distancia = Vector2.Distance(gameObject.transform.position, player.transform.position);
+
+            Coletar();
+            TempoDeFuncionamento();
+        }
     }
 
     private void Coletar()

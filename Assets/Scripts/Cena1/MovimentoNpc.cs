@@ -26,10 +26,13 @@ public class MovimentoNpc : MonoBehaviour
 
 	}
 
-	void Update() 
+	void Update()
 	{
-		Move();
-		Anim();
+		if (!GameControl._PauseGeral)
+		{
+			Move();
+			Anim();
+		}
 	}
 
 	void Move()

@@ -9,6 +9,8 @@ TagManager:
   - NPC
   - TelaQuest
   - TelaRequisito
+  - iniciador
+  - paginas
   layers:
   - Default
   - TransparentFX

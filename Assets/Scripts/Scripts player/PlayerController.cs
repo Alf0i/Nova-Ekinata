@@ -34,23 +34,27 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        _playerDirection = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
-        _anim.SetFloat("Horizontal", _playerDirection.x);
-        _anim.SetFloat("Vertical", _playerDirection.y);
-        _anim.SetFloat("Speed", _playerDirection.magnitude);
-
-        if (_playerDirection != Vector2.zero)
+        if (!GameControl._PauseGeral)
         {
-            _anim.SetFloat("Idle_H", _playerDirection.x);
-            _anim.SetFloat("Idle_V", _playerDirection.y);
-        }
+            _playerDirection = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+            _anim.SetFloat("Horizontal", _playerDirection.x);
+            _anim.SetFloat("Vertical", _playerDirection.y);
+            _anim.SetFloat("Speed", _playerDirection.magnitude);
 
-        if (Input.GetKeyDown(KeyCode.LeftShift))
-        {
-            _isRunning = true;
-        }
-        else if (Input.GetKeyUp(KeyCode.LeftShift)) {
-            _isRunning = false;
+            if (_playerDirection != Vector2.zero)
+            {
+                _anim.SetFloat("Idle_H", _playerDirection.x);
+                _anim.SetFloat("Idle_V", _playerDirection.y);
+            }
+
+            if (Input.GetKeyDown(KeyCode.LeftShift))
+            {
+                _isRunning = true;
+            }
+            else if (Input.GetKeyUp(KeyCode.LeftShift))
+            {
+                _isRunning = false;
+            }
         }
     }
 
