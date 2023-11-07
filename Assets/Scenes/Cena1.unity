@@ -2390,65 +2390,67 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pag:
   - _spr: {fileID: 21300000, guid: 74b0bac6a3cc0dd4888c9f6f1cb4f483, type: 3}
-    texto: "Bem vindo(a) a Nova Ekinata!!! A segur daremos inicio \xE0 explica\xE7\xE3o
+    texto: "Bem-vindo(a) a Nova Ekinata!!! A seguir daremos in\xEDcio \xE0 explica\xE7\xE3o
       das regras do jogo."
   - _spr: {fileID: 21300000, guid: 37f9236f5068a69409d61190baac203d, type: 3}
-    texto: "Aqui est\xE1 o jogo do RG. Um jogo de coleta e entrega de items com tempo."
+    texto: "Aqui est\xE1 o jogo do RG. Um jogo de coleta e entrega de itens com tempo."
   - _spr: {fileID: 21300000, guid: acafe82072e222f4999a81570dd48206, type: 3}
-    texto: "Neste jogo voce ter\xE1 de entregar os itens solicitados."
+    texto: "Neste jogo voc\xEA ter\xE1 de entregar os itens solicitados."
   - _spr: {fileID: 21300000, guid: d6edf21560f7b6d4db78b35e644c6e64, type: 3}
     texto: "Esses itens possuem locais de coleta e eles apresentar\xE3o uma colora\xE7\xE3o
-      azulada quando puderem ser usados, e ao segurar o \"F\" voce poder\xE1 usar
-      o item o que deixar\xE1 o local avermelhado."
+      azulada quando puderem "
   - _spr: {fileID: 21300000, guid: d6edf21560f7b6d4db78b35e644c6e64, type: 3}
-    texto: "segurar o \"F\" voce poder\xE1 usar o item o que deixar\xE1 o local avermelhado."
+    texto: "ser usados, e ao segurar o 'F' voc\xEA poder\xE1 usar o item, o que deixar\xE1
+      o local avermelhado."
+  - _spr: {fileID: 21300000, guid: d6edf21560f7b6d4db78b35e644c6e64, type: 3}
+    texto: "Segurando o 'F', voc\xEA poder\xE1 usar o item, o que deixar\xE1 o local
+      avermelhado."
   - _spr: {fileID: 21300000, guid: cdfd886eba0039045ac5c194a55c8776, type: 3}
-    texto: "o primeiro item \xE9 a assinatura que se localiza no quadrado vermelho."
+    texto: "O primeiro item \xE9 a assinatura que se localiza no quadrado vermelho."
   - _spr: {fileID: 21300000, guid: 06e691fcfd259f342a3c0ec2cedd48b4, type: 3}
-    texto: "o segundo item \xE9 a digital que se localiza no quadrado vermelho."
+    texto: "O segundo item \xE9 a digital que se localiza no quadrado vermelho."
   - _spr: {fileID: 21300000, guid: 96c597e0c25fe1749b7438b77c3163ed, type: 3}
-    texto: "o terceiro item \xE9 a impressora que se localiza no quadrado vermelho."
+    texto: "O terceiro item \xE9 a impressora que se localiza no quadrado vermelho."
   - _spr: {fileID: 21300000, guid: 626052c2c56530147b54299102736fae, type: 3}
-    texto: Em alguns casos a tinta da impressora pode acabar, e a impressora vai
+    texto: Em alguns casos, a tinta da impressora pode acabar, e a impressora vai
       avisar.
   - _spr: {fileID: 21300000, guid: c9dd0d896946fe946b3176d1e99aae21, type: 3}
-    texto: "Para consertar \xE9 bem simples, primeiro a impressora avisa, segundo
-      voce deve coletar a tinta na caixa pressionando \"F\""
+    texto: "Para consertar \xE9 bem simples. Primeiro a impressora avisa, segundo
+      voc\xEA deve coletar a tinta na caixa pressionando 'F', pressionando 'F'."
   - _spr: {fileID: 21300000, guid: c9dd0d896946fe946b3176d1e99aae21, type: 3}
-    texto: " pressionando \"F\". E ent\xE3o, voce deve ir em dire\xE7\xE3o \xE0 impressora
-      e inserir a tinta pressionando \"F\"."
+    texto: "E ent\xE3o, voc\xEA deve ir em dire\xE7\xE3o \xE0 impressora e inserir
+      a tinta pressionando 'F'."
   - _spr: {fileID: 21300000, guid: 01c1bd2f0d783e7479f2d1cbe18ded2e, type: 3}
     texto: "Aqui voc\xEA pode ver o local da coleta da tinta."
   - _spr: {fileID: 21300000, guid: 894ead4dbafb84b4ea4811ccafa0a251, type: 3}
-    texto: "Para conseguir usar a impressora voce deve ter a foto em m\xE3os. Caso
-      n\xE3o tenha, um aviso aparecer\xE1."
+    texto: "Para conseguir usar a impressora, voc\xEA deve ter a foto em m\xE3os.
+      Caso n\xE3o tenha, um aviso aparecer\xE1."
   - _spr: {fileID: 21300000, guid: 6da20f5569d84134ba211984fc71ff16, type: 3}
-    texto: "Para coletar a foto voce deve se deslocar para a posi\xE7\xE3o onde a
-      seta aponta. "
+    texto: "Para coletar a foto, voc\xEA deve se deslocar para a posi\xE7\xE3o onde
+      a seta aponta."
   - _spr: {fileID: 21300000, guid: acfb668ecfa8b8c4ea1d5384a32e7560, type: 3}
     texto: "Aqui voc\xEA pode ver o local da coleta da foto."
   - _spr: {fileID: 21300000, guid: 5cc25345283e6014aa74cc07869b3d7e, type: 3}
-    texto: "Ap\xF3s a coleta de cada item, voce deve seguir para o local de entrega
-      do item e entregar pressionando \"F\"."
+    texto: "Ap\xF3s a coleta de cada item, voc\xEA deve seguir para o local de entrega
+      do item e entregar pressionando 'F'."
   - _spr: {fileID: 21300000, guid: 585cb03f65d7f1848a39866df69579d7, type: 3}
-    texto: "Esse local de Entrega que far\xE1 uma solicita\xE7\xE3o do item e voce
+    texto: "Esse local de Entrega far\xE1 uma solicita\xE7\xE3o do item, e voc\xEA
       deve entregar exatamente ele."
   - _spr: {fileID: 21300000, guid: d19cd7f39c836df4685f70c8882e65d0, type: 3}
-    texto: "Ap\xF3s a entrega dos tr\xEAs itens solicitados ser\xE1 gerada uma pasta
-      na mesa"
+    texto: "Ap\xF3s a entrega dos tr\xEAs itens solicitados, ser\xE1 gerada uma pasta
+      na mesa."
   - _spr: {fileID: 21300000, guid: f6484b0e8175c204ba2e3914ad9278fc, type: 3}
-    texto: "Essa pasta deve ser entregue no local de entrega final. que lhe dar\xE1
-      \"+1 ponto\" ap\xF3s a entrega."
+    texto: "Essa pasta deve ser entregue no local de entrega final, que lhe dar\xE1
+      '+1 ponto' ap\xF3s a entrega."
   - _spr: {fileID: 21300000, guid: ed76babec701c3b45bed7b172f7e3bdc, type: 3}
-    texto: Ao entregar "3 pastas" voce ganha.
+    texto: "Ao entregar '3 pastas', voc\xEA ganha."
   - _spr: {fileID: 21300000, guid: 7975c360c9fd6fd4286411af86f838b8, type: 3}
-    texto: Caso o tempo termine antes das entregas, voce perde.
+    texto: "Caso o tempo termine antes das entregas, voc\xEA perde."
   - _spr: {fileID: 21300000, guid: 1303cbde9e79433408c8f4aa0c218c46, type: 3}
-    texto: Desejamos BOA SORTE!!!                            ... para iniciar pressione
-      "ESC".
+    texto: Desejamos BOA SORTE!!! ... Para iniciar, pressione 'ESC'.
   _img: {fileID: 1048016179}
   _txt: {fileID: 688647377}
-  aberto: 0
+  aberto: 1
   iniciado: 0
   explicacao: {fileID: 1120181610}
 --- !u!4 &452223448
