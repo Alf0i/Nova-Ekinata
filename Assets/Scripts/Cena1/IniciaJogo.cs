@@ -13,6 +13,8 @@ public class IniciaJogo : MonoBehaviour
     public static IniciaJogo Ij;
     public TextMeshProUGUI Text;
     private float count;
+    public bool comecou;
+
     //private float currentTime;
     private void Awake()
     {
@@ -23,6 +25,7 @@ public class IniciaJogo : MonoBehaviour
     {
         count = 6;
         gameObject.SetActive(false);
+        comecou = false;
     }
 
     // Update is called once per frame
@@ -37,6 +40,7 @@ public class IniciaJogo : MonoBehaviour
         {
             gameObject.SetActive(false);
             GameControl._PauseGeral = false;
+            comecou = true;
         }
         
     }

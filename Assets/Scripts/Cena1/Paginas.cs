@@ -1,3 +1,4 @@
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -12,23 +13,28 @@ public class Pag
 
 public class Paginas : MonoBehaviour
 {
+    private MenuScript _menu;
     public List<Pag> pag; 
     private int index;
     [SerializeField] private Image _img;
     [SerializeField] private Text _txt;
     private IniciaJogo iniciador;
-    private bool aberto;
+    public bool aberto;
     public bool iniciado;
     public GameObject explicacao;
+    private InfoPanelScore ips;
 
-
+    
     void Start()
     {
+        _menu = GetComponent<MenuScript>();
         aberto = true;
         iniciado = false;
+        
         index = 0;
         iniciador = IniciaJogo.Ij;
         GameControl._PauseGeral = true;
+        ips = InfoPanelScore.ips;
     }
 
     // Update is called once per frame
@@ -42,7 +48,8 @@ public class Paginas : MonoBehaviour
         {
             if (GameObject.FindGameObjectWithTag("iniciador")) {iniciador.gameObject.SetActive(true);
                 iniciado = false;
-            }
+                
+            }   
             
             
         }
@@ -62,7 +69,7 @@ public class Paginas : MonoBehaviour
 
     void Abrir_Fechar()
     {
-        if (aberto && iniciado)
+        if (aberto && iniciado &&!_menu.menuAberto && !ips.jogoTerminado)
         {
             Time.timeScale = 0f;
             if (Input.GetKeyDown(KeyCode.Escape)) { 
@@ -71,7 +78,7 @@ public class Paginas : MonoBehaviour
                 Time.timeScale = 1f;
             } 
         }
-        else if(!aberto && iniciado)
+        else if(!aberto && iniciado && !_menu.menuAberto && !ips.jogoTerminado)
         {
             
             if (Input.GetKeyDown(KeyCode.H)) {
@@ -80,7 +87,7 @@ public class Paginas : MonoBehaviour
                 Time.timeScale = 0f;
             } 
         }
-        else if (aberto && !iniciado)
+        else if (aberto && !iniciado && !_menu.menuAberto && !ips.jogoTerminado)
         {
             Time.timeScale = 0f;
             if (Input.GetKeyDown(KeyCode.Escape))
@@ -92,4 +99,6 @@ public class Paginas : MonoBehaviour
             }
         }
     }
+
+
 }

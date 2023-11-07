@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Temporizador : MonoBehaviour
@@ -82,8 +83,16 @@ public class Temporizador : MonoBehaviour
 
                 timerText.text = timeString;
             }
-            
-            
+            if (lido)
+            {
+                if (Input.GetKeyDown(KeyCode.N))
+                {
+                    SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+                    GameControl._PauseGeral = true;
+                    lido = false;
+                }
+            }
+
         }
     }
 

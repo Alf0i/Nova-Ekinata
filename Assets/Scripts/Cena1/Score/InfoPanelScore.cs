@@ -8,6 +8,7 @@ public class InfoPanelScore : MonoBehaviour
     public static InfoPanelScore ips;
     [HideInInspector]public string n;
     public bool telafechada;
+    public bool jogoTerminado;
     private void Awake()
     {
         ips = this;
@@ -16,6 +17,7 @@ public class InfoPanelScore : MonoBehaviour
     {
         gameObject.SetActive(false);
         telafechada = false;
+        jogoTerminado = false;
     }
 
     // Update is called once per frame
@@ -27,7 +29,9 @@ public class InfoPanelScore : MonoBehaviour
     public void MostrarTelaPlayer()
     {
         gameObject.SetActive(true);
+        jogoTerminado = true;
         Time.timeScale = 0f;
+        GameControl._PauseGeral = false;
     }
 
     public void FecharTelaPlayer()
