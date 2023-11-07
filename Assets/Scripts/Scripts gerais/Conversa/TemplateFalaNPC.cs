@@ -212,6 +212,19 @@ public class TemplateFalaNPC : MonoBehaviour
 
         }
 
+        // caso especifico da cena Sala De Espera
+        if(telaDeQuest == telaDeRequisito)
+        {
+           
+            if (Input.GetKeyDown(KeyCode.F) && _podeFalar == true) {
+                falar.dialogoTerminado = false;
+            if(!TemQuest && !falar.dialogoTerminado)
+            {
+                falar.AbrirDialogo(pages);
+            } 
+            }
+                
+        }
 
     }
 
