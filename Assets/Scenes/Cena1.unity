@@ -2446,7 +2446,7 @@ MonoBehaviour:
     texto: "Ao entregar '3 pastas', voc\xEA ganha."
   - _spr: {fileID: 21300000, guid: 7975c360c9fd6fd4286411af86f838b8, type: 3}
     texto: "Caso o tempo termine antes das entregas, voc\xEA perde."
-  - _spr: {fileID: 21300000, guid: 1303cbde9e79433408c8f4aa0c218c46, type: 3}
+  - _spr: {fileID: 21300000, guid: 74b0bac6a3cc0dd4888c9f6f1cb4f483, type: 3}
     texto: Desejamos BOA SORTE!!! ... Para iniciar, pressione 'ESC'.
   _img: {fileID: 1048016179}
   _txt: {fileID: 688647377}

@@ -840,7 +840,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 244232436}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.5799007, y: -6.879508, z: 0.15262099}
+  m_LocalPosition: {x: -1.5799007, y: -7.29, z: 0.15262099}
   m_LocalScale: {x: 26.7977, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1822,7 +1822,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 597351057}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.5799007, y: 5.310492, z: 0.15262099}
+  m_LocalPosition: {x: -1.5799007, y: 3.89, z: 0.15262099}
   m_LocalScale: {x: 26.7977, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1917,6 +1917,7 @@ GameObject:
   m_Component:
   - component: {fileID: 617672975}
   - component: {fileID: 617672974}
+  - component: {fileID: 617672976}
   m_Layer: 0
   m_Name: TrashCan
   m_TagString: Untagged
@@ -1991,6 +1992,22 @@ Transform:
   m_Father: {fileID: 1586096849}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!70 &617672976
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 617672973}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 1.31, y: 1.64}
+  m_Direction: 0
 --- !u!1 &685803198
 GameObject:
   m_ObjectHideFlags: 0
