@@ -69,7 +69,8 @@ public class Paginas : MonoBehaviour
 
     void Abrir_Fechar()
     {
-        if (aberto && iniciado &&!_menu.menuAberto && !ips.jogoTerminado)
+        if(ips != null) {
+        if (aberto && iniciado && (!_menu.menuAberto) && (!ips.jogoTerminado))
         {
             Time.timeScale = 0f;
             if (Input.GetKeyDown(KeyCode.Escape)) { 
@@ -78,7 +79,7 @@ public class Paginas : MonoBehaviour
                 Time.timeScale = 1f;
             } 
         }
-        else if(!aberto && iniciado && !_menu.menuAberto && !ips.jogoTerminado)
+        else if(!aberto && iniciado && (!_menu.menuAberto) && (!ips.jogoTerminado))
         {
             
             if (Input.GetKeyDown(KeyCode.H)) {
@@ -87,7 +88,7 @@ public class Paginas : MonoBehaviour
                 Time.timeScale = 0f;
             } 
         }
-        else if (aberto && !iniciado && !_menu.menuAberto && !ips.jogoTerminado)
+        else if (aberto && !iniciado && (!_menu.menuAberto) && (!ips.jogoTerminado))
         {
             Time.timeScale = 0f;
             if (Input.GetKeyDown(KeyCode.Escape))
@@ -96,6 +97,41 @@ public class Paginas : MonoBehaviour
                 aberto = false;
                 iniciado = true;
                 Time.timeScale = 1f;
+            }
+        }
+        }
+        else
+        {
+            if (aberto && iniciado )
+            {
+                Time.timeScale = 0f;
+                if (Input.GetKeyDown(KeyCode.Escape))
+                {
+                    explicacao.SetActive(false);
+                    aberto = false;
+                    Time.timeScale = 1f;
+                }
+            }
+            else if (!aberto && iniciado)
+            {
+
+                if (Input.GetKeyDown(KeyCode.H))
+                {
+                    explicacao.SetActive(true);
+                    aberto = true;
+                    Time.timeScale = 0f;
+                }
+            }
+            else if (aberto && !iniciado)
+            {
+                Time.timeScale = 0f;
+                if (Input.GetKeyDown(KeyCode.Escape))
+                {
+                    explicacao.SetActive(false);
+                    aberto = false;
+                    iniciado = true;
+                    Time.timeScale = 1f;
+                }
             }
         }
     }
