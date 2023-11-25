@@ -63,7 +63,7 @@ public class Temporizador : MonoBehaviour
                 remainingTime -= (Time.deltaTime);
 
                 // TERMINA DE CONTAR
-                if ((remainingTime < 1 || Input.GetKeyDown(KeyCode.M)) && Time.timeScale == 1f)
+                if (remainingTime < 1 && Time.timeScale == 1f)
                 {
                     remainingTime = 0;
                     finished = true;
@@ -83,7 +83,7 @@ public class Temporizador : MonoBehaviour
 
                 timerText.text = timeString;
             }
-            if (lido)
+            if (lido && info.telafechada)
             {
                 if (Input.GetKeyDown(KeyCode.N))
                 {

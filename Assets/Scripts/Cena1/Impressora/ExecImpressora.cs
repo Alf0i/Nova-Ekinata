@@ -69,7 +69,7 @@ public class ExecImpressora : MonoBehaviour
                     _isNear = false;
          }
 
-        if (_isNear == true)
+        if (_isNear == true && _canUse)
         {
             if (Input.GetKeyDown(KeyCode.F))
             {
@@ -101,7 +101,7 @@ public class ExecImpressora : MonoBehaviour
     {
         
         // se tiver dentro da area do objeto utlizar o "F" vai fazer a funcao do objeto.
-        if (_isNear == true)
+        if (_isNear == true )
         {
 
             if (_isUsingObj == true)
@@ -143,7 +143,7 @@ public class ExecImpressora : MonoBehaviour
                 gameObject.GetComponent<SpriteRenderer>().color = CorDeAproximacao;
             }
         }
-        else if (_isNear == false)
+        else
         {
             _isUsingObj = false;
             gameObject.GetComponent<SpriteRenderer>().color = minhaCor;

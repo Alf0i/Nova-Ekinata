@@ -23,18 +23,18 @@ public class Paginas : MonoBehaviour
     public bool iniciado;
     public GameObject explicacao;
     private InfoPanelScore ips;
+    public GameObject inic ;
 
-    
     void Start()
     {
         _menu = GetComponent<MenuScript>();
         aberto = true;
         iniciado = false;
-        
         index = 0;
         iniciador = IniciaJogo.Ij;
         GameControl._PauseGeral = true;
         ips = InfoPanelScore.ips;
+        
     }
 
     // Update is called once per frame
@@ -46,7 +46,11 @@ public class Paginas : MonoBehaviour
         Abrir_Fechar();
         if (iniciado)
         {
-            if (GameObject.FindGameObjectWithTag("iniciador")) {iniciador.gameObject.SetActive(true);
+            Debug.Log("teste");
+            inic.SetActive(true);
+            if (inic.activeInHierarchy) {
+                Debug.Log("achou");
+                iniciador.gameObject.SetActive(true);
                 iniciado = false;
                 
             }   
@@ -102,7 +106,8 @@ public class Paginas : MonoBehaviour
         }
         else
         {
-            if (aberto && iniciado )
+            //tela de regra aberta depois da tela de regra inicial 
+            if (aberto && iniciado && (!_menu.menuAberto))
             {
                 Time.timeScale = 0f;
                 if (Input.GetKeyDown(KeyCode.Escape))
@@ -112,7 +117,8 @@ public class Paginas : MonoBehaviour
                     Time.timeScale = 1f;
                 }
             }
-            else if (!aberto && iniciado)
+            //tela de regra fechada depois da tela de regra inicial
+            else if (!aberto && iniciado && (!_menu.menuAberto))
             {
 
                 if (Input.GetKeyDown(KeyCode.H))
@@ -122,7 +128,8 @@ public class Paginas : MonoBehaviour
                     Time.timeScale = 0f;
                 }
             }
-            else if (aberto && !iniciado)
+            //tela de regra inicial
+            else if (aberto && !iniciado && (!_menu.menuAberto))
             {
                 Time.timeScale = 0f;
                 if (Input.GetKeyDown(KeyCode.Escape))

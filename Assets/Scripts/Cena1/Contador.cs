@@ -37,7 +37,7 @@ public class Contador : MonoBehaviour
         {
             if (contado && !finished)
             {
-                if (Input.GetKeyDown(KeyCode.F8))
+                if (Input.GetKeyDown(KeyCode.F8) && info.telafechada)
                 {
                     sc.Remover();
                 }
@@ -68,7 +68,7 @@ public class Contador : MonoBehaviour
             int Count = EntregaFinal._EntregaFinal.ContadorFinal;
 
             // TERMINA DE CONTAR
-            if ((Count == 3 || Input.GetKeyDown(KeyCode.P)) && !contado && Time.timeScale == 1f)
+            if ((Count == 3) && !contado && Time.timeScale == 1f)
             {
                 contado = true;
                 finished = true;
