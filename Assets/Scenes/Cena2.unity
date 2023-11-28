@@ -4614,6 +4614,7 @@ GameObject:
   m_Component:
   - component: {fileID: 232696868}
   - component: {fileID: 232696869}
+  - component: {fileID: 232696870}
   m_Layer: 0
   m_Name: CadeiraHospitalLado (6)
   m_TagString: Untagged
@@ -4688,6 +4689,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &232696870
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 232696867}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.28720498}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 2, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2, y: 1.42559}
+  m_EdgeRadius: 0
 --- !u!1001 &233657272
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8902,7 +8929,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -24.999207}
+  m_AnchoredPosition: {x: 0, y: -24.999268}
   m_SizeDelta: {x: -900, y: -450}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &394327856
@@ -10589,6 +10616,8 @@ Transform:
   - {fileID: 240509280}
   - {fileID: 1730765265}
   - {fileID: 196390476}
+  - {fileID: 1977393596}
+  - {fileID: 852927072}
   m_Father: {fileID: 1379038721}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -14971,18 +15000,22 @@ PrefabInstance:
     - target: {fileID: 2791557580151055436, guid: 1bda09aef7a540f4f8d0b27eb092efb4, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 19419b785d298754aa5e85cb4919efdb, type: 3}
+      objectReference: {fileID: 0}
+    - target: {fileID: 2791557580151055436, guid: 1bda09aef7a540f4f8d0b27eb092efb4, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2791557580151055437, guid: 1bda09aef7a540f4f8d0b27eb092efb4, type: 3}
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2791557580151055437, guid: 1bda09aef7a540f4f8d0b27eb092efb4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 53.91
+      value: 2.16
       objectReference: {fileID: 0}
     - target: {fileID: 2791557580151055437, guid: 1bda09aef7a540f4f8d0b27eb092efb4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 67.89
+      value: 59.71
       objectReference: {fileID: 0}
     - target: {fileID: 2791557580151055437, guid: 1bda09aef7a540f4f8d0b27eb092efb4, type: 3}
       propertyPath: m_LocalPosition.z
@@ -15250,6 +15283,7 @@ GameObject:
   m_Component:
   - component: {fileID: 660970425}
   - component: {fileID: 660970426}
+  - component: {fileID: 660970427}
   m_Layer: 0
   m_Name: CadeiraHospitalLado (11)
   m_TagString: Untagged
@@ -15324,6 +15358,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &660970427
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 660970424}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.28720498}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 2, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2, y: 1.42559}
+  m_EdgeRadius: 0
 --- !u!1 &663372040
 GameObject:
   m_ObjectHideFlags: 0
@@ -15334,6 +15394,7 @@ GameObject:
   m_Component:
   - component: {fileID: 663372041}
   - component: {fileID: 663372042}
+  - component: {fileID: 663372043}
   m_Layer: 0
   m_Name: CadeiraHospitalLado (5)
   m_TagString: Untagged
@@ -15408,6 +15469,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &663372043
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 663372040}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.28720498}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 2, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2, y: 1.42559}
+  m_EdgeRadius: 0
 --- !u!1 &663470652
 GameObject:
   m_ObjectHideFlags: 0
@@ -15848,10 +15935,10 @@ MonoBehaviour:
   - "descri\xE7\xE3o": Leia o nome do hospital na fonte
     alvos:
     - {fileID: 126933129}
-    "a\xE7\xE3o": 0
+    "a\xE7\xE3o": 1
   - "descri\xE7\xE3o": Pegue a tinta de impressora no deposito
     alvos:
-    - {fileID: 1328832696}
+    - {fileID: 1418424121}
     "a\xE7\xE3o": 0
   ObjetivoAtual: 0
   gm: {fileID: 0}
@@ -19088,6 +19175,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &826793213 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2791557580151055435, guid: 1bda09aef7a540f4f8d0b27eb092efb4, type: 3}
+  m_PrefabInstance: {fileID: 643823659}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &828750593
 GameObject:
   m_ObjectHideFlags: 0
@@ -19209,6 +19301,7 @@ GameObject:
   m_Component:
   - component: {fileID: 829817649}
   - component: {fileID: 829817650}
+  - component: {fileID: 829817651}
   m_Layer: 0
   m_Name: CadeiraHospitalLado (13)
   m_TagString: Untagged
@@ -19283,6 +19376,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &829817651
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 829817648}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.28720498}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 2, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2, y: 1.42559}
+  m_EdgeRadius: 0
 --- !u!1 &830370890
 GameObject:
   m_ObjectHideFlags: 0
@@ -19512,6 +19631,7 @@ GameObject:
   m_Component:
   - component: {fileID: 833106278}
   - component: {fileID: 833106279}
+  - component: {fileID: 833106280}
   m_Layer: 0
   m_Name: CadeiraHospitalLado (2)
   m_TagString: Untagged
@@ -19586,6 +19706,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &833106280
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 833106277}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.28720498}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 2, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2, y: 1.42559}
+  m_EdgeRadius: 0
 --- !u!1 &840607252
 GameObject:
   m_ObjectHideFlags: 0
@@ -20081,12 +20227,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 852927070}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 48.94, y: 10.81, z: 1.8439555}
+  m_LocalPosition: {x: 48.940002, y: 10.810001, z: 1.8439555}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1379038721}
-  m_RootOrder: 3
+  m_Father: {fileID: 457089599}
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &852927073
 BoxCollider2D:
@@ -21421,10 +21567,10 @@ MonoBehaviour:
   pages:
   - "Recepcionista \u2013 Por favor, os documentos.\r\n "
   - "Pai - Que documentos? Pensei que j\xE1 tinha tudo no sistema.\r\n"
-  - "Recepcionista - Mais um desinformado, para eu emitir a certid\xE3o de nascimento
+  - "Recepcionista - Mais um desinformado. Para eu emitir a certid\xE3o de nascimento,
     preciso de alguns documentos."
   - "Recepcionista - Sendo eles a sua certid\xE3o de casamento, assinatura do M\xE9dico
-    respons\xE1vel pelo parto, o nome do hospital e o tipo sangu\xEDneo."
+    respons\xE1vel pelo parto, o nome do hospital e o tipo sangu\xEDneo do beb\xEA."
   - "Pai \u2013 A certid\xE3o e a assinatura eu entendo, mas por que o nome do hospital
     voc\xEA n\xE3o sabe?"
   - "Recepcionista \u2013 Cala a boca e vai logo pegar o que pedi, e mais uma coisa
@@ -27626,7 +27772,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 6.049988}
+  m_AnchoredPosition: {x: 0, y: 6.050049}
   m_SizeDelta: {x: -850, y: -291.43}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1124590633
@@ -28155,6 +28301,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1147122778}
   - component: {fileID: 1147122779}
+  - component: {fileID: 1147122780}
   m_Layer: 0
   m_Name: CadeiraHospitalLado (1)
   m_TagString: Untagged
@@ -28229,6 +28376,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1147122780
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1147122777}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.28720498}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 2, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2, y: 1.42559}
+  m_EdgeRadius: 0
 --- !u!1 &1149250798
 GameObject:
   m_ObjectHideFlags: 0
@@ -30862,6 +31035,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1240409040}
   - component: {fileID: 1240409041}
+  - component: {fileID: 1240409042}
   m_Layer: 0
   m_Name: CadeiraHospitalLado (3)
   m_TagString: Untagged
@@ -30936,6 +31110,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1240409042
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1240409039}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.28720498}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 2, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2, y: 1.42559}
+  m_EdgeRadius: 0
 --- !u!1 &1241673496
 GameObject:
   m_ObjectHideFlags: 0
@@ -33361,6 +33561,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1342859292}
   - component: {fileID: 1342859293}
+  - component: {fileID: 1342859294}
   m_Layer: 0
   m_Name: CadeiraHospitalLado (9)
   m_TagString: Untagged
@@ -33435,6 +33636,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1342859294
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1342859291}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.28720498}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 2, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2, y: 1.42559}
+  m_EdgeRadius: 0
 --- !u!1 &1342929589
 GameObject:
   m_ObjectHideFlags: 0
@@ -34002,6 +34229,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1365548677}
   - component: {fileID: 1365548678}
+  - component: {fileID: 1365548679}
   m_Layer: 0
   m_Name: CadeiraHospitalLado (10)
   m_TagString: Untagged
@@ -34076,6 +34304,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1365548679
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1365548676}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.28720498}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 2, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2, y: 1.42559}
+  m_EdgeRadius: 0
 --- !u!1 &1365737653
 GameObject:
   m_ObjectHideFlags: 0
@@ -34523,8 +34777,6 @@ Transform:
   m_Children:
   - {fileID: 457089599}
   - {fileID: 1586225918}
-  - {fileID: 1977393596}
-  - {fileID: 852927072}
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -34898,6 +35150,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1403935052}
   - component: {fileID: 1403935053}
+  - component: {fileID: 1403935054}
   m_Layer: 0
   m_Name: CadeiraHospitalLado (12)
   m_TagString: Untagged
@@ -34972,6 +35225,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1403935054
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1403935051}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.28720498}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 2, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2, y: 1.42559}
+  m_EdgeRadius: 0
 --- !u!1 &1404080594
 GameObject:
   m_ObjectHideFlags: 0
@@ -35310,6 +35589,58 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2791557580151055437, guid: 1bda09aef7a540f4f8d0b27eb092efb4, type: 3}
   m_PrefabInstance: {fileID: 643823659}
   m_PrefabAsset: {fileID: 0}
+--- !u!61 &1418424125
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 826793213}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.13111806, y: -0.7340007}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.2622361, y: 0.86653996}
+  m_EdgeRadius: 0
+--- !u!61 &1418424126
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 826793213}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.45891523, y: -0.22242373}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.1800687, y: 2.423511}
+  m_EdgeRadius: 0
 --- !u!1 &1424496058
 GameObject:
   m_ObjectHideFlags: 0
@@ -39242,6 +39573,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1556171284}
   - component: {fileID: 1556171285}
+  - component: {fileID: 1556171286}
   m_Layer: 0
   m_Name: CadeiraHospitalLado (4)
   m_TagString: Untagged
@@ -39316,6 +39648,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1556171286
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1556171283}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.28720498}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 2, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2, y: 1.42559}
+  m_EdgeRadius: 0
 --- !u!1 &1559310583
 GameObject:
   m_ObjectHideFlags: 0
@@ -89653,6 +90011,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1909397329}
   - component: {fileID: 1909397330}
+  - component: {fileID: 1909397331}
   m_Layer: 0
   m_Name: CadeiraHospitalLado (8)
   m_TagString: Untagged
@@ -89727,6 +90086,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1909397331
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1909397328}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.28720498}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 2, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2, y: 1.42559}
+  m_EdgeRadius: 0
 --- !u!1 &1910442739
 GameObject:
   m_ObjectHideFlags: 0
@@ -92157,8 +92542,8 @@ Transform:
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1379038721}
-  m_RootOrder: 2
+  m_Father: {fileID: 457089599}
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1977393597
 BoxCollider2D:
@@ -92462,7 +92847,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -22.837524, y: -7.3893433}
+  m_AnchoredPosition: {x: -22.837402, y: -7.3894043}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &2000901481
