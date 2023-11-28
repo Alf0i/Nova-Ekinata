@@ -1689,13 +1689,17 @@ MonoBehaviour:
   titulo: {fileID: 126132138}
   descricao: {fileID: 2125784204}
   falar: {fileID: 1391911510}
-  pages: []
-  pagesAfterMission:
-  - valeu
+  pages:
+  - Pai - Ola, Bom dia.
+  - "Recepcionista - Desculpa, t\xF4 oculpado..."
+  - Pai -Opa, desculpa.
+  - "Recepcionista - Ent\xE3o Jorge como eu ia dizendo... Ai ele veio falando que
+    n\xE3o sei o que e n\xE3o sei oque l\xE1..."
+  pagesAfterMission: []
   telaDeQuest: {fileID: 394327854}
   telaDeRequisito: {fileID: 743348211}
   TemQuest: 0
-  QuestID: 0
+  QuestID: -2
   G: {fileID: 0}
   completo: 0
   limiteDist: 4
@@ -1714,7 +1718,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.011608124, y: 0.00068473816}
+  m_Offset: {x: -0.36203647, y: 0.00068473816}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1725,7 +1729,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.2299976, y: 1.310276}
+  m_Size: {x: 1.9772868, y: 1.310276}
   m_EdgeRadius: 0
 --- !u!212 &108364529
 SpriteRenderer:
@@ -3865,7 +3869,7 @@ MonoBehaviour:
   telaDeQuest: {fileID: 394327854}
   telaDeRequisito: {fileID: 743348211}
   TemQuest: 0
-  QuestID: 0
+  QuestID: -2
   G: {fileID: 0}
   completo: 0
   limiteDist: 2
@@ -5041,7 +5045,7 @@ MonoBehaviour:
   telaDeQuest: {fileID: 394327854}
   telaDeRequisito: {fileID: 743348211}
   TemQuest: 0
-  QuestID: 302
+  QuestID: -2
   G: {fileID: 0}
   completo: 0
   limiteDist: 2
@@ -5539,13 +5543,17 @@ MonoBehaviour:
   titulo: {fileID: 126132138}
   descricao: {fileID: 2125784204}
   falar: {fileID: 1391911510}
-  pages: []
-  pagesAfterMission:
-  - obrigado
+  pages:
+  - "Pai - Ola, Onde posso achar o ber\xE7\xE1rio?"
+  - "Recepcionista - Meu senhor, voc\xEA n\xE3o ta vendo uma placa do tamanho da
+    tua testa aqui do lado n\xE3o?!!"
+  - Pai - Eu hein, GROSSO...
+  - "Recepcionista - Aiai viu... \xC9 cada uma."
+  pagesAfterMission: []
   telaDeQuest: {fileID: 394327854}
   telaDeRequisito: {fileID: 743348211}
   TemQuest: 0
-  QuestID: 0
+  QuestID: -2
   G: {fileID: 0}
   completo: 0
   limiteDist: 4
@@ -16853,7 +16861,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 729619322}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -30.27, y: 8.740002, z: 1.8439555}
+  m_LocalPosition: {x: -33.89, y: 5.6, z: 1.8439555}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -16915,7 +16923,7 @@ MonoBehaviour:
   telaDeQuest: {fileID: 394327854}
   telaDeRequisito: {fileID: 743348211}
   TemQuest: 0
-  QuestID: 0
+  QuestID: -2
   G: {fileID: 0}
   completo: 0
   limiteDist: 4
@@ -21988,13 +21996,17 @@ MonoBehaviour:
   titulo: {fileID: 126132138}
   descricao: {fileID: 2125784204}
   falar: {fileID: 1391911510}
-  pages: []
+  pages:
+  - "Pai - Mo\xE7a, porfavor me ajuda."
+  - Atendente - Ola senhor, como posso ajudar?
+  - "Pai - Voc\xEA viu uma senhora por aqui? Estou procurando minha sogra."
+  - "Atendente - Ser\xE1 que n\xE3o \xE9 aquela "
   pagesAfterMission:
   - valeu
   telaDeQuest: {fileID: 394327854}
   telaDeRequisito: {fileID: 743348211}
   TemQuest: 0
-  QuestID: 0
+  QuestID: -2
   G: {fileID: 0}
   completo: 0
   limiteDist: 4
@@ -22013,7 +22025,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.08821535, y: 0.019074917}
+  m_Offset: {x: -0.4909525, y: 0.019074917}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -22024,7 +22036,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.1764307, y: 1.3650026}
+  m_Size: {x: 1.981905, y: 1.3650026}
   m_EdgeRadius: 0
 --- !u!212 &939407178
 SpriteRenderer:
@@ -41924,13 +41936,19 @@ MonoBehaviour:
   titulo: {fileID: 126132138}
   descricao: {fileID: 2125784204}
   falar: {fileID: 1391911510}
-  pages: []
+  pages:
+  - Pai - Ola, Bom dia.
+  - "Atendente - Oi senhor. Espera s\xF3 um minuto que o que ele ta falando aqui
+    \xE9 importante."
+  - "Atendente - Tenta com a pr\xF3xima atendente."
+  - Atendente - Iai Carlos e ele fez o que depois???
+  - "Pai - N\xE3o \xE9 poss\xEDvel um neg\xF3cio desses."
   pagesAfterMission:
   - valeu
   telaDeQuest: {fileID: 394327854}
   telaDeRequisito: {fileID: 743348211}
   TemQuest: 0
-  QuestID: 0
+  QuestID: -2
   G: {fileID: 0}
   completo: 0
   limiteDist: 4
@@ -41949,7 +41967,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.09171367, y: 0.01818943}
+  m_Offset: {x: -0.49730086, y: 0.01818943}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -41960,7 +41978,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.1834273, y: 1.3369198}
+  m_Size: {x: 1.9946017, y: 1.3369198}
   m_EdgeRadius: 0
 --- !u!212 &1621845337
 SpriteRenderer:
@@ -44254,7 +44272,7 @@ MonoBehaviour:
   telaDeQuest: {fileID: 394327854}
   telaDeRequisito: {fileID: 743348211}
   TemQuest: 0
-  QuestID: 302
+  QuestID: -2
   G: {fileID: 0}
   completo: 0
   limiteDist: 2
@@ -88433,13 +88451,19 @@ MonoBehaviour:
   titulo: {fileID: 126132138}
   descricao: {fileID: 2125784204}
   falar: {fileID: 1391911510}
-  pages: []
+  pages:
+  - Pai - Ola, Bom dia.
+  - Atendente - Ola senhor, como posso ajudar?
+  - Pai - Finalmente alguem que possa me atender...
+  - Telefone - TRIM... TRIM... TRIM...
+  - "Atendente - S\xF3 um minuto senhor... Oiii amigaaa, pode falar..."
+  - "Pai - N\xE3o \xE9 poss\xEDvel um neg\xF3cio desses!!!"
   pagesAfterMission:
   - valeu
   telaDeQuest: {fileID: 394327854}
   telaDeRequisito: {fileID: 743348211}
   TemQuest: 0
-  QuestID: 0
+  QuestID: -2
   G: {fileID: 0}
   completo: 0
   limiteDist: 4
@@ -88458,7 +88482,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.09680247, y: 0.04041195}
+  m_Offset: {x: -0.5457556, y: 0.04041195}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -88469,7 +88493,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.193605, y: 1.3518925}
+  m_Size: {x: 2.0915112, y: 1.3518925}
   m_EdgeRadius: 0
 --- !u!212 &1844678607
 SpriteRenderer:
@@ -88613,7 +88637,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.31891775}
+  m_Offset: {x: 0.9180217, y: -0.25870383}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -88624,7 +88648,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2, y: 3.3621645}
+  m_Size: {x: 3.8360434, y: 3.4825923}
   m_EdgeRadius: 0
 --- !u!212 &1851121282
 SpriteRenderer:
