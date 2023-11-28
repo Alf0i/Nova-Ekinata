@@ -34,11 +34,19 @@ public class SelecionaBotao : MonoBehaviour
         menu.SetActive(false);
         ajuda.menuAberto = false;
         Time.timeScale = 1f;
-        if (!InfoPanelScore.ips.jogoTerminado)
+        if(InfoPanelScore.ips != null)
+        {
+            if (!InfoPanelScore.ips.jogoTerminado)
+            {
+                GameControl._PauseGeral = false;
+
+            }
+        }
+        else
         {
             GameControl._PauseGeral = false;
-            
         }
+        
         
     }
 
