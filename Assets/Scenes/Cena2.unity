@@ -16204,7 +16204,7 @@ GameObject:
   - component: {fileID: 685803199}
   m_Layer: 0
   m_Name: EventSystem
-  m_TagString: Untagged
+  m_TagString: hospital
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35101,7 +35101,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ecb253ad61338294fba0e3bcd050914f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pag: {fileID: 1897665332}
+  ini: {fileID: 832146412}
   timerText: {fileID: 1403420845}
   contms: 0
   conts: 0
@@ -89784,6 +89784,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 700560c269a749347a0a46d5b8dbf540, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interruptorMenu: 0
   menu: {fileID: 481064800}
   hud: {fileID: 2082935255}
   menuAberto: 0

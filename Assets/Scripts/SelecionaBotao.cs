@@ -12,10 +12,12 @@ public class SelecionaBotao : MonoBehaviour
     [SerializeField] private GameObject menuControles;
     [SerializeField] private GameObject menu;
     [SerializeField] private MenuScript ajuda;
+    
     // Start is called before the first frame update
     void Start()
     {
         primaryButton.Select();
+      
     }
 
     // Update is called once per frame
@@ -31,14 +33,7 @@ public class SelecionaBotao : MonoBehaviour
 
     public void ContinuarJogo()
     {
-        menu.SetActive(false);
-        ajuda.menuAberto = false;
-        Time.timeScale = 1f;
-        if (!InfoPanelScore.ips.jogoTerminado)
-        {
-            GameControl._PauseGeral = false;
-            
-        }
+        ajuda.interruptorMenu = true;
         
     }
 
