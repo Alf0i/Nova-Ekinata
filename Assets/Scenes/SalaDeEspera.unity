@@ -359,7 +359,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ecb253ad61338294fba0e3bcd050914f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pag: {fileID: 0}
+  ini: {fileID: 0}
   timerText: {fileID: 155214691}
   contms: 0
   conts: 0
@@ -2255,8 +2255,9 @@ GameObject:
   - component: {fileID: 806789052}
   - component: {fileID: 806789051}
   - component: {fileID: 806789050}
+  - component: {fileID: 806789053}
   m_Layer: 0
-  m_Name: Square (3)
+  m_Name: Cena3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2329,7 +2330,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 12c14735d9f7551479bece280891c8e5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e07193e38d97f0147970e58958ad425c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2355,6 +2356,19 @@ Transform:
   m_Father: {fileID: 1559955314}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &806789053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 806789048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce22ac8de7322514aaad82b19281c9ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 482671402}
 --- !u!1 &824161450
 GameObject:
   m_ObjectHideFlags: 0
@@ -8102,6 +8116,7 @@ GameObject:
   - component: {fileID: 1853656609}
   - component: {fileID: 1853656608}
   - component: {fileID: 1853656607}
+  - component: {fileID: 1853656610}
   m_Layer: 0
   m_Name: Cena2
   m_TagString: Untagged
@@ -8176,7 +8191,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 9
-  m_Sprite: {fileID: 21300000, guid: 12c14735d9f7551479bece280891c8e5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e07193e38d97f0147970e58958ad425c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -8202,6 +8217,19 @@ Transform:
   m_Father: {fileID: 1559955314}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1853656610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1853656605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce22ac8de7322514aaad82b19281c9ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 482671402}
 --- !u!1 &1867317633
 GameObject:
   m_ObjectHideFlags: 0

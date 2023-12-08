@@ -6,6 +6,7 @@ using static UnityEditor.PlayerSettings;
 
 public class MenuScript : MonoBehaviour
 {
+    public bool interruptorMenu;
     private Paginas pag;
     public GameObject menu;
     public GameObject hud;
@@ -21,7 +22,7 @@ public class MenuScript : MonoBehaviour
         menuAberto = false;
         ij = IniciaJogo.Ij;
         info = InfoPanelScore.ips;
-        
+        interruptorMenu = false;
     }
 
     // Update is called once per frame
@@ -38,7 +39,7 @@ public class MenuScript : MonoBehaviour
                 Time.timeScale = 0f;
                 hud.SetActive(false);
             }
-            else if (Input.GetKeyDown(KeyCode.Escape) && menuAberto && menuTela.activeInHierarchy)
+            else if ((Input.GetKeyDown(KeyCode.Escape) || interruptorMenu) && menuAberto && menuTela.activeInHierarchy)
             {
                 if (info != null)
                 {
@@ -50,6 +51,7 @@ public class MenuScript : MonoBehaviour
                     {
                         Time.timeScale = 1f;
                     }
+                    
                 }
                 else
                 {
@@ -58,9 +60,10 @@ public class MenuScript : MonoBehaviour
                     GameControl._PauseGeral = false;
                     hud.SetActive(true);
                     Time.timeScale = 1f;
+                    
                 }
                     
-                
+                interruptorMenu = false;
 
             }
         }

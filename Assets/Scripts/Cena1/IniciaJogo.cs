@@ -40,6 +40,7 @@ public class IniciaJogo : MonoBehaviour
         {
             gameObject.SetActive(false);
             GameControl._PauseGeral = false;
+            Time.timeScale = 1f;
             comecou = true;
         }
         

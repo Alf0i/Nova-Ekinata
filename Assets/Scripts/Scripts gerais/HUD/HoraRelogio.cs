@@ -5,17 +5,16 @@ using UnityEngine.UI;
 
 public class HoraRelogio : MonoBehaviour
 {
-    [SerializeField] private Paginas pag;
+    [SerializeField] private IniciaJogo ini;
     public Text timerText;
     public float contms;
     public float conts;
     public float contm;
     public float conth;
-    private bool _isPaused;
 
     void Start()
     {
-        Debug.Log("COME�OU");
+        
         
         Time.timeScale = 1f;
         contms = 0;
@@ -23,26 +22,20 @@ public class HoraRelogio : MonoBehaviour
         contm = 0;
         conth = 7;
 
-        _isPaused = false;
         GameControl._PauseGeral = false;
 
     }
 
     void Update()
     {
-        if (GameObject.FindGameObjectWithTag("paginas")) 
+        if (GameObject.FindGameObjectWithTag("iniciador")) 
         { 
-            if(pag.iniciado)
+            if(ini.comecou)
             {
                 GameControl._PauseGeral = false;
             }
         }
-        // PAUSE 
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            Pausar();
-
-        }
+        
         string timeString = string.Format("{0:00}:{1:00}", conth, contm);
 
         timerText.text = timeString;
@@ -56,7 +49,7 @@ public class HoraRelogio : MonoBehaviour
     {
         
 
-        if (_isPaused == false)
+        if (GameControl._PauseGeral == false)
         {
 
             contms += (Time.fixedDeltaTime*60);
@@ -104,19 +97,7 @@ public class HoraRelogio : MonoBehaviour
 
 
 
-    private void Pausar()
-    {
-        if (_isPaused == false)
-        {
-            Time.timeScale = 0f;
-            _isPaused = true;
-        }
-        else
-        {
-            Time.timeScale = 1f;
-            _isPaused = false;
-        }
-    }
+    
 
 
 }
